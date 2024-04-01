@@ -1,0 +1,9 @@
+<map id="arcade::SolarFox::detectPlayerBulletTooFar" name="arcade::SolarFox::detectPlayerBulletTooFar">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,184,166"/>
+<area shape="rect" id="node2" href="$class_bullet.html#aa925017e506293a8523066b0840ef2d4" title=" " alt="" coords="243,5,370,32"/>
+<area shape="rect" id="node3" href="$class_bullet.html#a532e345747ba9c9deea06cbb5069c05f" title=" " alt="" coords="244,56,369,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad" title=" " alt="" coords="232,107,381,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="233,157,381,184"/>
+<area shape="rect" id="node6" href="$class_bullet.html#a0b09dc7337748ece22243c1bb0e3f6e0" title=" " alt="" coords="247,208,367,235"/>
+<area shape="rect" id="node7" href="$class_bullet.html#ac62505f50f89bc99e4659c6228bb893f" title=" " alt="" coords="242,259,371,285"/>
+</map>

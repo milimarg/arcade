@@ -1,0 +1,7 @@
+<map id="arcade::SolarFox::applyEvent" name="arcade::SolarFox::applyEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,216,108"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_player.html#ac3e467739c0a2ea066d26f6e5fb9aa56" title=" " alt="" coords="264,5,467,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad" title=" " alt="" coords="291,56,440,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="291,107,439,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9" title=" " alt="" coords="264,157,467,184"/>
+</map>

@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['sdl2_39',['Sdl2',['../classarcade_1_1_sdl2.html',1,'arcade']]],
-  ['sectors_5fs_40',['sectors_s',['../structsectors__s.html',1,'']]],
-  ['snake_41',['Snake',['../classarcade_1_1_snake.html',1,'arcade']]],
-  ['solarfox_42',['SolarFox',['../classarcade_1_1_solar_fox.html',1,'arcade']]],
-  ['stbi_5fio_5fcallbacks_43',['stbi_io_callbacks',['../structstbi__io__callbacks.html',1,'']]]
+  ['pacman_43',['Pacman',['../classarcade_1_1_pacman.html',1,'arcade']]],
+  ['pixel_44',['Pixel',['../classarcade_1_1_pixel.html',1,'arcade']]],
+  ['pixels_45',['Pixels',['../classarcade_1_1_pixels.html',1,'arcade']]],
+  ['player_46',['Player',['../classarcade_1_1_player.html',1,'arcade']]]
 ];

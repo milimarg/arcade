@@ -1,0 +1,14 @@
+<map id="arcade::Snake::reload" name="arcade::Snake::reload">
+<area shape="rect" id="node1" title=" " alt="" coords="5,293,168,320"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973" title=" " alt="" coords="219,188,362,215"/>
+<area shape="rect" id="node9" href="$classarcade_1_1_snake.html#abd09261053a61af43259e16d1c284205" title=" " alt="" coords="216,369,365,396"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_player.html#a0d05a6f5f8d28b05ff90505a255f8334" title=" " alt="" coords="427,5,633,32"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_a_game_module.html#a506c4b560b7b6105d7901f004af96ad3" title=" " alt="" coords="445,57,615,98"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_a_game_module.html#a579679ee389de8bb173532209aa70365" title=" " alt="" coords="445,122,615,163"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_player.html#a9dc0964ee3fe56f484c35c38e6a1ce49" title=" " alt="" coords="458,188,602,215"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9" title=" " alt="" coords="429,239,631,265"/>
+<area shape="rect" id="node8" href="$classarcade_1_1_player.html#a3fa840016ebc04c18a28f2792a2ade40" title=" " alt="" coords="413,289,647,316"/>
+<area shape="rect" id="node10" href="$classarcade_1_1_player.html#a72caf7890f32a5ee7df67ce1c4acd3df" title=" " alt="" coords="435,340,625,367"/>
+<area shape="rect" id="node11" href="$classarcade_1_1_player.html#a0e0bb20c37a388fce65b15a16b137cf6" title=" " alt="" coords="434,391,626,433"/>
+<area shape="rect" id="node12" href="$classarcade_1_1_player.html#a0230a8da3afd15abce440f5c1dc7f150" title=" " alt="" coords="423,457,637,484"/>
+</map>

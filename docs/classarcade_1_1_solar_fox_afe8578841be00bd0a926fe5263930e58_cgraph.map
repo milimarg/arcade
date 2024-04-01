@@ -1,0 +1,12 @@
+<map id="arcade::SolarFox::detectWallCollision" name="arcade::SolarFox::detectWallCollision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,201,184,242"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_entity.html#a05590055017449a684c4f6a586b7d361" title=" " alt="" coords="247,5,430,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_entity.html#a3282a1876e7bbeda46b22d847cc0c50a" title=" " alt="" coords="232,56,445,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_entity.html#ab62a6ab6fe9b3684fa6ce3ea354f9bdd" title=" " alt="" coords="254,107,423,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_entity.html#af2f62ad98b3a78f77a1779daeada819c" title=" " alt="" coords="249,157,428,184"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad" title=" " alt="" coords="264,208,413,235"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="265,259,413,285"/>
+<area shape="rect" id="node8" href="$classarcade_1_1_entity.html#a73dd1d9222da2e111649732999ee8fd6" title=" " alt="" coords="255,309,423,336"/>
+<area shape="rect" id="node9" href="$classarcade_1_1_entity.html#a439252eb324b016c15ce2592c50bda26" title=" " alt="" coords="265,360,413,387"/>
+<area shape="rect" id="node10" href="$classarcade_1_1_entity.html#a0bcb2be9b5aca5f00989bec31edb32fa" title=" " alt="" coords="265,411,412,437"/>
+</map>

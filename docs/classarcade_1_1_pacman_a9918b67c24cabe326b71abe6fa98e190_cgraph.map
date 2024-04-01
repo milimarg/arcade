@@ -1,0 +1,5 @@
+<map id="arcade::Pacman::applyEvents" name="arcade::Pacman::applyEvents">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,219,57"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_pacman.html#aca5523ed516c322c8bda4af61d111356" title=" " alt="" coords="267,5,473,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_i_event.html#a359934a001d072464c52fa668974271b" title=" " alt="" coords="279,56,461,83"/>
+</map>

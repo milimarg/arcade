@@ -1,0 +1,9 @@
+<map id="arcade::IGameModule" name="arcade::IGameModule">
+<area shape="rect" id="node1" title=" " alt="" coords="290,5,455,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_a_game_module.html" title=" " alt="" coords="287,80,458,107"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_doom.html" title=" " alt="" coords="5,155,119,181"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_main_menu.html" title=" " alt="" coords="143,155,285,181"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_pacman.html" title=" " alt="" coords="310,155,435,181"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_snake.html" title=" " alt="" coords="460,155,573,181"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_solar_fox.html" title=" " alt="" coords="598,155,729,181"/>
+</map>

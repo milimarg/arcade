@@ -1,0 +1,26 @@
+var classarcade_1_1_solar_fox =
+[
+    [ "SolarFox", "classarcade_1_1_solar_fox.html#acd7ae8b4d394b40c54400bc29e25da7d", null ],
+    [ "~SolarFox", "classarcade_1_1_solar_fox.html#a0c9075006d9b7b8f51527e0e8b00dbbc", null ],
+    [ "applyEvent", "classarcade_1_1_solar_fox.html#a176ced595ab15b159d2b8ca19b06263a", null ],
+    [ "applyEvents", "classarcade_1_1_solar_fox.html#ac36b9d59b46e35cf209e21dbe338156b", null ],
+    [ "detectBulletOutside", "classarcade_1_1_solar_fox.html#a1cc54a5f2baba07aafea1c2aa4ab7dbe", null ],
+    [ "detectPlayerBulletTooFar", "classarcade_1_1_solar_fox.html#aba619b853f6615348fc930507fb3e920", null ],
+    [ "detectPlayerIsSafe", "classarcade_1_1_solar_fox.html#a2ce55c7754acdbde50d3b0741c92dda9", null ],
+    [ "detectWallCollision", "classarcade_1_1_solar_fox.html#afe8578841be00bd0a926fe5263930e58", null ],
+    [ "draw", "classarcade_1_1_solar_fox.html#a54c702c6daa8821bbc37a1824a4cb1f5", null ],
+    [ "drawBullets", "classarcade_1_1_solar_fox.html#a81c2535444a730aefd5baa9ac12e5440", null ],
+    [ "drawEnemies", "classarcade_1_1_solar_fox.html#a7b4059abe7f65d2704675807be6ac40e", null ],
+    [ "drawPlayer", "classarcade_1_1_solar_fox.html#af18416751aed6b22c8fd43e3f30f14dc", null ],
+    [ "getScore", "classarcade_1_1_solar_fox.html#aa20e211fe20ad65bbb6607880491fcd4", null ],
+    [ "init", "classarcade_1_1_solar_fox.html#a2b3901e0221d7c061e667e58447e3284", null ],
+    [ "initEnemies", "classarcade_1_1_solar_fox.html#a2e804d1fbeec7f59c05b3710a52062d7", null ],
+    [ "initPlayer", "classarcade_1_1_solar_fox.html#a13abed7afb51a7f66acbd7b5bbe60d09", null ],
+    [ "reload", "classarcade_1_1_solar_fox.html#aee452c1823c9dca229a8aa17a5138efa", null ],
+    [ "spawnBullet", "classarcade_1_1_solar_fox.html#abc2e87d4a318b8b4d26f8ad621171d5a", null ],
+    [ "spawnPlayerBullet", "classarcade_1_1_solar_fox.html#ac505cb124b9c32dc14a5d0a1cd23bf2c", null ],
+    [ "stop", "classarcade_1_1_solar_fox.html#a67bbc3d9c2980627ea933da7f094f1d4", null ],
+    [ "update", "classarcade_1_1_solar_fox.html#a23d4226dea9fc20fb4259852b9382fe0", null ],
+    [ "updatePlayer", "classarcade_1_1_solar_fox.html#aa8fcc74fb2776545d226ce82f021081e", null ],
+    [ "updatePlayerBullet", "classarcade_1_1_solar_fox.html#a008cedee2d4230905dfe3dcc547a6f12", null ]
+];

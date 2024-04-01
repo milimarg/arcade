@@ -1,0 +1,7 @@
+<map id="arcade::Food::applyEffect" name="arcade::Food::applyEffect">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,192,108"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_player.html#a0d05a6f5f8d28b05ff90505a255f8334" title=" " alt="" coords="247,5,453,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_player.html#a1a64815325ed739fc91c9192e92fa3a0" title=" " alt="" coords="240,56,460,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_player.html#a0230a8da3afd15abce440f5c1dc7f150" title=" " alt="" coords="243,107,457,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_player.html#af41bb508e98de8ed5cfe08a1f65e6c37" title=" " alt="" coords="241,157,459,184"/>
+</map>

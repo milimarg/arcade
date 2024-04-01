@@ -1,0 +1,10 @@
+<map id="arcade::SolarFox::updatePlayerBullet" name="arcade::SolarFox::updatePlayerBullet">
+<area shape="rect" id="node1" title=" " alt="" coords="5,150,188,191"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_entity.html#a67e25af56a5537222e6c5fbfa019d3e3" title=" " alt="" coords="236,5,435,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_entity.html#ab62a6ab6fe9b3684fa6ce3ea354f9bdd" title=" " alt="" coords="251,56,420,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad" title=" " alt="" coords="261,107,410,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="261,157,409,184"/>
+<area shape="rect" id="node6" href="$class_bullet.html#a0b09dc7337748ece22243c1bb0e3f6e0" title=" " alt="" coords="275,208,395,235"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_entity.html#a439252eb324b016c15ce2592c50bda26" title=" " alt="" coords="261,259,409,285"/>
+<area shape="rect" id="node8" href="$classarcade_1_1_entity.html#a0bcb2be9b5aca5f00989bec31edb32fa" title=" " alt="" coords="262,309,409,336"/>
+</map>

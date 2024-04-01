@@ -1,0 +1,5 @@
+<map id="arcade::Pacman::stop" name="arcade::Pacman::stop">
+<area shape="rect" id="node1" title=" " alt="" coords="455,5,616,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_pacman.html#a0997dd7c9ab0bcbe8b24fd3d9b4c38ae" title=" " alt="" coords="232,5,407,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_pacman.html#afd59956c48e690e593cb71fdea146dd5" title=" " alt="" coords="5,5,184,32"/>
+</map>

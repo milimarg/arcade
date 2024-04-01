@@ -1,0 +1,8 @@
+<map id="arcade::SolarFox::drawPlayer" name="arcade::SolarFox::drawPlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,216,133"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_entity.html#a05590055017449a684c4f6a586b7d361" title=" " alt="" coords="264,5,447,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_entity.html#af290fe6bd1e1be07d0f7d3b533ffdda1" title=" " alt="" coords="274,56,437,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_entity.html#af2f62ad98b3a78f77a1779daeada819c" title=" " alt="" coords="266,107,445,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad" title=" " alt="" coords="281,157,430,184"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="281,208,429,235"/>
+</map>

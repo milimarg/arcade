@@ -1,0 +1,5 @@
+<map id="arcade::Snake::applyEvents" name="arcade::Snake::applyEvents">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,207,57"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_snake.html#af554d41af17ae5d3f8f6854778ea3589" title=" " alt="" coords="255,5,449,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_i_event.html#a359934a001d072464c52fa668974271b" title=" " alt="" coords="261,56,443,83"/>
+</map>

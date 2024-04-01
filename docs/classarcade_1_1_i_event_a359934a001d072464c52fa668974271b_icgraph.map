@@ -1,0 +1,8 @@
+<map id="arcade::IEvent::getEvent" name="arcade::IEvent::getEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="284,107,465,133"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_doom.html#afbde0757e65b25c19cf288a3010b0366" title=" " alt="" coords="20,5,221,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_main_menu.html#a3373d94239c4704846d1aefe5e56bd4e" title=" " alt="" coords="5,56,236,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_pacman.html#a9918b67c24cabe326b71abe6fa98e190" title=" " alt="" coords="14,107,227,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_snake.html#ac94c2b55dd7014cd42459162ed5ef272" title=" " alt="" coords="20,157,221,184"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_solar_fox.html#ac36b9d59b46e35cf209e21dbe338156b" title=" " alt="" coords="11,208,230,235"/>
+</map>

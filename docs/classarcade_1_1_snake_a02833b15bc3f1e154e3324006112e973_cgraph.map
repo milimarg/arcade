@@ -1,0 +1,9 @@
+<map id="arcade::Snake::init" name="arcade::Snake::init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,159,148,185"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_player.html#a0d05a6f5f8d28b05ff90505a255f8334" title=" " alt="" coords="210,5,415,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_a_game_module.html#a506c4b560b7b6105d7901f004af96ad3" title=" " alt="" coords="227,57,398,98"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_a_game_module.html#a579679ee389de8bb173532209aa70365" title=" " alt="" coords="227,122,398,163"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_player.html#a9dc0964ee3fe56f484c35c38e6a1ce49" title=" " alt="" coords="241,188,385,215"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9" title=" " alt="" coords="211,239,414,265"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_player.html#a3fa840016ebc04c18a28f2792a2ade40" title=" " alt="" coords="196,289,429,316"/>
+</map>

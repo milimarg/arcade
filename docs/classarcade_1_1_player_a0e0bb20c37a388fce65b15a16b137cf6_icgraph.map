@@ -1,0 +1,6 @@
+<map id="arcade::Player::resetMoveSpeed" name="arcade::Player::resetMoveSpeed">
+<area shape="rect" id="node1" title=" " alt="" coords="628,5,820,47"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_snake.html#abd09261053a61af43259e16d1c284205" title=" " alt="" coords="431,13,580,39"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_snake.html#ab859c5f34beb05636c25a974402ef199" title=" " alt="" coords="220,13,383,39"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="5,13,172,39"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="arcade::Pacman::update" name="arcade::Pacman::update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,70,184,97"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_pacman.html#a0997dd7c9ab0bcbe8b24fd3d9b4c38ae" title=" " alt="" coords="232,70,407,97"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_pacman.html#a545306e4b7082acbd4a53de8ee22c3ca" title=" " alt="" coords="458,45,613,71"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_pacman.html#aadccdfc3886e988360e94904ec540e37" title=" " alt="" coords="455,95,616,122"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_a_game_module.html#a506c4b560b7b6105d7901f004af96ad3" title=" " alt="" coords="664,5,835,47"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_a_game_module.html#a579679ee389de8bb173532209aa70365" title=" " alt="" coords="664,71,835,112"/>
+</map>

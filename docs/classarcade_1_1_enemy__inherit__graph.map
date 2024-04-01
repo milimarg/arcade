@@ -1,0 +1,5 @@
+<map id="arcade::Enemy" name="arcade::Enemy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$class_bullet.html" title=" " alt="" coords="35,155,95,181"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_entity.html" title=" " alt="" coords="9,5,121,32"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="arcade::AGameModule::createTextsObject" name="arcade::AGameModule::createTextsObject">
+<area shape="rect" id="node1" title=" " alt="" coords="681,99,852,141"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_doom.html#ad4ddbf65a25f508e275d4708ee4a446b" title=" " alt="" coords="477,5,619,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_main_menu.html#a66bae697a3a17e1f3ee8cd5f7fb05f1b" title=" " alt="" coords="463,56,633,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_pacman.html#a545306e4b7082acbd4a53de8ee22c3ca" title=" " alt="" coords="471,107,625,133"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973" title=" " alt="" coords="477,157,619,184"/>
+<area shape="rect" id="node10" href="$classarcade_1_1_solar_fox.html#a2b3901e0221d7c061e667e58447e3284" title=" " alt="" coords="469,208,627,235"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_pacman.html#a0997dd7c9ab0bcbe8b24fd3d9b4c38ae" title=" " alt="" coords="238,107,413,133"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_pacman.html#afd59956c48e690e593cb71fdea146dd5" title=" " alt="" coords="7,107,186,133"/>
+<area shape="rect" id="node8" href="$classarcade_1_1_snake.html#ab859c5f34beb05636c25a974402ef199" title=" " alt="" coords="244,157,407,184"/>
+<area shape="rect" id="node9" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="13,157,180,184"/>
+<area shape="rect" id="node11" href="$classarcade_1_1_solar_fox.html#aee452c1823c9dca229a8aa17a5138efa" title=" " alt="" coords="236,208,415,235"/>
+<area shape="rect" id="node12" href="$classarcade_1_1_solar_fox.html#a23d4226dea9fc20fb4259852b9382fe0" title=" " alt="" coords="5,208,188,235"/>
+</map>
