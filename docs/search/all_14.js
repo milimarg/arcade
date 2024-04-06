@@ -1,27 +1,6 @@
 var searchData=
 [
-  ['t_5fkey_543',['T_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba66a3a2bd487148a6e63f0ace398b967d',1,'arcade']]],
-  ['test_544',['test',['../namespacearcade.html#a937669db2d32ccea1594f465548c9792',1,'arcade']]],
-  ['text_545',['Text',['../classarcade_1_1_text.html',1,'arcade::Text'],['../classarcade_1_1_text.html#af3dac84b69f5f216e8e9b3e58ea802ab',1,'arcade::Text::Text()'],['../classarcade_1_1_text.html#adb3cad3e55f84360e1ce963333ef0793',1,'arcade::Text::Text(const std::string &amp;str)'],['../classarcade_1_1_text.html#aba9439337bc705814983cf0fdf9e00cf',1,'arcade::Text::Text(const std::string &amp;str, Color red, Color green, Color blue, Color alpha=255)']]],
-  ['text_2ecpp_546',['Text.cpp',['../_text_8cpp.html',1,'']]],
-  ['text_2ehpp_547',['Text.hpp',['../_text_8hpp.html',1,'']]],
-  ['textmap_548',['TextMap',['../namespacearcade.html#ad52c388da9a5e9b5409a196431380fc2',1,'arcade']]],
-  ['texts_549',['Texts',['../classarcade_1_1_texts.html',1,'arcade::Texts'],['../classarcade_1_1_texts.html#a18e326a9cce50025ebeb8ff55f7c2690',1,'arcade::Texts::Texts()']]],
-  ['texts_2ecpp_550',['Texts.cpp',['../_texts_8cpp.html',1,'']]],
-  ['texts_2ehpp_551',['Texts.hpp',['../_texts_8hpp.html',1,'']]],
-  ['texture_552',['Texture',['../class_texture.html#a4cd45e8898c02b5a5c790a479233124b',1,'Texture::Texture(const std::string &amp;path)'],['../class_texture.html#a6c275e3f186675ff6ed73ccf970e552f',1,'Texture::Texture()'],['../class_texture.html',1,'Texture']]],
-  ['texture_2ecpp_553',['Texture.cpp',['../_texture_8cpp.html',1,'']]],
-  ['texture_2ehpp_554',['Texture.hpp',['../_texture_8hpp.html',1,'']]],
-  ['textured_555',['TEXTURED',['../classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4aac1c8c13a1c375e3947b7b13d082cce7',1,'arcade::IPixel']]],
-  ['time_556',['Time',['../classarcade_1_1_time.html',1,'arcade::Time'],['../classarcade_1_1_time.html#ac14e7cc63b4738875f060c8eace283af',1,'arcade::Time::Time()']]],
-  ['time_2ecpp_557',['Time.cpp',['../_time_8cpp.html',1,'']]],
-  ['time_2ehpp_558',['Time.hpp',['../_time_8hpp.html',1,'']]],
-  ['top_559',['top',['../structid__rect.html#ae954544e0a17838914f5cf1798bbe6d8',1,'id_rect::top()'],['../structsectors__s.html#a289fe7af035d57e5a0e04e6352d6d3fd',1,'sectors_s::top()'],['../structid___color_box.html#a20f17a41e4c6d0fb40e2c5038b29cb7a',1,'id_ColorBox::top()']]],
-  ['top_560',['TOP',['../struct_8hpp.html#aa44ee0f90142da2a1da8771c19643633a0ad44897a70fba309c24a5b6007de3e3',1,'struct.hpp']]],
-  ['top1_561',['top1',['../structcoordinates__wall.html#a9cfc1b645f1dbb6ceaa6eced835963c9',1,'coordinates_wall']]],
-  ['top2_562',['top2',['../structcoordinates__wall.html#a19e4523301c59bcb6a4e2499952ecc10',1,'coordinates_wall']]],
-  ['triangle_563',['TRIANGLE',['../struct_8hpp.html#a82a00e336c65dad4cc04b65563b26eb5a2fd33892864d1c342d3bead2f2d9ad56',1,'struct.hpp']]],
-  ['turn_5fleft_564',['turn_left',['../my_8hpp.html#a9529f4fa560748b413c0ddc81c8f510f',1,'turn_left(my_idt1 &amp;world, id_Vec2 *delta):&#160;my.hpp'],['../move__player__body_8cpp.html#a30324609f42ac4457f70538a64d3733a',1,'turn_left(my_idt1 &amp;world, id_Vec2 *delta __attribute_maybe_unused__):&#160;move_player_body.cpp']]],
-  ['turn_5fright_565',['turn_right',['../move__player__body_8cpp.html#a834e5391ae707b3897db4b0abfb3847d',1,'turn_right(my_idt1 &amp;world, id_Vec2 *delta __attribute_maybe_unused__):&#160;move_player_body.cpp'],['../my_8hpp.html#a0636b430ce1f7c3893ed67bd3c294e67',1,'turn_right(my_idt1 &amp;world, id_Vec2 *delta):&#160;my.hpp']]],
-  ['type_566',['type',['../structmy__idt1.html#a1f97f8af16974860addda9004019a901',1,'my_idt1']]]
+  ['wall_5fs_111',['wall_s',['../structwall__s.html',1,'']]],
+  ['welcome_20to_20the_20arcade_20project_112',['Welcome to the Arcade Project',['../md__home_marg__e_p_i_t_e_c_h__p_r_o_j_e_c_t_s__b__o_o_p_400__s_t_g_4_1_arcade_noe_tritsch__r_e_a_d_m_e.html',1,'']]],
+  ['window_113',['Window',['../classarcade_1_1_window.html',1,'arcade']]]
 ];

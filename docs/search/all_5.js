@@ -1,18 +1,8 @@
 var searchData=
 [
-  ['e_5fkey_107',['E_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6baad3a20b18f167a29239483138d10dadd',1,'arcade']]],
-  ['enemy_108',['Enemy',['../classarcade_1_1_enemy.html',1,'arcade::Enemy'],['../classarcade_1_1_enemy.html#af6390477e91a102d2e02d2fe86b19834',1,'arcade::Enemy::Enemy()']]],
-  ['enemy_2ehpp_109',['Enemy.hpp',['../_enemy_8hpp.html',1,'']]],
-  ['enter_110',['ENTER',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba331b3100a485d8cacff1d3df8e9b0c13',1,'arcade']]],
-  ['entity_111',['Entity',['../classarcade_1_1_entity.html',1,'arcade::Entity'],['../classarcade_1_1_entity.html#ab6b33e52f1d0a7bf51323ffd36f8e3a9',1,'arcade::Entity::Entity()']]],
-  ['entity_2ehpp_112',['Entity.hpp',['../_entity_8hpp.html',1,'']]],
-  ['entrypoint_113',['entryPoint',['../_sdl2_8hpp.html#aa6e9f4646c626e5579f5c6988f054448',1,'entryPoint():&#160;Sdl2.hpp'],['../_doom_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965',1,'entryPoint():&#160;Doom.hpp'],['../_main_menu_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965',1,'entryPoint():&#160;MainMenu.hpp'],['../_n_curses_8hpp.html#aa6e9f4646c626e5579f5c6988f054448',1,'entryPoint():&#160;NCurses.hpp'],['../_nibbler_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965',1,'entryPoint():&#160;Nibbler.hpp'],['../_open_g_l_8hpp.html#aa6e9f4646c626e5579f5c6988f054448',1,'entryPoint():&#160;OpenGL.hpp'],['../_pacman_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965',1,'entryPoint():&#160;Pacman.hpp'],['../_solar_fox_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965',1,'entryPoint():&#160;SolarFox.hpp'],['../_s_f_m_l_8hpp.html#aa6e9f4646c626e5579f5c6988f054448',1,'entryPoint():&#160;SFML.hpp'],['../_snake_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965',1,'entryPoint():&#160;Snake.hpp']]],
-  ['eof_114',['eof',['../structstbi__io__callbacks.html#a319639db2f76e715eed7a7a974136832',1,'stbi_io_callbacks']]],
-  ['error_115',['Error',['../classarcade_1_1_error.html',1,'arcade::Error'],['../classarcade_1_1_error.html#a42ea81f3ad8a1e3ad3c1c8ab171b1395',1,'arcade::Error::Error()']]],
-  ['error_5fhandling_5ffile_116',['error_handling_file',['../convert__dante__to__config_8cpp.html#a0e909750bf642b6c15f512250bed8599',1,'convert_dante_to_config.cpp']]],
-  ['escape_117',['ESCAPE',['../namespacearcade.html#a242d62fa4da7e6f7c7c6c5687a4d0eccadaaedac409335b869929ea43fa44be5d',1,'arcade']]],
-  ['event_118',['Event',['../classarcade_1_1_event.html',1,'arcade::Event'],['../classarcade_1_1_event.html#ad92da67278009eee1cc3a648fc28fc9d',1,'arcade::Event::Event()'],['../classarcade_1_1_event.html#ad92da67278009eee1cc3a648fc28fc9d',1,'arcade::Event::Event()'],['../classarcade_1_1_event.html#ad92da67278009eee1cc3a648fc28fc9d',1,'arcade::Event::Event()'],['../classarcade_1_1_event.html#ad92da67278009eee1cc3a648fc28fc9d',1,'arcade::Event::Event()']]],
-  ['eventinfo_119',['EventInfo',['../classarcade_1_1_event_info.html',1,'arcade::EventInfo'],['../classarcade_1_1_event_info.html#ab6aa26b0f62479750b073ac33a094e21',1,'arcade::EventInfo::EventInfo(const ChangeKey &amp;key)'],['../classarcade_1_1_event_info.html#a4385659ddf5363a550202696972badef',1,'arcade::EventInfo::EventInfo(const Key &amp;key, const std::pair&lt; int, int &gt; &amp;mouseCoords)'],['../classarcade_1_1_event_info.html#a5e2517cbe9c45032feb10837e12e80e3',1,'arcade::EventInfo::EventInfo(const Key &amp;key)'],['../classarcade_1_1_event_info.html#a5f66022e30953e39abf876c9288cfe8e',1,'arcade::EventInfo::EventInfo()']]],
-  ['eventinfo_2ecpp_120',['EventInfo.cpp',['../_event_info_8cpp.html',1,'']]],
-  ['eventinfo_2ehpp_121',['EventInfo.hpp',['../_event_info_8hpp.html',1,'']]]
+  ['enemy_25',['Enemy',['../classarcade_1_1_enemy.html',1,'arcade']]],
+  ['entity_26',['Entity',['../classarcade_1_1_entity.html',1,'arcade']]],
+  ['error_27',['Error',['../classarcade_1_1_error.html',1,'arcade']]],
+  ['event_28',['Event',['../classarcade_1_1_event.html',1,'arcade']]],
+  ['eventinfo_29',['EventInfo',['../classarcade_1_1_event_info.html',1,'arcade']]]
 ];

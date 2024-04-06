@@ -70,7 +70,7 @@ $(function() {
 <div class="title">Snake.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_snake_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** arcade-preparations</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -80,23 +80,23 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef Snake_HPP_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define Snake_HPP_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_a_game_module_8hpp.html">AGameModule.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_i_graphical_module_8hpp.html">IGraphicalModule.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &quot;AGameModule.hpp&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;IGraphicalModule.hpp&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #include &lt;deque&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #include &lt;cstdlib&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #include &lt;ctime&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #include &lt;array&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_snake_2_food_8hpp.html">Food.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_solar_fox_2_player_8hpp.html">Player.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #include &quot;Food.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    #include &quot;Player.hpp&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classarcade_1_1_snake.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_snake.html">Snake</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_a_game_module.html">AGameModule</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="classarcade_1_1_snake.html#ac2d67bc373332c9c8dc52743efc052ce">Snake</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="classarcade_1_1_snake.html#a93abcd4ea476f99f468371c738500716">~Snake</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="classarcade_1_1_snake.html">Snake</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            ~<a class="code" href="classarcade_1_1_snake.html">Snake</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973">init</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_snake.html#a2e1e104d27af43372d41f6239bbf68a3">draw</a>(<a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> *module) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_snake.html#af554d41af17ae5d3f8f6854778ea3589">applyEvent</a>(<span class="keyword">const</span> <a class="code" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;key) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_snake.html#af554d41af17ae5d3f8f6854778ea3589">applyEvent</a>(<span class="keyword">const</span> Key &amp;key) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordtype">int</span> _score;</div>
@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">bool</span> _isDevModeOn;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">void</span> handleCollisions();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">void</span> handleSnakeDirectionChange(<span class="keyword">const</span> <a class="code" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;key);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">void</span> handleSnakeDirectionChange(<span class="keyword">const</span> Key &amp;key);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">void</span> renderSnake();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">bool</span> checkFoodPosition(std::pair&lt;int, int&gt; checkedPos);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordtype">void</span> spawnFood();</div>
@@ -138,7 +138,7 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">void</span> renderArena();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">void</span> renderBackground();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">void</span> renderScore();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> updateTrueDirection(<span class="keywordtype">int</span> changeValue, <a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Player::Direction</a> snakeDirection);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> updateTrueDirection(<span class="keywordtype">int</span> changeValue, Player::Direction snakeDirection);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Key, std::pair&lt;Player::Direction, Player::Direction&gt;&gt; _playerDirection;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
@@ -146,40 +146,29 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_snake_8hpp.html#abff4a74ab82d3f0e9470620181f7756e">  106</a></span>&#160;    std::string <a class="code" href="_snake_8hpp.html#abff4a74ab82d3f0e9470620181f7756e">getType</a>() {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::string getType() {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;game&quot;</span>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="_snake_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965">  110</a></span>&#160;    std::unique_ptr&lt;arcade::IGameModule&gt; <a class="code" href="_snake_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965">entryPoint</a>() {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::unique_ptr&lt;arcade::IGameModule&gt; entryPoint() {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;arcade::Snake&gt;();</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !Snake_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_a_game_module_8hpp_html"><div class="ttname"><a href="_a_game_module_8hpp.html">AGameModule.hpp</a></div></div>
-<div class="ttc" id="a_i_graphical_module_8hpp_html"><div class="ttname"><a href="_i_graphical_module_8hpp.html">IGraphicalModule.hpp</a></div></div>
-<div class="ttc" id="a_snake_2_food_8hpp_html"><div class="ttname"><a href="_snake_2_food_8hpp.html">Food.hpp</a></div></div>
-<div class="ttc" id="a_snake_8hpp_html_ab1ee8dc960d865dfb2d8a381f3c0a965"><div class="ttname"><a href="_snake_8hpp.html#ab1ee8dc960d865dfb2d8a381f3c0a965">entryPoint</a></div><div class="ttdeci">std::unique_ptr&lt; arcade::IGameModule &gt; entryPoint()</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8hpp_source.html#l00110">Snake.hpp:110</a></div></div>
-<div class="ttc" id="a_snake_8hpp_html_abff4a74ab82d3f0e9470620181f7756e"><div class="ttname"><a href="_snake_8hpp.html#abff4a74ab82d3f0e9470620181f7756e">getType</a></div><div class="ttdeci">std::string getType()</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8hpp_source.html#l00106">Snake.hpp:106</a></div></div>
-<div class="ttc" id="a_solar_fox_2_player_8hpp_html"><div class="ttname"><a href="_solar_fox_2_player_8hpp.html">Player.hpp</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_a_game_module_html"><div class="ttname"><a href="classarcade_1_1_a_game_module.html">arcade::AGameModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_game_module_8hpp_source.html#l00017">AGameModule.hpp:17</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_event_8hpp_source.html#l00015">IEvent.hpp:15</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_graphical_module_8hpp_source.html#l00022">IGraphicalModule.hpp:22</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_player_html"><div class="ttname"><a href="classarcade_1_1_player.html">arcade::Player</a></div><div class="ttdef"><b>Definition:</b> <a href="_nibbler_2_player_8hpp_source.html#l00021">Player.hpp:21</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_player_html_a1a889c812eff18f3452c15f3b1ddeb55"><div class="ttname"><a href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">arcade::Player::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> <a href="_nibbler_2_player_8hpp_source.html#l00023">Player.hpp:23</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html"><div class="ttname"><a href="classarcade_1_1_snake.html">arcade::Snake</a></div><div class="ttdef"><b>Definition:</b> <a href="_snake_8hpp_source.html#l00024">Snake.hpp:24</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_a02833b15bc3f1e154e3324006112e973"><div class="ttname"><a href="classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973">arcade::Snake::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00031">Snake.cpp:31</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_a2e1e104d27af43372d41f6239bbf68a3"><div class="ttname"><a href="classarcade_1_1_snake.html#a2e1e104d27af43372d41f6239bbf68a3">arcade::Snake::draw</a></div><div class="ttdeci">void draw(IGraphicalModule *module) override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00180">Snake.cpp:180</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_a93abcd4ea476f99f468371c738500716"><div class="ttname"><a href="classarcade_1_1_snake.html#a93abcd4ea476f99f468371c738500716">arcade::Snake::~Snake</a></div><div class="ttdeci">~Snake()</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00029">Snake.cpp:29</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_aa8fb5f51e2c391285dadf409eba7e96c"><div class="ttname"><a href="classarcade_1_1_snake.html#aa8fb5f51e2c391285dadf409eba7e96c">arcade::Snake::getScore</a></div><div class="ttdeci">int getScore() override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00175">Snake.cpp:175</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_ab859c5f34beb05636c25a974402ef199"><div class="ttname"><a href="classarcade_1_1_snake.html#ab859c5f34beb05636c25a974402ef199">arcade::Snake::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00169">Snake.cpp:169</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_abd09261053a61af43259e16d1c284205"><div class="ttname"><a href="classarcade_1_1_snake.html#abd09261053a61af43259e16d1c284205">arcade::Snake::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00104">Snake.cpp:104</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_ac2d67bc373332c9c8dc52743efc052ce"><div class="ttname"><a href="classarcade_1_1_snake.html#ac2d67bc373332c9c8dc52743efc052ce">arcade::Snake::Snake</a></div><div class="ttdeci">Snake()</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00012">Snake.cpp:12</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_ac94c2b55dd7014cd42459162ed5ef272"><div class="ttname"><a href="classarcade_1_1_snake.html#ac94c2b55dd7014cd42459162ed5ef272">arcade::Snake::applyEvents</a></div><div class="ttdeci">void applyEvents(IEvent *eventWrapper) override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00114">Snake.cpp:114</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_acbf8266a6cf09230f10af40d4e51cea1"><div class="ttname"><a href="classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1">arcade::Snake::update</a></div><div class="ttdeci">void update(float deltaTime) override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00129">Snake.cpp:129</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_snake_html_af554d41af17ae5d3f8f6854778ea3589"><div class="ttname"><a href="classarcade_1_1_snake.html#af554d41af17ae5d3f8f6854778ea3589">arcade::Snake::applyEvent</a></div><div class="ttdeci">void applyEvent(const Key &amp;key) override</div><div class="ttdef"><b>Definition:</b> <a href="_snake_8cpp_source.html#l00187">Snake.cpp:187</a></div></div>
-<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> <a href="_doom_8cpp_source.html#l00011">Doom.cpp:12</a></div></div>
-<div class="ttc" id="anamespacearcade_html_a52a577b6127e6275047bef2a793bce6b"><div class="ttname"><a href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">arcade::Key</a></div><div class="ttdeci">Key</div><div class="ttdef"><b>Definition:</b> <a href="_keys_8hpp_source.html#l00013">Keys.hpp:13</a></div></div>
+<div class="ttc" id="aclassarcade_1_1_a_game_module_html"><div class="ttname"><a href="classarcade_1_1_a_game_module.html">arcade::AGameModule</a></div><div class="ttdef"><b>Definition:</b> AGameModule.hpp:17</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:15</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> IGraphicalModule.hpp:24</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html"><div class="ttname"><a href="classarcade_1_1_player.html">arcade::Player</a></div><div class="ttdef"><b>Definition:</b> Player.hpp:21</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html"><div class="ttname"><a href="classarcade_1_1_snake.html">arcade::Snake</a></div><div class="ttdef"><b>Definition:</b> Snake.hpp:24</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_a02833b15bc3f1e154e3324006112e973"><div class="ttname"><a href="classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973">arcade::Snake::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:31</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_a2e1e104d27af43372d41f6239bbf68a3"><div class="ttname"><a href="classarcade_1_1_snake.html#a2e1e104d27af43372d41f6239bbf68a3">arcade::Snake::draw</a></div><div class="ttdeci">void draw(IGraphicalModule *module) override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:180</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_aa8fb5f51e2c391285dadf409eba7e96c"><div class="ttname"><a href="classarcade_1_1_snake.html#aa8fb5f51e2c391285dadf409eba7e96c">arcade::Snake::getScore</a></div><div class="ttdeci">int getScore() override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:175</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_ab859c5f34beb05636c25a974402ef199"><div class="ttname"><a href="classarcade_1_1_snake.html#ab859c5f34beb05636c25a974402ef199">arcade::Snake::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:169</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_abd09261053a61af43259e16d1c284205"><div class="ttname"><a href="classarcade_1_1_snake.html#abd09261053a61af43259e16d1c284205">arcade::Snake::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:104</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_ac94c2b55dd7014cd42459162ed5ef272"><div class="ttname"><a href="classarcade_1_1_snake.html#ac94c2b55dd7014cd42459162ed5ef272">arcade::Snake::applyEvents</a></div><div class="ttdeci">void applyEvents(IEvent *eventWrapper) override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:114</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_acbf8266a6cf09230f10af40d4e51cea1"><div class="ttname"><a href="classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1">arcade::Snake::update</a></div><div class="ttdeci">void update(float deltaTime) override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:129</div></div>
+<div class="ttc" id="aclassarcade_1_1_snake_html_af554d41af17ae5d3f8f6854778ea3589"><div class="ttname"><a href="classarcade_1_1_snake.html#af554d41af17ae5d3f8f6854778ea3589">arcade::Snake::applyEvent</a></div><div class="ttdeci">void applyEvent(const Key &amp;key) override</div><div class="ttdef"><b>Definition:</b> Snake.cpp:187</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

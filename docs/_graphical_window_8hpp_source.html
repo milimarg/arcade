@@ -70,7 +70,7 @@ $(function() {
 <div class="title">GraphicalWindow.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_graphical_window_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** B-OOP-400-STG-4-1-arcade-noe.tritsch</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -79,33 +79,26 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef GRAPHICALWINDOW_HPP_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define GRAPHICALWINDOW_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_i_window_8hpp.html">IWindow.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &quot;IWindow.hpp&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classarcade_1_1_graphical_window.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_graphical_window.html">GraphicalWindow</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <a class="code" href="classarcade_1_1_graphical_window.html#ad1c325e8525f40d2875dd99811584aca">GraphicalWindow</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <a class="code" href="classarcade_1_1_graphical_window.html">GraphicalWindow</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_graphical_window.html#a9225c2fa994f18b17a0799d14d6978b7">getCurrentPixelSizeX</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_graphical_window.html#a802b790bda3c79617d283a62d72d8a55">getCurrentPixelSizeY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordtype">int</span> getCurrentPixelSizeX() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">int</span> getCurrentPixelSizeY() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classarcade_1_1_graphical_window.html#adc472a55dbbd5c560ec9d9c57f1bec82">   22</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_graphical_window.html#adc472a55dbbd5c560ec9d9c57f1bec82">_currentPixelSizeX</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classarcade_1_1_graphical_window.html#aa51b5d638c69e552a2d0ded3a74f1b9e">   23</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_graphical_window.html#aa51b5d638c69e552a2d0ded3a74f1b9e">_currentPixelSizeY</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordtype">int</span> _currentPixelSizeX;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordtype">int</span> _currentPixelSizeY;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !GRAPHICALWINDOW_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_i_window_8hpp_html"><div class="ttname"><a href="_i_window_8hpp.html">IWindow.hpp</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_graphical_window_html"><div class="ttname"><a href="classarcade_1_1_graphical_window.html">arcade::GraphicalWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_graphical_window_8hpp_source.html#l00014">GraphicalWindow.hpp:14</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_graphical_window_html_a802b790bda3c79617d283a62d72d8a55"><div class="ttname"><a href="classarcade_1_1_graphical_window.html#a802b790bda3c79617d283a62d72d8a55">arcade::GraphicalWindow::getCurrentPixelSizeY</a></div><div class="ttdeci">int getCurrentPixelSizeY() const</div><div class="ttdef"><b>Definition:</b> <a href="_graphical_window_8cpp_source.html#l00023">GraphicalWindow.cpp:23</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_graphical_window_html_a9225c2fa994f18b17a0799d14d6978b7"><div class="ttname"><a href="classarcade_1_1_graphical_window.html#a9225c2fa994f18b17a0799d14d6978b7">arcade::GraphicalWindow::getCurrentPixelSizeX</a></div><div class="ttdeci">int getCurrentPixelSizeX() const</div><div class="ttdef"><b>Definition:</b> <a href="_graphical_window_8cpp_source.html#l00018">GraphicalWindow.cpp:18</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_graphical_window_html_aa51b5d638c69e552a2d0ded3a74f1b9e"><div class="ttname"><a href="classarcade_1_1_graphical_window.html#aa51b5d638c69e552a2d0ded3a74f1b9e">arcade::GraphicalWindow::_currentPixelSizeY</a></div><div class="ttdeci">int _currentPixelSizeY</div><div class="ttdef"><b>Definition:</b> <a href="_graphical_window_8hpp_source.html#l00023">GraphicalWindow.hpp:23</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_graphical_window_html_ad1c325e8525f40d2875dd99811584aca"><div class="ttname"><a href="classarcade_1_1_graphical_window.html#ad1c325e8525f40d2875dd99811584aca">arcade::GraphicalWindow::GraphicalWindow</a></div><div class="ttdeci">GraphicalWindow()</div><div class="ttdef"><b>Definition:</b> <a href="_graphical_window_8cpp_source.html#l00012">GraphicalWindow.cpp:12</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_graphical_window_html_adc472a55dbbd5c560ec9d9c57f1bec82"><div class="ttname"><a href="classarcade_1_1_graphical_window.html#adc472a55dbbd5c560ec9d9c57f1bec82">arcade::GraphicalWindow::_currentPixelSizeX</a></div><div class="ttdeci">int _currentPixelSizeX</div><div class="ttdef"><b>Definition:</b> <a href="_graphical_window_8hpp_source.html#l00022">GraphicalWindow.hpp:22</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_window_html"><div class="ttname"><a href="classarcade_1_1_i_window.html">arcade::IWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_window_8hpp_source.html#l00016">IWindow.hpp:16</a></div></div>
-<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> <a href="_doom_8cpp_source.html#l00011">Doom.cpp:12</a></div></div>
+<div class="ttc" id="aclassarcade_1_1_graphical_window_html"><div class="ttname"><a href="classarcade_1_1_graphical_window.html">arcade::GraphicalWindow</a></div><div class="ttdef"><b>Definition:</b> GraphicalWindow.hpp:14</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_window_html"><div class="ttname"><a href="classarcade_1_1_i_window.html">arcade::IWindow</a></div><div class="ttdef"><b>Definition:</b> IWindow.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

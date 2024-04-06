@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacearcade.html">arcade</a></li><li class="navelem"><a class="el" href="classarcade_1_1_i_pixel.html">IPixel</a></li>  </ul>
+<li class="navelem"><b>arcade</b></li><li class="navelem"><a class="el" href="classarcade_1_1_i_pixel.html">IPixel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,8 +74,6 @@ $(function() {
 <div class="title">arcade::IPixel Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_i_pixel_8hpp_source.html">IPixel.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for arcade::IPixel:</div>
 <div class="dyncontent">
@@ -88,722 +86,84 @@ Inheritance diagram for arcade::IPixel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a52de4dbb2dbe9b0b8e2010bdda8360f4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a> { <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4a5b39c8b553c821e7cddc6da64b5bd2ee">DEFAULT</a>
-, <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4aac1c8c13a1c375e3947b7b13d082cce7">TEXTURED</a>
-, <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+<tr class="memitem:a52de4dbb2dbe9b0b8e2010bdda8360f4"><td class="memItemLeft" align="right" valign="top"><a id="a52de4dbb2dbe9b0b8e2010bdda8360f4"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PixelType</b> { <b>DEFAULT</b>
+, <b>TEXTURED</b>
+, <b>NONE</b>
  }</td></tr>
 <tr class="separator:a52de4dbb2dbe9b0b8e2010bdda8360f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb0b71dd6a5cc15426e80c1b461bac7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a> { <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7a298ae558fe1a3bb5aab7fab0bad18e42">R0</a>
-, <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7afcc57f86c4affb85abae0c3bc7582820">R90</a>
-, <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7a24fab55a244f6e1f247c71b750b28c8c">R180</a>
-, <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7a17461302e5359371ba66ec6de6b7e0c9">R270</a>
+<tr class="memitem:a3eb0b71dd6a5cc15426e80c1b461bac7"><td class="memItemLeft" align="right" valign="top"><a id="a3eb0b71dd6a5cc15426e80c1b461bac7"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Rotation</b> { <b>R0</b>
+, <b>R90</b>
+, <b>R180</b>
+, <b>R270</b>
  }</td></tr>
 <tr class="separator:a3eb0b71dd6a5cc15426e80c1b461bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad139b83e47dc0b49f2f631667385bc6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> = unsigned int</td></tr>
+<tr class="memitem:ad139b83e47dc0b49f2f631667385bc6e"><td class="memItemLeft" align="right" valign="top"><a id="ad139b83e47dc0b49f2f631667385bc6e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Color</b> = unsigned int</td></tr>
 <tr class="separator:ad139b83e47dc0b49f2f631667385bc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2fc1d40a4e62bc6b50707f7d1d7f5423"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a2fc1d40a4e62bc6b50707f7d1d7f5423">~IPixel</a> ()=default</td></tr>
-<tr class="separator:a2fc1d40a4e62bc6b50707f7d1d7f5423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded404fa512de87a83eebe02daae6bf3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#aded404fa512de87a83eebe02daae6bf3">getRed</a> () const =0</td></tr>
+<tr class="memitem:aded404fa512de87a83eebe02daae6bf3"><td class="memItemLeft" align="right" valign="top"><a id="aded404fa512de87a83eebe02daae6bf3"></a>
+virtual Color&#160;</td><td class="memItemRight" valign="bottom"><b>getRed</b> () const =0</td></tr>
 <tr class="separator:aded404fa512de87a83eebe02daae6bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad89c715a0de2016f06e16ee19c82aa75"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#ad89c715a0de2016f06e16ee19c82aa75">getGreen</a> () const =0</td></tr>
+<tr class="memitem:ad89c715a0de2016f06e16ee19c82aa75"><td class="memItemLeft" align="right" valign="top"><a id="ad89c715a0de2016f06e16ee19c82aa75"></a>
+virtual Color&#160;</td><td class="memItemRight" valign="bottom"><b>getGreen</b> () const =0</td></tr>
 <tr class="separator:ad89c715a0de2016f06e16ee19c82aa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d42a622325286696eeae983cc4d488"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a38d42a622325286696eeae983cc4d488">getBlue</a> () const =0</td></tr>
+<tr class="memitem:a38d42a622325286696eeae983cc4d488"><td class="memItemLeft" align="right" valign="top"><a id="a38d42a622325286696eeae983cc4d488"></a>
+virtual Color&#160;</td><td class="memItemRight" valign="bottom"><b>getBlue</b> () const =0</td></tr>
 <tr class="separator:a38d42a622325286696eeae983cc4d488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04081702903941096accae528ddff3e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a04081702903941096accae528ddff3e3">getAlpha</a> () const =0</td></tr>
+<tr class="memitem:a04081702903941096accae528ddff3e3"><td class="memItemLeft" align="right" valign="top"><a id="a04081702903941096accae528ddff3e3"></a>
+virtual Color&#160;</td><td class="memItemRight" valign="bottom"><b>getAlpha</b> () const =0</td></tr>
 <tr class="separator:a04081702903941096accae528ddff3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96e3fe6d11ab376526c07b27bca2539d"><td class="memItemLeft" align="right" valign="top">virtual char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a96e3fe6d11ab376526c07b27bca2539d">getChar</a> () const =0</td></tr>
+<tr class="memitem:a96e3fe6d11ab376526c07b27bca2539d"><td class="memItemLeft" align="right" valign="top"><a id="a96e3fe6d11ab376526c07b27bca2539d"></a>
+virtual char&#160;</td><td class="memItemRight" valign="bottom"><b>getChar</b> () const =0</td></tr>
 <tr class="separator:a96e3fe6d11ab376526c07b27bca2539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ddd399065f32b0f5388a527bc671d60"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a1ddd399065f32b0f5388a527bc671d60">getTexturePath</a> () const =0</td></tr>
+<tr class="memitem:a1ddd399065f32b0f5388a527bc671d60"><td class="memItemLeft" align="right" valign="top"><a id="a1ddd399065f32b0f5388a527bc671d60"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getTexturePath</b> () const =0</td></tr>
 <tr class="separator:a1ddd399065f32b0f5388a527bc671d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d61a42c421b4e508db4adcec68f1ac7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a9d61a42c421b4e508db4adcec68f1ac7">getRotation</a> () const =0</td></tr>
+<tr class="memitem:a9d61a42c421b4e508db4adcec68f1ac7"><td class="memItemLeft" align="right" valign="top"><a id="a9d61a42c421b4e508db4adcec68f1ac7"></a>
+virtual Rotation&#160;</td><td class="memItemRight" valign="bottom"><b>getRotation</b> () const =0</td></tr>
 <tr class="separator:a9d61a42c421b4e508db4adcec68f1ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c17b5a42965af34cd79c1c5aaaf167"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a10c17b5a42965af34cd79c1c5aaaf167">getType</a> () const =0</td></tr>
+<tr class="memitem:a10c17b5a42965af34cd79c1c5aaaf167"><td class="memItemLeft" align="right" valign="top"><a id="a10c17b5a42965af34cd79c1c5aaaf167"></a>
+virtual PixelType&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const =0</td></tr>
 <tr class="separator:a10c17b5a42965af34cd79c1c5aaaf167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a903c846ee754e393795564f9707c83fb"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a903c846ee754e393795564f9707c83fb">getRectSize</a> () const =0</td></tr>
+<tr class="memitem:a903c846ee754e393795564f9707c83fb"><td class="memItemLeft" align="right" valign="top"><a id="a903c846ee754e393795564f9707c83fb"></a>
+virtual std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRectSize</b> () const =0</td></tr>
 <tr class="separator:a903c846ee754e393795564f9707c83fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aa3f4d83c65cc23d71dc0753622c7d8"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a4aa3f4d83c65cc23d71dc0753622c7d8">getRectPosition</a> () const =0</td></tr>
+<tr class="memitem:a4aa3f4d83c65cc23d71dc0753622c7d8"><td class="memItemLeft" align="right" valign="top"><a id="a4aa3f4d83c65cc23d71dc0753622c7d8"></a>
+virtual std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRectPosition</b> () const =0</td></tr>
 <tr class="separator:a4aa3f4d83c65cc23d71dc0753622c7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88aac7cd0ca517aa0ae91df07847a51c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a88aac7cd0ca517aa0ae91df07847a51c">setRed</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> red)=0</td></tr>
+<tr class="memitem:a88aac7cd0ca517aa0ae91df07847a51c"><td class="memItemLeft" align="right" valign="top"><a id="a88aac7cd0ca517aa0ae91df07847a51c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRed</b> (Color red)=0</td></tr>
 <tr class="separator:a88aac7cd0ca517aa0ae91df07847a51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50a267f53aa8855e9d851072f7a83375"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a50a267f53aa8855e9d851072f7a83375">setGreen</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> green)=0</td></tr>
+<tr class="memitem:a50a267f53aa8855e9d851072f7a83375"><td class="memItemLeft" align="right" valign="top"><a id="a50a267f53aa8855e9d851072f7a83375"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setGreen</b> (Color green)=0</td></tr>
 <tr class="separator:a50a267f53aa8855e9d851072f7a83375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59868e7511ae5dbede38bbf4ea599002"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a59868e7511ae5dbede38bbf4ea599002">setBlue</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> blue)=0</td></tr>
+<tr class="memitem:a59868e7511ae5dbede38bbf4ea599002"><td class="memItemLeft" align="right" valign="top"><a id="a59868e7511ae5dbede38bbf4ea599002"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlue</b> (Color blue)=0</td></tr>
 <tr class="separator:a59868e7511ae5dbede38bbf4ea599002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4366c2473885839711fe0d315e2f0eb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a4366c2473885839711fe0d315e2f0eb4">setAlpha</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> alpha)=0</td></tr>
+<tr class="memitem:a4366c2473885839711fe0d315e2f0eb4"><td class="memItemLeft" align="right" valign="top"><a id="a4366c2473885839711fe0d315e2f0eb4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlpha</b> (Color alpha)=0</td></tr>
 <tr class="separator:a4366c2473885839711fe0d315e2f0eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12a53f87a95c71b3ba62dda0f2a3dc6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#ad12a53f87a95c71b3ba62dda0f2a3dc6">setChar</a> (char charValue)=0</td></tr>
+<tr class="memitem:ad12a53f87a95c71b3ba62dda0f2a3dc6"><td class="memItemLeft" align="right" valign="top"><a id="ad12a53f87a95c71b3ba62dda0f2a3dc6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setChar</b> (char charValue)=0</td></tr>
 <tr class="separator:ad12a53f87a95c71b3ba62dda0f2a3dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae88beeec570db2b3e53ec6e44199f4d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#ae88beeec570db2b3e53ec6e44199f4d9">setTexturePath</a> (const std::string &amp;path)=0</td></tr>
+<tr class="memitem:ae88beeec570db2b3e53ec6e44199f4d9"><td class="memItemLeft" align="right" valign="top"><a id="ae88beeec570db2b3e53ec6e44199f4d9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTexturePath</b> (const std::string &amp;path)=0</td></tr>
 <tr class="separator:ae88beeec570db2b3e53ec6e44199f4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a5c204a7e1f1f76c9b2b8f0f3769d3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a8a5c204a7e1f1f76c9b2b8f0f3769d3a">setRotation</a> (<a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a> rotation)=0</td></tr>
+<tr class="memitem:a8a5c204a7e1f1f76c9b2b8f0f3769d3a"><td class="memItemLeft" align="right" valign="top"><a id="a8a5c204a7e1f1f76c9b2b8f0f3769d3a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRotation</b> (Rotation rotation)=0</td></tr>
 <tr class="separator:a8a5c204a7e1f1f76c9b2b8f0f3769d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa98e8a7541c1c7f27d645b4c13a8af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a8aa98e8a7541c1c7f27d645b4c13a8af">setType</a> (<a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a> type)=0</td></tr>
+<tr class="memitem:a8aa98e8a7541c1c7f27d645b4c13a8af"><td class="memItemLeft" align="right" valign="top"><a id="a8aa98e8a7541c1c7f27d645b4c13a8af"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (PixelType type)=0</td></tr>
 <tr class="separator:a8aa98e8a7541c1c7f27d645b4c13a8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ecf651611b5c84453b13945e61ebf10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a7ecf651611b5c84453b13945e61ebf10">setRectSize</a> (std::pair&lt; int, int &gt; rectSize)=0</td></tr>
+<tr class="memitem:a7ecf651611b5c84453b13945e61ebf10"><td class="memItemLeft" align="right" valign="top"><a id="a7ecf651611b5c84453b13945e61ebf10"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRectSize</b> (std::pair&lt; int, int &gt; rectSize)=0</td></tr>
 <tr class="separator:a7ecf651611b5c84453b13945e61ebf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff6b05094bbbab649dbf34e2df8df99"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a4ff6b05094bbbab649dbf34e2df8df99">setRectPosition</a> (std::pair&lt; int, int &gt; rectPosition)=0</td></tr>
+<tr class="memitem:a4ff6b05094bbbab649dbf34e2df8df99"><td class="memItemLeft" align="right" valign="top"><a id="a4ff6b05094bbbab649dbf34e2df8df99"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRectPosition</b> (std::pair&lt; int, int &gt; rectPosition)=0</td></tr>
 <tr class="separator:a4ff6b05094bbbab649dbf34e2df8df99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_i_pixel_8hpp_source.html#l00014">14</a> of file <a class="el" href="_i_pixel_8hpp_source.html">IPixel.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ad139b83e47dc0b49f2f631667385bc6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad139b83e47dc0b49f2f631667385bc6e">&#9670;&nbsp;</a></span>Color</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">arcade::IPixel::Color</a> =  unsigned int</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_i_pixel_8hpp_source.html#l00016">16</a> of file <a class="el" href="_i_pixel_8hpp_source.html">IPixel.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a52de4dbb2dbe9b0b8e2010bdda8360f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52de4dbb2dbe9b0b8e2010bdda8360f4">&#9670;&nbsp;</a></span>PixelType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">arcade::IPixel::PixelType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a52de4dbb2dbe9b0b8e2010bdda8360f4a5b39c8b553c821e7cddc6da64b5bd2ee"></a>DEFAULT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a52de4dbb2dbe9b0b8e2010bdda8360f4aac1c8c13a1c375e3947b7b13d082cce7"></a>TEXTURED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a52de4dbb2dbe9b0b8e2010bdda8360f4ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="_i_pixel_8hpp_source.html#l00018">18</a> of file <a class="el" href="_i_pixel_8hpp_source.html">IPixel.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a3eb0b71dd6a5cc15426e80c1b461bac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eb0b71dd6a5cc15426e80c1b461bac7">&#9670;&nbsp;</a></span>Rotation</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">arcade::IPixel::Rotation</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3eb0b71dd6a5cc15426e80c1b461bac7a298ae558fe1a3bb5aab7fab0bad18e42"></a>R0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3eb0b71dd6a5cc15426e80c1b461bac7afcc57f86c4affb85abae0c3bc7582820"></a>R90&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3eb0b71dd6a5cc15426e80c1b461bac7a24fab55a244f6e1f247c71b750b28c8c"></a>R180&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3eb0b71dd6a5cc15426e80c1b461bac7a17461302e5359371ba66ec6de6b7e0c9"></a>R270&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="_i_pixel_8hpp_source.html#l00025">25</a> of file <a class="el" href="_i_pixel_8hpp_source.html">IPixel.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2fc1d40a4e62bc6b50707f7d1d7f5423"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fc1d40a4e62bc6b50707f7d1d7f5423">&#9670;&nbsp;</a></span>~IPixel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual arcade::IPixel::~IPixel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a04081702903941096accae528ddff3e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04081702903941096accae528ddff3e3">&#9670;&nbsp;</a></span>getAlpha()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> arcade::IPixel::getAlpha </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a94d9c67bd80befda57b4301490c8c44e">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a38d42a622325286696eeae983cc4d488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d42a622325286696eeae983cc4d488">&#9670;&nbsp;</a></span>getBlue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> arcade::IPixel::getBlue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a19ab3a43dd1b92a5bad646ab9b9985c1">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a96e3fe6d11ab376526c07b27bca2539d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96e3fe6d11ab376526c07b27bca2539d">&#9670;&nbsp;</a></span>getChar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual char arcade::IPixel::getChar </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a9b9fe867abf82ef61623e3cec78c0e92">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="ad89c715a0de2016f06e16ee19c82aa75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad89c715a0de2016f06e16ee19c82aa75">&#9670;&nbsp;</a></span>getGreen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> arcade::IPixel::getGreen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#acbad59e79cb5da36ed4099892bb87f06">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a4aa3f4d83c65cc23d71dc0753622c7d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aa3f4d83c65cc23d71dc0753622c7d8">&#9670;&nbsp;</a></span>getRectPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::pair&lt;int, int&gt; arcade::IPixel::getRectPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a37e3710965d0ec928119b3368033e5b4">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a903c846ee754e393795564f9707c83fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a903c846ee754e393795564f9707c83fb">&#9670;&nbsp;</a></span>getRectSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::pair&lt;int, int&gt; arcade::IPixel::getRectSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a6a7f6209a27558f9d90af5f42e783f39">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="aded404fa512de87a83eebe02daae6bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aded404fa512de87a83eebe02daae6bf3">&#9670;&nbsp;</a></span>getRed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> arcade::IPixel::getRed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#ab6d2ee77a61e8877b31aa50db6ca288a">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a9d61a42c421b4e508db4adcec68f1ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d61a42c421b4e508db4adcec68f1ac7">&#9670;&nbsp;</a></span>getRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a> arcade::IPixel::getRotation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a2679f7685c27c0b61212bd0d7b7115be">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a1ddd399065f32b0f5388a527bc671d60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ddd399065f32b0f5388a527bc671d60">&#9670;&nbsp;</a></span>getTexturePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string arcade::IPixel::getTexturePath </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a61bf034def3a210bdc96ae8ef1136e7e">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a10c17b5a42965af34cd79c1c5aaaf167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10c17b5a42965af34cd79c1c5aaaf167">&#9670;&nbsp;</a></span>getType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a> arcade::IPixel::getType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a9f9a3ae32a57f738ca04658342336eac">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a4366c2473885839711fe0d315e2f0eb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4366c2473885839711fe0d315e2f0eb4">&#9670;&nbsp;</a></span>setAlpha()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setAlpha </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
-          <td class="paramname"><em>alpha</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a61306c64ca5cd58fd86cca30b2834081">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a59868e7511ae5dbede38bbf4ea599002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59868e7511ae5dbede38bbf4ea599002">&#9670;&nbsp;</a></span>setBlue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setBlue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
-          <td class="paramname"><em>blue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a4b5a5c3007d9c2440f9fd67f5f584bbf">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="ad12a53f87a95c71b3ba62dda0f2a3dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad12a53f87a95c71b3ba62dda0f2a3dc6">&#9670;&nbsp;</a></span>setChar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setChar </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>charValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a19da49deb85db5d531c9cfa42f5e4dba">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a50a267f53aa8855e9d851072f7a83375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50a267f53aa8855e9d851072f7a83375">&#9670;&nbsp;</a></span>setGreen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setGreen </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
-          <td class="paramname"><em>green</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#ace9798bcbb04a48d26209785639c6b8e">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a4ff6b05094bbbab649dbf34e2df8df99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ff6b05094bbbab649dbf34e2df8df99">&#9670;&nbsp;</a></span>setRectPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setRectPosition </td>
-          <td>(</td>
-          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
-          <td class="paramname"><em>rectPosition</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a5a2be9b0ce88a938aaa4816903012c40">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a7ecf651611b5c84453b13945e61ebf10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ecf651611b5c84453b13945e61ebf10">&#9670;&nbsp;</a></span>setRectSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setRectSize </td>
-          <td>(</td>
-          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
-          <td class="paramname"><em>rectSize</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a354b8c5e2c0787c4183e9b8aeff8ee86">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a88aac7cd0ca517aa0ae91df07847a51c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88aac7cd0ca517aa0ae91df07847a51c">&#9670;&nbsp;</a></span>setRed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setRed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
-          <td class="paramname"><em>red</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a45d4115fc7753ce7e29f42c0a17b0af3">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a8a5c204a7e1f1f76c9b2b8f0f3769d3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a5c204a7e1f1f76c9b2b8f0f3769d3a">&#9670;&nbsp;</a></span>setRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setRotation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a>&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a6b6cd096d1c88471d9bb5e81b4907859">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="ae88beeec570db2b3e53ec6e44199f4d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae88beeec570db2b3e53ec6e44199f4d9">&#9670;&nbsp;</a></span>setTexturePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setTexturePath </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a6001963e06a9812d2bb8c787a925da62">arcade::Pixel</a>.</p>
-
-</div>
-</div>
-<a id="a8aa98e8a7541c1c7f27d645b4c13a8af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aa98e8a7541c1c7f27d645b4c13a8af">&#9670;&nbsp;</a></span>setType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void arcade::IPixel::setType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classarcade_1_1_pixel.html#a23480fcadd10d5d5ec45e7abc90c0f40">arcade::Pixel</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Includes/<a class="el" href="_i_pixel_8hpp_source.html">IPixel.hpp</a></li>
 </ul>

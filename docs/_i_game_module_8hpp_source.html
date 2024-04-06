@@ -70,7 +70,7 @@ $(function() {
 <div class="title">IGameModule.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_game_module_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** arcade-preparations</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -84,70 +84,53 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &lt;array&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_pair_8hpp.html">Pair.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_keys_8hpp.html">Keys.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">class </span>IGraphicalModule;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">class </span>IEvent;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">class </span>IWindow;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">class </span>IPixels;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">class </span>ITexts;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_game_module.html">IGameModule</a> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a3a2f25bca1b9562cefb609b3ec67d17e">   28</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_game_module.html#a3a2f25bca1b9562cefb609b3ec67d17e">~IGameModule</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#ae536ded1df21a765dcd571aaa6f86e1d">   30</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#ae536ded1df21a765dcd571aaa6f86e1d">init</a>() = 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a16b74045f80a367c4826dba79cb87ee9">   31</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#a16b74045f80a367c4826dba79cb87ee9">stop</a>() = 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#aa4f59a478566e670797b7d8dbdcee11b">   32</a></span>&#160;            <span class="keyword">virtual</span> std::string <a class="code" href="classarcade_1_1_i_game_module.html#aa4f59a478566e670797b7d8dbdcee11b">getName</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#af4b8ad302b7f401c70178d750f368ccb">   34</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *<a class="code" href="classarcade_1_1_i_game_module.html#af4b8ad302b7f401c70178d750f368ccb">getPixelsWrapper</a>() = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a4bcfeab0efe07b8399ead2f5e22d01ec">   35</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *<a class="code" href="classarcade_1_1_i_game_module.html#a4bcfeab0efe07b8399ead2f5e22d01ec">getTextsWrapper</a>() = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a379dbd7aff993435bd7244d783532c33">   37</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#a379dbd7aff993435bd7244d783532c33">applyEvents</a>(<a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *eventWrapper) = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#ac4b5aabc53f6fbbfcabbffa2313717a6">   39</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#ac4b5aabc53f6fbbfcabbffa2313717a6">update</a>(<span class="keywordtype">float</span> deltaTime) = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a85c71d6f597a2ee3a402a8e7a78ec408">   41</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#a85c71d6f597a2ee3a402a8e7a78ec408">reload</a>() = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#aa594d68d697405f489e740e4d602c4d7">   43</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_i_game_module.html#aa594d68d697405f489e740e4d602c4d7">getScore</a>() = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a5d69dd77ec185d24f23b1a25d89f449b">   45</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#a5d69dd77ec185d24f23b1a25d89f449b">draw</a>(<a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> *module) = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a795efccf0e058b910bbe2e04cbfe7392">   48</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *<a class="code" href="classarcade_1_1_i_game_module.html#a795efccf0e058b910bbe2e04cbfe7392">createPixelsObject</a>() = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#ad387a1336f763bdfa2a617186a26d826">   49</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *<a class="code" href="classarcade_1_1_i_game_module.html#ad387a1336f763bdfa2a617186a26d826">createTextsObject</a>() = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html#a793bbe874ef29994aacdee5ae25446d2">   51</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_game_module.html#a793bbe874ef29994aacdee5ae25446d2">applyEvent</a>(<span class="keyword">const</span> <a class="code" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;key) = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IGAMEMODULE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_keys_8hpp_html"><div class="ttname"><a href="_keys_8hpp.html">Keys.hpp</a></div></div>
-<div class="ttc" id="a_pair_8hpp_html"><div class="ttname"><a href="_pair_8hpp.html">Pair.hpp</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_event_8hpp_source.html#l00015">IEvent.hpp:15</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html"><div class="ttname"><a href="classarcade_1_1_i_game_module.html">arcade::IGameModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_game_module_8hpp_source.html#l00026">IGameModule.hpp:26</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a16b74045f80a367c4826dba79cb87ee9"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a16b74045f80a367c4826dba79cb87ee9">arcade::IGameModule::stop</a></div><div class="ttdeci">virtual void stop()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a379dbd7aff993435bd7244d783532c33"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a379dbd7aff993435bd7244d783532c33">arcade::IGameModule::applyEvents</a></div><div class="ttdeci">virtual void applyEvents(IEvent *eventWrapper)=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a3a2f25bca1b9562cefb609b3ec67d17e"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a3a2f25bca1b9562cefb609b3ec67d17e">arcade::IGameModule::~IGameModule</a></div><div class="ttdeci">virtual ~IGameModule()=default</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a4bcfeab0efe07b8399ead2f5e22d01ec"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a4bcfeab0efe07b8399ead2f5e22d01ec">arcade::IGameModule::getTextsWrapper</a></div><div class="ttdeci">virtual ITexts * getTextsWrapper()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a5d69dd77ec185d24f23b1a25d89f449b"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a5d69dd77ec185d24f23b1a25d89f449b">arcade::IGameModule::draw</a></div><div class="ttdeci">virtual void draw(IGraphicalModule *module)=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a793bbe874ef29994aacdee5ae25446d2"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a793bbe874ef29994aacdee5ae25446d2">arcade::IGameModule::applyEvent</a></div><div class="ttdeci">virtual void applyEvent(const Key &amp;key)=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a795efccf0e058b910bbe2e04cbfe7392"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a795efccf0e058b910bbe2e04cbfe7392">arcade::IGameModule::createPixelsObject</a></div><div class="ttdeci">virtual IPixels * createPixelsObject()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_a85c71d6f597a2ee3a402a8e7a78ec408"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#a85c71d6f597a2ee3a402a8e7a78ec408">arcade::IGameModule::reload</a></div><div class="ttdeci">virtual void reload()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_aa4f59a478566e670797b7d8dbdcee11b"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#aa4f59a478566e670797b7d8dbdcee11b">arcade::IGameModule::getName</a></div><div class="ttdeci">virtual std::string getName() const =0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_aa594d68d697405f489e740e4d602c4d7"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#aa594d68d697405f489e740e4d602c4d7">arcade::IGameModule::getScore</a></div><div class="ttdeci">virtual int getScore()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_ac4b5aabc53f6fbbfcabbffa2313717a6"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#ac4b5aabc53f6fbbfcabbffa2313717a6">arcade::IGameModule::update</a></div><div class="ttdeci">virtual void update(float deltaTime)=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_ad387a1336f763bdfa2a617186a26d826"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#ad387a1336f763bdfa2a617186a26d826">arcade::IGameModule::createTextsObject</a></div><div class="ttdeci">virtual ITexts * createTextsObject()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_ae536ded1df21a765dcd571aaa6f86e1d"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#ae536ded1df21a765dcd571aaa6f86e1d">arcade::IGameModule::init</a></div><div class="ttdeci">virtual void init()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_game_module_html_af4b8ad302b7f401c70178d750f368ccb"><div class="ttname"><a href="classarcade_1_1_i_game_module.html#af4b8ad302b7f401c70178d750f368ccb">arcade::IGameModule::getPixelsWrapper</a></div><div class="ttdeci">virtual IPixels * getPixelsWrapper()=0</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_graphical_module_8hpp_source.html#l00022">IGraphicalModule.hpp:22</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_pixels_html"><div class="ttname"><a href="classarcade_1_1_i_pixels.html">arcade::IPixels</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_pixels_8hpp_source.html#l00017">IPixels.hpp:17</a></div></div>
-<div class="ttc" id="aclassarcade_1_1_i_texts_html"><div class="ttname"><a href="classarcade_1_1_i_texts.html">arcade::ITexts</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_texts_8hpp_source.html#l00018">ITexts.hpp:18</a></div></div>
-<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> <a href="_doom_8cpp_source.html#l00011">Doom.cpp:12</a></div></div>
-<div class="ttc" id="anamespacearcade_html_a52a577b6127e6275047bef2a793bce6b"><div class="ttname"><a href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">arcade::Key</a></div><div class="ttdeci">Key</div><div class="ttdef"><b>Definition:</b> <a href="_keys_8hpp_source.html#l00013">Keys.hpp:13</a></div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #include &quot;Pair.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #include &quot;Keys.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #include &quot;Error.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>arcade</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">class </span>IGraphicalModule;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">class </span>IEvent;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">class </span>IWindow;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">class </span>IPixels;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">class </span>ITexts;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_game_module.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_game_module.html">IGameModule</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_game_module.html">IGameModule</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> init() = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> stop() = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">virtual</span> std::string getName() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *getPixelsWrapper() = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *getTextsWrapper() = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> applyEvents(<a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *eventWrapper) = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> update(<span class="keywordtype">float</span> deltaTime) = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> reload() = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> getScore() = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> draw(<a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> *module) = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *createPixelsObject() = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *createTextsObject() = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> applyEvent(<span class="keyword">const</span> Key &amp;key) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IGAMEMODULE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:15</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_game_module_html"><div class="ttname"><a href="classarcade_1_1_i_game_module.html">arcade::IGameModule</a></div><div class="ttdef"><b>Definition:</b> IGameModule.hpp:27</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> IGraphicalModule.hpp:24</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_pixels_html"><div class="ttname"><a href="classarcade_1_1_i_pixels.html">arcade::IPixels</a></div><div class="ttdef"><b>Definition:</b> IPixels.hpp:17</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_texts_html"><div class="ttname"><a href="classarcade_1_1_i_texts.html">arcade::ITexts</a></div><div class="ttdef"><b>Definition:</b> ITexts.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
