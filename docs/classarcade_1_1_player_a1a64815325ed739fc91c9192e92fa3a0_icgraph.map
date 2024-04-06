@@ -1,5 +1,6 @@
 <map id="arcade::Player::getMoveSpeed" name="arcade::Player::getMoveSpeed">
-<area shape="rect" id="node1" title=" " alt="" coords="240,31,460,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="240,56,460,83"/>
 <area shape="rect" id="node2" href="$classarcade_1_1_food.html#ab6f440fdff422df42c02fc816a120b5c" title=" " alt="" coords="5,5,192,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="15,56,182,83"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_nibbler.html#aa6c7ecb2db5707581d555f914cd8376a" title=" " alt="" coords="11,56,186,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="15,107,182,133"/>
 </map>

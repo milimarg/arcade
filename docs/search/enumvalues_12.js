@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['s_5fkey_1121',['S_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba6b1da4edc3495e97b5390b88d8f6a325',1,'arcade']]],
-  ['side_1122',['SIDE',['../struct_8hpp.html#aa44ee0f90142da2a1da8771c19643633acf669193caab2fa232206c4d7ee97a73',1,'struct.hpp']]],
-  ['space_1123',['SPACE',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba6506ae39fdca9845e3a6de3865183e57',1,'arcade']]],
-  ['stbi_5fdefault_1124',['STBI_default',['../stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029',1,'stb_image.h']]],
-  ['stbi_5fgrey_1125',['STBI_grey',['../stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa',1,'stb_image.h']]],
-  ['stbi_5fgrey_5falpha_1126',['STBI_grey_alpha',['../stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8',1,'stb_image.h']]],
-  ['stbi_5frgb_1127',['STBI_rgb',['../stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf',1,'stb_image.h']]],
-  ['stbi_5frgb_5falpha_1128',['STBI_rgb_alpha',['../stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293',1,'stb_image.h']]]
+  ['r0_1300',['R0',['../classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7a298ae558fe1a3bb5aab7fab0bad18e42',1,'arcade::IPixel']]],
+  ['r180_1301',['R180',['../classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7a24fab55a244f6e1f247c71b750b28c8c',1,'arcade::IPixel']]],
+  ['r270_1302',['R270',['../classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7a17461302e5359371ba66ec6de6b7e0c9',1,'arcade::IPixel']]],
+  ['r90_1303',['R90',['../classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7afcc57f86c4affb85abae0c3bc7582820',1,'arcade::IPixel']]],
+  ['r_5fkey_1304',['R_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6baff634881d88e6fbd2959ca16e5ce237f',1,'arcade']]],
+  ['random_1305',['RANDOM',['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a170e02e86972c2be8559884cc3c12254',1,'arcade::Food::RANDOM()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a170e02e86972c2be8559884cc3c12254',1,'arcade::Food::RANDOM()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a170e02e86972c2be8559884cc3c12254',1,'arcade::Food::RANDOM()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a170e02e86972c2be8559884cc3c12254',1,'arcade::Food::RANDOM()']]],
+  ['raw_5fconfig_1306',['RAW_CONFIG',['../struct_8hpp.html#a4dce14e855acdc7349281c9d2301fcdca6376c7cfcb772a5c3b2d71f58c6f90db',1,'struct.hpp']]],
+  ['rectangle_1307',['RECTANGLE',['../struct_8hpp.html#a82a00e336c65dad4cc04b65563b26eb5ae552ab0a96c0384a6e918e726b7f6102',1,'struct.hpp']]],
+  ['red_5ffruit_1308',['RED_FRUIT',['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a3aa4d78d78796da1b41082275cf09ecf',1,'arcade::Food::RED_FRUIT()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a3aa4d78d78796da1b41082275cf09ecf',1,'arcade::Food::RED_FRUIT()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a3aa4d78d78796da1b41082275cf09ecf',1,'arcade::Food::RED_FRUIT()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a3aa4d78d78796da1b41082275cf09ecf',1,'arcade::Food::RED_FRUIT()']]],
+  ['right_1309',['RIGHT',['../classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55a21507b40c80068eda19865706fdc2403',1,'arcade::Player::RIGHT()'],['../classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55a21507b40c80068eda19865706fdc2403',1,'arcade::Player::RIGHT()'],['../classarcade_1_1_pacman.html#a64ec9e7899ecb0470424f40d781539b6a21507b40c80068eda19865706fdc2403',1,'arcade::Pacman::RIGHT()'],['../classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55a21507b40c80068eda19865706fdc2403',1,'arcade::Player::RIGHT()'],['../classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55a21507b40c80068eda19865706fdc2403',1,'arcade::Player::RIGHT()'],['../classarcade_1_1_entity.html#a22c5aaf71af33b1d4813ad9c2aaaf18ba21507b40c80068eda19865706fdc2403',1,'arcade::Entity::RIGHT()'],['../_open_g_l_8hpp.html#aead2858c27ebd105d4f955cec5a60436a21507b40c80068eda19865706fdc2403',1,'RIGHT():&#160;OpenGL.hpp']]],
+  ['right_5farrow_1310',['RIGHT_ARROW',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6baf8cda338628d7fe6d56b844f3260a314',1,'arcade']]]
 ];

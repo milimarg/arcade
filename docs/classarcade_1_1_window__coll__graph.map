@@ -1,4 +1,5 @@
 <map id="arcade::Window" name="arcade::Window">
-<area shape="rect" id="node1" title=" " alt="" coords="7,80,134,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="74,155,201,181"/>
 <area shape="rect" id="node2" href="$classarcade_1_1_i_window.html" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_graphical_window.html" title=" " alt="" coords="43,80,231,107"/>
 </map>

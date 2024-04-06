@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['key_1065',['Key',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6b',1,'arcade']]]
+  ['foodtype_1243',['FoodType',['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41',1,'arcade::Food::FoodType()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41',1,'arcade::Food::FoodType()']]]
 ];

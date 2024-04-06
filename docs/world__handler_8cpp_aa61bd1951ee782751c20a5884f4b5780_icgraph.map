@@ -1,5 +1,9 @@
 <map id="set_map_infos" name="set_map_infos">
-<area shape="rect" id="node1" title=" " alt="" coords="351,5,468,32"/>
-<area shape="rect" id="node2" href="$my_8hpp.html#af39290d452c60557988106c7b06a8736" title=" " alt="" coords="196,5,303,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_doom.html#ad4ddbf65a25f508e275d4708ee4a446b" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="812,31,929,57"/>
+<area shape="rect" id="node2" href="$my_8hpp.html#af39290d452c60557988106c7b06a8736" title=" " alt="" coords="657,31,764,57"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_doom.html#ad4ddbf65a25f508e275d4708ee4a446b" title=" " alt="" coords="461,5,603,32"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_pacman.html#a545306e4b7082acbd4a53de8ee22c3ca" title=" " alt="" coords="455,56,609,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_doom.html#a5ee11dcee2a69eca027c4fbed644f8ca" title=" " alt="" coords="238,5,401,32"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_pacman.html#a0997dd7c9ab0bcbe8b24fd3d9b4c38ae" title=" " alt="" coords="232,56,407,83"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_pacman.html#afd59956c48e690e593cb71fdea146dd5" title=" " alt="" coords="5,56,184,83"/>
 </map>

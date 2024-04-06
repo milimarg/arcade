@@ -84,8 +84,12 @@ $(function() {
 : <a class="el" href="class_texture.html#a835c2ffd13b2271c5bf94036ea727a08">Texture</a>
 </li>
 <li>getChangeEvent()
-: <a class="el" href="classarcade_1_1_event.html#a146adf81273f54180b9cad09723df968">arcade::Event</a>
-, <a class="el" href="classarcade_1_1_i_event.html#a170eb2aa50961f741cf67e9d12175b24">arcade::IEvent</a>
+: <a class="el" href="classarcade_1_1_event.html#adbd389d5f5e55085bac7c63c51e3a002">arcade::Event</a>
+, <a class="el" href="classarcade_1_1_i_event.html#a3bc27435b3ac7949c6cbd5c891d35abe">arcade::IEvent</a>
+</li>
+<li>getChangeKey()
+: <a class="el" href="classarcade_1_1_event_info.html#ab76531bf7c6fbaeaf76a7e8531faf246">arcade::EventInfo</a>
+, <a class="el" href="classarcade_1_1_i_event_info.html#acabb5d30e396171be440871c12ee651b">arcade::IEventInfo</a>
 </li>
 <li>getChannels()
 : <a class="el" href="class_texture.html#ac45ceb8ab0838e7321c30bdb037e85dd">Texture</a>
@@ -94,8 +98,17 @@ $(function() {
 : <a class="el" href="classarcade_1_1_i_pixel.html#a96e3fe6d11ab376526c07b27bca2539d">arcade::IPixel</a>
 , <a class="el" href="classarcade_1_1_pixel.html#a9b9fe867abf82ef61623e3cec78c0e92">arcade::Pixel</a>
 </li>
+<li>getCollectiblesMap()
+: <a class="el" href="class_map.html#a488730df8bc3dd15b0825eda9c03436c">Map</a>
+</li>
 <li>getColor()
 : <a class="el" href="classarcade_1_1_food.html#ae6ff0fe0c8d8799be3fcbf33d3e80c18">arcade::Food</a>
+</li>
+<li>getCurrentPixelSizeX()
+: <a class="el" href="classarcade_1_1_graphical_window.html#a9225c2fa994f18b17a0799d14d6978b7">arcade::GraphicalWindow</a>
+</li>
+<li>getCurrentPixelSizeY()
+: <a class="el" href="classarcade_1_1_graphical_window.html#a802b790bda3c79617d283a62d72d8a55">arcade::GraphicalWindow</a>
 </li>
 <li>getDeltaTime()
 : <a class="el" href="classarcade_1_1_i_time.html#a95aa12f5f8e39cc90a11bb754e3fa8cb">arcade::ITime</a>
@@ -112,14 +125,15 @@ $(function() {
 : <a class="el" href="classarcade_1_1_player.html#a257417841dce73509c2bc4448a9d3994">arcade::Player</a>
 </li>
 <li>getEvent()
-: <a class="el" href="classarcade_1_1_event.html#af72845625c3b45af175a9ebca9825941">arcade::Event</a>
-, <a class="el" href="classarcade_1_1_i_event.html#a359934a001d072464c52fa668974271b">arcade::IEvent</a>
+: <a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">arcade::Event</a>
+, <a class="el" href="classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623">arcade::IEvent</a>
 </li>
 <li>getEventWrapper()
 : <a class="el" href="classarcade_1_1_i_graphical_module.html#a6307198d1a4b0d2bcfd7050423280072">arcade::IGraphicalModule</a>
 , <a class="el" href="classarcade_1_1_n_curses.html#abd9c2864280623f183338b4f7f642c22">arcade::NCurses</a>
 , <a class="el" href="classarcade_1_1_open_g_l.html#a71f9dd958c21d5df80eead14ee820978">arcade::OpenGL</a>
 , <a class="el" href="classarcade_1_1_sdl2.html#a004ef05755734a59563f78a83c9e875c">arcade::Sdl2</a>
+, <a class="el" href="classarcade_1_1_s_f_m_l.html#a312da56f10dac1f3030acd54d4c3f629">arcade::SFML</a>
 </li>
 <li>getGreen()
 : <a class="el" href="classarcade_1_1_i_pixel.html#ad89c715a0de2016f06e16ee19c82aa75">arcade::IPixel</a>
@@ -132,8 +146,11 @@ $(function() {
 </li>
 <li>getHeight()
 : <a class="el" href="classarcade_1_1_entity.html#a05590055017449a684c4f6a586b7d361">arcade::Entity</a>
-, <a class="el" href="class_rect.html#ad553d3ab3a51007a893166bf16bdefa6">Rect</a>
+, <a class="el" href="class_rect.html#ac8278ffb9cbca4ed57de08cd6bbdb044">Rect</a>
 , <a class="el" href="class_texture.html#a23c3c1315267a5521d824982bb8d208c">Texture</a>
+</li>
+<li>getIsBlocked()
+: <a class="el" href="classarcade_1_1_player.html#a817ccd34e38dbda0d4b1f5cabc59b540">arcade::Player</a>
 </li>
 <li>getIsDead()
 : <a class="el" href="classarcade_1_1_player.html#a3eb4701356ae034fa5772392e8ad35fc">arcade::Player</a>
@@ -141,18 +158,29 @@ $(function() {
 <li>getIsReversed()
 : <a class="el" href="classarcade_1_1_player.html#a91ac9e60c8bc7ac487a08f48eb7ee405">arcade::Player</a>
 </li>
+<li>getIsStopped()
+: <a class="el" href="classarcade_1_1_player.html#a3ced75449851232719e2540c72c64657">arcade::Player</a>
+</li>
+<li>getKey()
+: <a class="el" href="classarcade_1_1_event_info.html#a4c8372da25d66d6f8ac080552474476d">arcade::EventInfo</a>
+, <a class="el" href="classarcade_1_1_i_event_info.html#a6a332799af92c1c909209b56390d928c">arcade::IEventInfo</a>
+</li>
 <li>getLastError()
 : <a class="el" href="classarcade_1_1_i_library_handler.html#a7f6eaf916e93a69d2c53eeb20da21b15">arcade::ILibraryHandler</a>
 , <a class="el" href="classarcade_1_1_library_handler.html#aacf1c25c76ae689cbccc66f0fcb9c120">arcade::LibraryHandler</a>
 </li>
 <li>getLeft()
-: <a class="el" href="class_rect.html#af7961b54b8e5665304723a3f9f7037f9">Rect</a>
+: <a class="el" href="class_rect.html#a98ebe0655793ef839d8d31ec3f218574">Rect</a>
 </li>
 <li>getMaxX()
 : <a class="el" href="class_bullet.html#aa925017e506293a8523066b0840ef2d4">Bullet</a>
 </li>
 <li>getMaxY()
 : <a class="el" href="class_bullet.html#a532e345747ba9c9deea06cbb5069c05f">Bullet</a>
+</li>
+<li>getMouseCoords()
+: <a class="el" href="classarcade_1_1_event_info.html#a4fe5077f63c43a0786ffa019da39f368">arcade::EventInfo</a>
+, <a class="el" href="classarcade_1_1_i_event_info.html#a56b16808a7740d507b7b062b86b71e17">arcade::IEventInfo</a>
 </li>
 <li>getMoveSpeed()
 : <a class="el" href="classarcade_1_1_player.html#a1a64815325ed739fc91c9192e92fa3a0">arcade::Player</a>
@@ -161,9 +189,14 @@ $(function() {
 : <a class="el" href="classarcade_1_1_a_game_module.html#ac1ad9e1f2e591cd575f8e0db4865d2c6">arcade::AGameModule</a>
 , <a class="el" href="classarcade_1_1_i_game_module.html#aa4f59a478566e670797b7d8dbdcee11b">arcade::IGameModule</a>
 , <a class="el" href="classarcade_1_1_i_graphical_module.html#ae1029969a500eae85b37e499df9830a7">arcade::IGraphicalModule</a>
+, <a class="el" href="classarcade_1_1_main_menu.html#a2809e767a5a24de13dcafffb9933dc1c">arcade::MainMenu</a>
 , <a class="el" href="classarcade_1_1_n_curses.html#ad9712f5e9117ec074cc95caac4482cbe">arcade::NCurses</a>
 , <a class="el" href="classarcade_1_1_open_g_l.html#a61cc308ab08fe9e9ade0e8fafede512d">arcade::OpenGL</a>
 , <a class="el" href="classarcade_1_1_sdl2.html#a8e9be97488e1d8a002948e7e469947f4">arcade::Sdl2</a>
+, <a class="el" href="classarcade_1_1_s_f_m_l.html#ae4e981fa87bda614a2959bbd347c3457">arcade::SFML</a>
+</li>
+<li>getNumber()
+: <a class="el" href="class_map.html#a1b3870559e3dfe8c0b51e17f5936c71c">Map</a>
 </li>
 <li>getOrientation()
 : <a class="el" href="classarcade_1_1_entity.html#a3282a1876e7bbeda46b22d847cc0c50a">arcade::Entity</a>
@@ -180,8 +213,17 @@ $(function() {
 : <a class="el" href="classarcade_1_1_a_game_module.html#a4f2ef2c793c3ddaccae1045466b3b05f">arcade::AGameModule</a>
 , <a class="el" href="classarcade_1_1_i_game_module.html#af4b8ad302b7f401c70178d750f368ccb">arcade::IGameModule</a>
 </li>
+<li>getPlayerName()
+: <a class="el" href="classarcade_1_1_score.html#a26a9ddfcdc03de7386ddb9363ad4f43e">arcade::Score</a>
+</li>
 <li>getPosition()
 : <a class="el" href="classarcade_1_1_food.html#af5c4078221d17cdfa81d3b21aa0be7a8">arcade::Food</a>
+</li>
+<li>getRacksSizeX()
+: <a class="el" href="class_map.html#a659e8ea98416b9c1be306ee854e34b7d">Map</a>
+</li>
+<li>getRacksSizeY()
+: <a class="el" href="class_map.html#acb00c75cd209c6f57332deb897a1cb37">Map</a>
 </li>
 <li>getRectPosition()
 : <a class="el" href="classarcade_1_1_i_pixel.html#a4aa3f4d83c65cc23d71dc0753622c7d8">arcade::IPixel</a>
@@ -200,6 +242,9 @@ $(function() {
 <li>getRef()
 : <a class="el" href="classarcade_1_1_entity.html#af290fe6bd1e1be07d0f7d3b533ffdda1">arcade::Entity</a>
 </li>
+<li>getRenderWindow()
+: <a class="el" href="classarcade_1_1_window.html#a83799d1dd19bb98fb51a3b0f63527ed2">arcade::Window</a>
+</li>
 <li>getRotation()
 : <a class="el" href="classarcade_1_1_i_pixel.html#a9d61a42c421b4e508db4adcec68f1ac7">arcade::IPixel</a>
 , <a class="el" href="classarcade_1_1_pixel.html#a2679f7685c27c0b61212bd0d7b7115be">arcade::Pixel</a>
@@ -209,9 +254,13 @@ $(function() {
 , <a class="el" href="classarcade_1_1_food.html#a452d5fce7d46c6a75947e44b2242a920">arcade::Food</a>
 , <a class="el" href="classarcade_1_1_i_game_module.html#aa594d68d697405f489e740e4d602c4d7">arcade::IGameModule</a>
 , <a class="el" href="classarcade_1_1_main_menu.html#ad31c3ca9435a166c67277985269b99ca">arcade::MainMenu</a>
+, <a class="el" href="classarcade_1_1_nibbler.html#a021d3214d050dfe10673dcb9ff6ecd9e">arcade::Nibbler</a>
 , <a class="el" href="classarcade_1_1_pacman.html#ae23295013eaf42fb8e138efb6fb7eea5">arcade::Pacman</a>
 , <a class="el" href="classarcade_1_1_snake.html#aa8fb5f51e2c391285dadf409eba7e96c">arcade::Snake</a>
 , <a class="el" href="classarcade_1_1_solar_fox.html#aa20e211fe20ad65bbb6607880491fcd4">arcade::SolarFox</a>
+</li>
+<li>getScoreValue()
+: <a class="el" href="classarcade_1_1_score.html#a72938a3eb09f1f6e50640d3eb3b94b0e">arcade::Score</a>
 </li>
 <li>getShift()
 : <a class="el" href="classarcade_1_1_entity.html#ab62a6ab6fe9b3684fa6ce3ea354f9bdd">arcade::Entity</a>
@@ -249,7 +298,7 @@ $(function() {
 , <a class="el" href="classarcade_1_1_time.html#a6e35471047bcfa9f4d7149d92831edbf">arcade::Time</a>
 </li>
 <li>getTop()
-: <a class="el" href="class_rect.html#ac52d9e20520ea4f8eae71fd28f211f21">Rect</a>
+: <a class="el" href="class_rect.html#a69344ecc30937f0cff69d353af660cae">Rect</a>
 </li>
 <li>getType()
 : <a class="el" href="classarcade_1_1_food.html#ac2c1aa1960f14c80ceb1b130ce35e005">arcade::Food</a>
@@ -258,7 +307,7 @@ $(function() {
 </li>
 <li>getWidth()
 : <a class="el" href="classarcade_1_1_entity.html#af2f62ad98b3a78f77a1779daeada819c">arcade::Entity</a>
-, <a class="el" href="class_rect.html#a0a907a5c36add13e57b543cabefa4d92">Rect</a>
+, <a class="el" href="class_rect.html#ad12569d169de8d8f092b435a762b74de">Rect</a>
 , <a class="el" href="class_texture.html#a2c2b502138a1a1786c4bf74016620885">Texture</a>
 </li>
 <li>getWindowWrapper()
@@ -266,14 +315,18 @@ $(function() {
 , <a class="el" href="classarcade_1_1_n_curses.html#a1970f41b156b958f8635a5446b1abc16">arcade::NCurses</a>
 , <a class="el" href="classarcade_1_1_open_g_l.html#a5b4fa54e1249b98ce26e389db8f8de6a">arcade::OpenGL</a>
 , <a class="el" href="classarcade_1_1_sdl2.html#adb6f242eaada2ff26fcdddb7f8efeb0f">arcade::Sdl2</a>
+, <a class="el" href="classarcade_1_1_s_f_m_l.html#aefe52ecf82b2e002f1a2f9fa7b322cb7">arcade::SFML</a>
 </li>
 <li>getX()
 : <a class="el" href="classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad">arcade::Entity</a>
-, <a class="el" href="class_vec2.html#ac66c164ecc068ca8902025f670fb4ad0">Vec2</a>
+, <a class="el" href="class_vec2.html#a83a1fde171624b675b09b7a85833c97f">Vec2</a>
 </li>
 <li>getY()
 : <a class="el" href="classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e">arcade::Entity</a>
-, <a class="el" href="class_vec2.html#a081c7358846f08cdf0bca9bd09ecf16a">Vec2</a>
+, <a class="el" href="class_vec2.html#a9e36c9b62a505188150d4c5b9a5783e6">Vec2</a>
+</li>
+<li>GraphicalWindow()
+: <a class="el" href="classarcade_1_1_graphical_window.html#ad1c325e8525f40d2875dd99811584aca">arcade::GraphicalWindow</a>
 </li>
 </ul>
 </div><!-- contents -->

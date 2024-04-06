@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wall_5ftype_1071',['wall_type',['../struct_8hpp.html#aa44ee0f90142da2a1da8771c19643633',1,'struct.hpp']]]
+  ['rotation_1250',['Rotation',['../classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7',1,'arcade::IPixel']]]
 ];

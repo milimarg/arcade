@@ -1,12 +1,6 @@
 <map id="arcade::Player::setDirection" name="arcade::Player::setDirection">
-<area shape="rect" id="node1" title=" " alt="" coords="988,56,1191,83"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a176ced595ab15b159d2b8ca19b06263a" title=" " alt="" coords="729,5,940,32"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973" title=" " alt="" coords="763,56,906,83"/>
-<area shape="rect" id="node7" href="$classarcade_1_1_solar_fox.html#a13abed7afb51a7f66acbd7b5bbe60d09" title=" " alt="" coords="735,107,935,133"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_solar_fox.html#ac36b9d59b46e35cf209e21dbe338156b" title=" " alt="" coords="463,5,681,32"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_snake.html#ab859c5f34beb05636c25a974402ef199" title=" " alt="" coords="491,56,653,83"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="242,56,409,83"/>
-<area shape="rect" id="node8" href="$classarcade_1_1_solar_fox.html#a2b3901e0221d7c061e667e58447e3284" title=" " alt="" coords="493,107,651,133"/>
-<area shape="rect" id="node9" href="$classarcade_1_1_solar_fox.html#aee452c1823c9dca229a8aa17a5138efa" title=" " alt="" coords="236,107,415,133"/>
-<area shape="rect" id="node10" href="$classarcade_1_1_solar_fox.html#a23d4226dea9fc20fb4259852b9382fe0" title=" " alt="" coords="5,107,188,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="621,5,824,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_snake.html#a02833b15bc3f1e154e3324006112e973" title=" " alt="" coords="431,5,573,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_snake.html#ab859c5f34beb05636c25a974402ef199" title=" " alt="" coords="220,5,383,32"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="5,5,172,32"/>
 </map>

@@ -1,15 +1,4 @@
 <map id="arcade::Entity::getX" name="arcade::Entity::getX">
-<area shape="rect" id="node1" title=" " alt="" coords="541,312,691,339"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a176ced595ab15b159d2b8ca19b06263a" title=" " alt="" coords="277,5,488,32"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_solar_fox.html#a1cc54a5f2baba07aafea1c2aa4ab7dbe" title=" " alt="" coords="293,57,472,98"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_solar_fox.html#a23d4226dea9fc20fb4259852b9382fe0" title=" " alt="" coords="23,341,206,368"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_solar_fox.html#aba619b853f6615348fc930507fb3e920" title=" " alt="" coords="293,174,472,215"/>
-<area shape="rect" id="node7" href="$classarcade_1_1_solar_fox.html#a2ce55c7754acdbde50d3b0741c92dda9" title=" " alt="" coords="293,239,472,281"/>
-<area shape="rect" id="node8" href="$classarcade_1_1_solar_fox.html#afe8578841be00bd0a926fe5263930e58" title=" " alt="" coords="293,305,472,346"/>
-<area shape="rect" id="node9" href="$classarcade_1_1_solar_fox.html#af18416751aed6b22c8fd43e3f30f14dc" title=" " alt="" coords="277,371,488,397"/>
-<area shape="rect" id="node10" href="$classarcade_1_1_solar_fox.html#abc2e87d4a318b8b4d26f8ad621171d5a" title=" " alt="" coords="273,421,492,448"/>
-<area shape="rect" id="node11" href="$classarcade_1_1_solar_fox.html#ac505cb124b9c32dc14a5d0a1cd23bf2c" title=" " alt="" coords="272,473,493,514"/>
-<area shape="rect" id="node12" href="$classarcade_1_1_solar_fox.html#aa8fcc74fb2776545d226ce82f021081e" title=" " alt="" coords="291,538,474,579"/>
-<area shape="rect" id="node13" href="$classarcade_1_1_solar_fox.html#a008cedee2d4230905dfe3dcc547a6f12" title=" " alt="" coords="291,603,474,645"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_solar_fox.html#ac36b9d59b46e35cf209e21dbe338156b" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="236,5,385,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a23d4226dea9fc20fb4259852b9382fe0" title=" " alt="" coords="5,5,188,32"/>
 </map>

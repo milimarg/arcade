@@ -1,4 +1,5 @@
 <map id="move_player" name="move_player">
-<area shape="rect" id="node1" title=" " alt="" coords="220,5,327,32"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_doom.html#aca9a2b6e5c44e6b666248184ec8d3975" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="232,31,339,57"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_doom.html#aca9a2b6e5c44e6b666248184ec8d3975" title=" " alt="" coords="11,5,178,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_pacman.html#afd59956c48e690e593cb71fdea146dd5" title=" " alt="" coords="5,56,184,83"/>
 </map>

@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_83e6bb2fd5fc2e8e9d317886e7b67d68.html">marg</a></li><li class="navelem"><a class="el" href="dir_4c91b22ab8fd933d4228e45ab3086540.html">EPITECH_PROJECTS</a></li><li class="navelem"><a class="el" href="dir_800dcb4e9d93feb320ea4f8afbc53c8e.html">B-OOP-400-STG-4-1-arcade-noe.tritsch</a></li><li class="navelem"><a class="el" href="dir_7b46f8ec7559fe8d66ac7169f16025fd.html">SolarFox</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_393706d2dab13d62a4cc4a6b8ed73447.html">EPITECH_PROJECTS</a></li><li class="navelem"><a class="el" href="dir_20bdbfea4f84cfd50e6a9602ecdc6d59.html">B-OOP-400-STG-4-1-arcade-noe.tritsch</a></li><li class="navelem"><a class="el" href="dir_14d85f776fc7c52345964a3686c18b81.html">SolarFox</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,7 +70,7 @@ $(function() {
 <div class="title">Bullet.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_bullet_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** B-OOP-400-STG-4-1-arcade-noe.tritsch</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -79,33 +79,45 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_BULLET_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_BULLET_HPP</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &quot;Enemy.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_enemy_8hpp.html">Enemy.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_bullet.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bullet.html">Bullet</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_enemy.html">arcade::Enemy</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_bullet.html">Bullet</a>() : status(<span class="keyword">false</span>) {};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    ~<a class="code" href="class_bullet.html">Bullet</a>() {};</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_bullet.html#acd7befc0bc18907cc1d871d37bbdddeb">   14</a></span>&#160;    <a class="code" href="class_bullet.html#acd7befc0bc18907cc1d871d37bbdddeb">Bullet</a>() : _status(false) {};</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_bullet.html#aaeb5cb41d7db89f49007b08b41f1bfcf">   15</a></span>&#160;    <a class="code" href="class_bullet.html#aaeb5cb41d7db89f49007b08b41f1bfcf">~Bullet</a>() {};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> isActive()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> status; }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Orientation getOrientation()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> orientation; }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> getMaxX()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> max_x; }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> getMaxY()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> max_y; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_bullet.html#a0b09dc7337748ece22243c1bb0e3f6e0">   17</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_bullet.html#a0b09dc7337748ece22243c1bb0e3f6e0">isActive</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _status; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_bullet.html#affe72c58e4debc41e7952e382976aa6f">   18</a></span>&#160;    <a class="code" href="classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85a">Orientation</a> <a class="code" href="class_bullet.html#affe72c58e4debc41e7952e382976aa6f">getOrientation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _orientation; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_bullet.html#aa925017e506293a8523066b0840ef2d4">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_bullet.html#aa925017e506293a8523066b0840ef2d4">getMaxX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> max_x; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_bullet.html#a532e345747ba9c9deea06cbb5069c05f">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_bullet.html#a532e345747ba9c9deea06cbb5069c05f">getMaxY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> max_y; }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> setStatus(<span class="keywordtype">bool</span> _status) { status = _status; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> setOrientation(Orientation _orientation) { orientation = _orientation; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> setMaxX(<span class="keywordtype">int</span> x) { max_x = x; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> setMaxY(<span class="keywordtype">int</span> y) { max_y = y; }</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_bullet.html#ad9d98bf7d76f3f5862806e7f3ae9db04">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bullet.html#ad9d98bf7d76f3f5862806e7f3ae9db04">setStatus</a>(<span class="keywordtype">bool</span> status) { _status = status; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_bullet.html#ae3336518b278bfac1db93372e9d910c2">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bullet.html#ae3336518b278bfac1db93372e9d910c2">setOrientation</a>(<a class="code" href="classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85a">Orientation</a> orientation) { _orientation = orientation; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_bullet.html#a2ee0a628ca947acb2e118a492340fac6">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bullet.html#a2ee0a628ca947acb2e118a492340fac6">setMaxX</a>(<span class="keywordtype">int</span> x) { max_x = x; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_bullet.html#a697094b6895cf70278c4f2e7eb813ff6">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bullet.html#a697094b6895cf70278c4f2e7eb813ff6">setMaxY</a>(<span class="keywordtype">int</span> y) { max_y = y; }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> status;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Orientation orientation;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> _status;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85a">Orientation</a> _orientation;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> max_x;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> max_y;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_BULLET_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_bullet_html"><div class="ttname"><a href="class_bullet.html">Bullet</a></div><div class="ttdef"><b>Definition:</b> Bullet.hpp:12</div></div>
-<div class="ttc" id="aclassarcade_1_1_enemy_html"><div class="ttname"><a href="classarcade_1_1_enemy.html">arcade::Enemy</a></div><div class="ttdef"><b>Definition:</b> Enemy.hpp:14</div></div>
+<div class="ttc" id="a_enemy_8hpp_html"><div class="ttname"><a href="_enemy_8hpp.html">Enemy.hpp</a></div></div>
+<div class="ttc" id="aclass_bullet_html"><div class="ttname"><a href="class_bullet.html">Bullet</a></div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00012">Bullet.hpp:12</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a0b09dc7337748ece22243c1bb0e3f6e0"><div class="ttname"><a href="class_bullet.html#a0b09dc7337748ece22243c1bb0e3f6e0">Bullet::isActive</a></div><div class="ttdeci">bool isActive() const</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00017">Bullet.hpp:17</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a2ee0a628ca947acb2e118a492340fac6"><div class="ttname"><a href="class_bullet.html#a2ee0a628ca947acb2e118a492340fac6">Bullet::setMaxX</a></div><div class="ttdeci">void setMaxX(int x)</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00024">Bullet.hpp:24</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a532e345747ba9c9deea06cbb5069c05f"><div class="ttname"><a href="class_bullet.html#a532e345747ba9c9deea06cbb5069c05f">Bullet::getMaxY</a></div><div class="ttdeci">int getMaxY() const</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00020">Bullet.hpp:20</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a697094b6895cf70278c4f2e7eb813ff6"><div class="ttname"><a href="class_bullet.html#a697094b6895cf70278c4f2e7eb813ff6">Bullet::setMaxY</a></div><div class="ttdeci">void setMaxY(int y)</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00025">Bullet.hpp:25</a></div></div>
+<div class="ttc" id="aclass_bullet_html_aa925017e506293a8523066b0840ef2d4"><div class="ttname"><a href="class_bullet.html#aa925017e506293a8523066b0840ef2d4">Bullet::getMaxX</a></div><div class="ttdeci">int getMaxX() const</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00019">Bullet.hpp:19</a></div></div>
+<div class="ttc" id="aclass_bullet_html_aaeb5cb41d7db89f49007b08b41f1bfcf"><div class="ttname"><a href="class_bullet.html#aaeb5cb41d7db89f49007b08b41f1bfcf">Bullet::~Bullet</a></div><div class="ttdeci">~Bullet()</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00015">Bullet.hpp:15</a></div></div>
+<div class="ttc" id="aclass_bullet_html_acd7befc0bc18907cc1d871d37bbdddeb"><div class="ttname"><a href="class_bullet.html#acd7befc0bc18907cc1d871d37bbdddeb">Bullet::Bullet</a></div><div class="ttdeci">Bullet()</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00014">Bullet.hpp:14</a></div></div>
+<div class="ttc" id="aclass_bullet_html_ad9d98bf7d76f3f5862806e7f3ae9db04"><div class="ttname"><a href="class_bullet.html#ad9d98bf7d76f3f5862806e7f3ae9db04">Bullet::setStatus</a></div><div class="ttdeci">void setStatus(bool status)</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00022">Bullet.hpp:22</a></div></div>
+<div class="ttc" id="aclass_bullet_html_ae3336518b278bfac1db93372e9d910c2"><div class="ttname"><a href="class_bullet.html#ae3336518b278bfac1db93372e9d910c2">Bullet::setOrientation</a></div><div class="ttdeci">void setOrientation(Orientation orientation)</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00023">Bullet.hpp:23</a></div></div>
+<div class="ttc" id="aclass_bullet_html_affe72c58e4debc41e7952e382976aa6f"><div class="ttname"><a href="class_bullet.html#affe72c58e4debc41e7952e382976aa6f">Bullet::getOrientation</a></div><div class="ttdeci">Orientation getOrientation() const</div><div class="ttdef"><b>Definition:</b> <a href="_bullet_8hpp_source.html#l00018">Bullet.hpp:18</a></div></div>
+<div class="ttc" id="aclassarcade_1_1_enemy_html"><div class="ttname"><a href="classarcade_1_1_enemy.html">arcade::Enemy</a></div><div class="ttdef"><b>Definition:</b> <a href="_enemy_8hpp_source.html#l00014">Enemy.hpp:14</a></div></div>
+<div class="ttc" id="aclassarcade_1_1_entity_html_aea5b418a57a431c26db89907a816d85a"><div class="ttname"><a href="classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85a">arcade::Entity::Orientation</a></div><div class="ttdeci">Orientation</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8hpp_source.html#l00018">Entity.hpp:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

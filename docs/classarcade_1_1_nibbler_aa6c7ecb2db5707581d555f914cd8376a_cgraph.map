@@ -1,0 +1,12 @@
+<map id="arcade::Nibbler::update" name="arcade::Nibbler::update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,121,180,147"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_player.html#a1a64815325ed739fc91c9192e92fa3a0" title=" " alt="" coords="228,45,448,71"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_nibbler.html#af21a0b1264a6e3afa764ed1e53c82358" title=" " alt="" coords="253,95,423,122"/>
+<area shape="rect" id="node8" href="$classarcade_1_1_player.html#aed6de360b5c0cef02361ca4394065609" title=" " alt="" coords="228,146,448,173"/>
+<area shape="rect" id="node10" href="$classarcade_1_1_player.html#a20c2bd49362b3e14c8ec377422aa6242" title=" " alt="" coords="237,197,439,223"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_nibbler.html#a09f8796df2152f6df443184fc0ee30e3" title=" " alt="" coords="531,45,681,71"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_nibbler.html#ad3ace326108e1f1042a1e3b1332a74cf" title=" " alt="" coords="527,95,685,122"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_a_game_module.html#a506c4b560b7b6105d7901f004af96ad3" title=" " alt="" coords="764,5,935,47"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_a_game_module.html#a579679ee389de8bb173532209aa70365" title=" " alt="" coords="764,71,935,112"/>
+<area shape="rect" id="node9" href="$classarcade_1_1_player.html#a1f4ecefe963c7e9237f11380817c5fbe" title=" " alt="" coords="496,146,716,173"/>
+</map>

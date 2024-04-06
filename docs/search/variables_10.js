@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['top_1035',['top',['../structid__rect.html#ae954544e0a17838914f5cf1798bbe6d8',1,'id_rect::top()'],['../structsectors__s.html#a289fe7af035d57e5a0e04e6352d6d3fd',1,'sectors_s::top()']]],
-  ['top1_1036',['top1',['../structcoordinates__wall.html#a9cfc1b645f1dbb6ceaa6eced835963c9',1,'coordinates_wall']]],
-  ['top2_1037',['top2',['../structcoordinates__wall.html#a19e4523301c59bcb6a4e2499952ecc10',1,'coordinates_wall']]],
-  ['type_1038',['type',['../structmy__idt1.html#a1f97f8af16974860addda9004019a901',1,'my_idt1']]]
+  ['sectors_1204',['sectors',['../structmy__idt1.html#a4d93a078ff0b21f47f3b6b65fe5125fe',1,'my_idt1']]],
+  ['sectors_5fnb_1205',['sectors_nb',['../structmy__idt1.html#a41010cbe9f3584d24b5fbb28cfe51e3f',1,'my_idt1']]],
+  ['side_1206',['side',['../structid___color_box.html#a0723dbbb08cc01552c3a532374c85eea',1,'id_ColorBox']]],
+  ['sideshadow_1207',['sideShadow',['../structid___color_box.html#a1ef91adf0915d42f9abc8da1ad822d17',1,'id_ColorBox']]],
+  ['skip_1208',['skip',['../structstbi__io__callbacks.html#a257aac5480a90a6c4b8fbe86c1b01068',1,'stbi_io_callbacks']]],
+  ['specialkeyspressed_1209',['specialKeysPressed',['../_open_g_l_8hpp.html#a2b236a8fb78d57c355d8e8514ebc1149',1,'OpenGL.hpp']]],
+  ['surface_1210',['surface',['../structsectors__s.html#aa65bba51281f0bc749add1f3d2f2b00e',1,'sectors_s']]]
 ];

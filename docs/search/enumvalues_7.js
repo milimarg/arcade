@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['h_5fkey_1090',['H_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6baffaf91aabe669820a969c625dba607f1',1,'arcade']]],
-  ['horizontal_1091',['HORIZONTAL',['../classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85aa86e5d0d8407ce71f7e2004ef3949894e',1,'arcade::Entity']]]
+  ['g_5fkey_1275',['G_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6bae76600e8fd10e2128bd1ae82f1c9d496',1,'arcade']]],
+  ['game_1276',['GAME',['../classarcade_1_1_pacman.html#a33f502260315accca047ceeeaadb0067a4504e1ed59cd9732b8a844e5424e6f13',1,'arcade::Pacman']]],
+  ['green_5ffruit_1277',['GREEN_FRUIT',['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a053070e1579b0a5d6a2daa5b35c08829',1,'arcade::Food::GREEN_FRUIT()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a053070e1579b0a5d6a2daa5b35c08829',1,'arcade::Food::GREEN_FRUIT()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a053070e1579b0a5d6a2daa5b35c08829',1,'arcade::Food::GREEN_FRUIT()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41a053070e1579b0a5d6a2daa5b35c08829',1,'arcade::Food::GREEN_FRUIT()']]]
 ];

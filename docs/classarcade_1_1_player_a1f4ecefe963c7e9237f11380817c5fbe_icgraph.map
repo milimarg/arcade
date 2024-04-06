@@ -1,4 +1,6 @@
 <map id="arcade::Player::updatePosition" name="arcade::Player::updatePosition">
-<area shape="rect" id="node1" title=" " alt="" coords="220,5,440,32"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="496,31,716,57"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_player.html#aed6de360b5c0cef02361ca4394065609" title=" " alt="" coords="228,31,448,57"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_nibbler.html#aa6c7ecb2db5707581d555f914cd8376a" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_snake.html#acbf8266a6cf09230f10af40d4e51cea1" title=" " alt="" coords="9,56,176,83"/>
 </map>

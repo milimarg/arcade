@@ -1,6 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classarcade_1_1_i_graphical_module.html" title=" " alt="" coords="5,56,193,83"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_n_curses.html" title=" " alt="" coords="241,5,369,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_open_g_l.html" title=" " alt="" coords="243,56,368,83"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_sdl2.html" title=" " alt="" coords="254,107,357,133"/>
+<area shape="rect" id="node1" href="$classarcade_1_1_i_event_info.html" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_event_info.html" title=" " alt="" coords="193,5,329,32"/>
 </map>

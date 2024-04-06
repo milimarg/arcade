@@ -1,11 +1,8 @@
 <map id="arcade::Window::displayTexturedPixel" name="arcade::Window::displayTexturedPixel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,175,241,217"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_pixel.html#a19ab3a43dd1b92a5bad646ab9b9985c1" title=" " alt="" coords="315,5,478,32"/>
-<area shape="rect" id="node3" href="$class_texture.html#a835c2ffd13b2271c5bf94036ea727a08" title=" " alt="" coords="327,56,466,83"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_pixel.html#acbad59e79cb5da36ed4099892bb87f06" title=" " alt="" coords="310,107,483,133"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_pixel.html#a37e3710965d0ec928119b3368033e5b4" title=" " alt="" coords="289,157,504,184"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_pixel.html#a6a7f6209a27558f9d90af5f42e783f39" title=" " alt="" coords="301,208,492,235"/>
-<area shape="rect" id="node7" href="$classarcade_1_1_pixel.html#ab6d2ee77a61e8877b31aa50db6ca288a" title=" " alt="" coords="317,259,476,285"/>
-<area shape="rect" id="node8" href="$classarcade_1_1_pixel.html#a61bf034def3a210bdc96ae8ef1136e7e" title=" " alt="" coords="291,309,502,336"/>
-<area shape="rect" id="node9" href="$class_texture.html#a2c2b502138a1a1786c4bf74016620885" title=" " alt="" coords="328,360,465,387"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,99,241,141"/>
+<area shape="rect" id="node2" href="$class_texture.html#a835c2ffd13b2271c5bf94036ea727a08" title=" " alt="" coords="327,5,466,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_pixel.html#a37e3710965d0ec928119b3368033e5b4" title=" " alt="" coords="289,56,504,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_pixel.html#a6a7f6209a27558f9d90af5f42e783f39" title=" " alt="" coords="301,107,492,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_pixel.html#a61bf034def3a210bdc96ae8ef1136e7e" title=" " alt="" coords="291,157,502,184"/>
+<area shape="rect" id="node6" href="$class_texture.html#a2c2b502138a1a1786c4bf74016620885" title=" " alt="" coords="328,208,465,235"/>
 </map>

@@ -1,4 +1,6 @@
 <map id="arcade::Core::initLib" name="arcade::Core::initLib">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,157,32"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_core.html#a31f4bdcd188fcfb36c8160b520527838" title=" " alt="" coords="205,5,405,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,157,91"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_core.html#a5f1670e54539ec3d5fe335225b5ed24e" title=" " alt="" coords="205,5,425,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_core.html#afb84503daf84374217b4c5e64de5ec00" title=" " alt="" coords="216,57,415,98"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_core.html#a31f4bdcd188fcfb36c8160b520527838" title=" " alt="" coords="215,123,415,149"/>
 </map>

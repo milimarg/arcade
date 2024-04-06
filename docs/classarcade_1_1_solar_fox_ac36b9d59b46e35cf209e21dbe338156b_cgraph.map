@@ -1,9 +1,5 @@
 <map id="arcade::SolarFox::applyEvents" name="arcade::SolarFox::applyEvents">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,224,133"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a176ced595ab15b159d2b8ca19b06263a" title=" " alt="" coords="272,81,483,108"/>
-<area shape="rect" id="node7" href="$classarcade_1_1_i_event.html#a359934a001d072464c52fa668974271b" title=" " alt="" coords="287,132,468,159"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_player.html#ac3e467739c0a2ea066d26f6e5fb9aa56" title=" " alt="" coords="531,5,733,32"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_entity.html#a0aa41040a2956859c001ada7845970ad" title=" " alt="" coords="557,56,707,83"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="558,107,706,133"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9" title=" " alt="" coords="531,157,733,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,224,57"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a176ced595ab15b159d2b8ca19b06263a" title=" " alt="" coords="272,5,483,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623" title=" " alt="" coords="287,56,468,83"/>
 </map>

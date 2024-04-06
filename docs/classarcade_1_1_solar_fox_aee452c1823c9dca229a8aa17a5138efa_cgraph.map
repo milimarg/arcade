@@ -1,19 +1,14 @@
 <map id="arcade::SolarFox::reload" name="arcade::SolarFox::reload">
-<area shape="rect" id="node1" title=" " alt="" coords="5,204,184,231"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a2b3901e0221d7c061e667e58447e3284" title=" " alt="" coords="236,179,395,205"/>
-<area shape="rect" id="node17" href="$classarcade_1_1_solar_fox.html#a67bbc3d9c2980627ea933da7f094f1d4" title=" " alt="" coords="232,229,399,256"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_a_game_module.html#a506c4b560b7b6105d7901f004af96ad3" title=" " alt="" coords="469,77,639,118"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_a_game_module.html#a579679ee389de8bb173532209aa70365" title=" " alt="" coords="469,142,639,183"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_solar_fox.html#a2e804d1fbeec7f59c05b3710a52062d7" title=" " alt="" coords="447,208,661,235"/>
-<area shape="rect" id="node14" href="$classarcade_1_1_solar_fox.html#a13abed7afb51a7f66acbd7b5bbe60d09" title=" " alt="" coords="454,284,654,311"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_entity.html#a3282a1876e7bbeda46b22d847cc0c50a" title=" " alt="" coords="709,5,923,32"/>
-<area shape="rect" id="node7" href="$classarcade_1_1_entity.html#ab91bdf2bb791fb0b10a32a43e458073e" title=" " alt="" coords="742,56,890,83"/>
-<area shape="rect" id="node8" href="$classarcade_1_1_entity.html#aa0b2471c1e2109499b1dfd17c860e91d" title=" " alt="" coords="725,208,907,235"/>
-<area shape="rect" id="node9" href="$classarcade_1_1_entity.html#a1b704d9481cc9cfde85897fc6777aef9" title=" " alt="" coords="710,107,922,133"/>
-<area shape="rect" id="node10" href="$classarcade_1_1_entity.html#aa970e2933a0a3d15a81b31c93cc258b0" title=" " alt="" coords="735,259,897,285"/>
-<area shape="rect" id="node11" href="$classarcade_1_1_entity.html#a73eba281816dfb50a7f74f8100f4a1c1" title=" " alt="" coords="727,309,905,336"/>
-<area shape="rect" id="node12" href="$classarcade_1_1_entity.html#a439252eb324b016c15ce2592c50bda26" title=" " alt="" coords="742,360,890,387"/>
-<area shape="rect" id="node13" href="$classarcade_1_1_entity.html#a0bcb2be9b5aca5f00989bec31edb32fa" title=" " alt="" coords="743,157,889,184"/>
-<area shape="rect" id="node15" href="$classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9" title=" " alt="" coords="715,411,917,437"/>
-<area shape="rect" id="node16" href="$classarcade_1_1_entity.html#a73dd1d9222da2e111649732999ee8fd6" title=" " alt="" coords="732,461,900,488"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,103,184,130"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#a2b3901e0221d7c061e667e58447e3284" title=" " alt="" coords="236,78,395,105"/>
+<area shape="rect" id="node12" href="$classarcade_1_1_solar_fox.html#a67bbc3d9c2980627ea933da7f094f1d4" title=" " alt="" coords="232,129,399,155"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_a_game_module.html#a506c4b560b7b6105d7901f004af96ad3" title=" " alt="" coords="450,5,621,47"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_a_game_module.html#a579679ee389de8bb173532209aa70365" title=" " alt="" coords="450,71,621,112"/>
+<area shape="rect" id="node5" href="$class_map_wrapper.html#a4bd7120ab93a2380a7d10771b2dbc684" title=" " alt="" coords="447,137,624,163"/>
+<area shape="rect" id="node6" href="$class_map.html#a488730df8bc3dd15b0825eda9c03436c" title=" " alt="" coords="672,10,855,37"/>
+<area shape="rect" id="node7" href="$class_map.html#a1b3870559e3dfe8c0b51e17f5936c71c" title=" " alt="" coords="698,61,829,87"/>
+<area shape="rect" id="node8" href="$class_map.html#acb00c75cd209c6f57332deb897a1cb37" title=" " alt="" coords="687,111,840,138"/>
+<area shape="rect" id="node9" href="$class_map.html#aaed5e2dc2304fe307ecfd2c921a564f3" title=" " alt="" coords="698,162,829,189"/>
+<area shape="rect" id="node10" href="$class_map.html#ab4701486d64bb0d67dfcbf4c93dc4667" title=" " alt="" coords="687,213,840,239"/>
+<area shape="rect" id="node11" href="$class_map.html#a0445832a640b7a8cc2b71673ebaaf819" title=" " alt="" coords="687,263,839,290"/>
 </map>

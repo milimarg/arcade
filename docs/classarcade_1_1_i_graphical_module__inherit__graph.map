@@ -1,6 +1,7 @@
 <map id="arcade::IGraphicalModule" name="arcade::IGraphicalModule">
-<area shape="rect" id="node1" title=" " alt="" coords="126,5,314,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="197,5,385,32"/>
 <area shape="rect" id="node2" href="$classarcade_1_1_n_curses.html" title=" " alt="" coords="5,80,133,107"/>
 <area shape="rect" id="node3" href="$classarcade_1_1_open_g_l.html" title=" " alt="" coords="157,80,283,107"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_sdl2.html" title=" " alt="" coords="307,80,410,107"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_s_f_m_l.html" title=" " alt="" coords="307,80,416,107"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_sdl2.html" title=" " alt="" coords="441,80,543,107"/>
 </map>

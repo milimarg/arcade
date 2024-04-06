@@ -1,8 +1,9 @@
 <map id="arcade::IGraphicalModule::updatePixelsWrapper" name="arcade::IGraphicalModule::updatePixelsWrapper">
-<area shape="rect" id="node1" title=" " alt="" coords="236,99,424,141"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_doom.html#a2427d7ad9cfa24b1b2e2beafa4f9a2bc" title=" " alt="" coords="20,5,173,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_main_menu.html#a34bd3fc14f1b119607df80d119ca4628" title=" " alt="" coords="5,56,188,83"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_pacman.html#a62a81fb047d8efc0e2f245448a904b8d" title=" " alt="" coords="14,107,179,133"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_snake.html#a2e1e104d27af43372d41f6239bbf68a3" title=" " alt="" coords="20,157,173,184"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_solar_fox.html#a54c702c6daa8821bbc37a1824a4cb1f5" title=" " alt="" coords="11,208,182,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="236,125,424,166"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_solar_fox.html#ad8594d93e9e72541d380ad9e57897d0f" title=" " alt="" coords="11,5,182,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_doom.html#a2427d7ad9cfa24b1b2e2beafa4f9a2bc" title=" " alt="" coords="20,56,173,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_main_menu.html#a34bd3fc14f1b119607df80d119ca4628" title=" " alt="" coords="5,107,188,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_nibbler.html#a463ff0a5e606144a3483f455e69ab255" title=" " alt="" coords="16,157,177,184"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_pacman.html#a62a81fb047d8efc0e2f245448a904b8d" title=" " alt="" coords="14,208,179,235"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_snake.html#a2e1e104d27af43372d41f6239bbf68a3" title=" " alt="" coords="20,259,173,285"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pixeltype_1068',['PixelType',['../classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4',1,'arcade::IPixel']]]
+  ['map_5ftype_1247',['map_type',['../struct_8hpp.html#a4dce14e855acdc7349281c9d2301fcdc',1,'struct.hpp']]]
 ];

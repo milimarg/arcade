@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['a_5fkey_1072',['A_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba1d894a4084a4f1ffc94cfc3cab04e19d',1,'arcade']]]
+  ['_5f2_5f5d_1254',['_2_5D',['../classarcade_1_1_pacman.html#ad2416d3e90305322b7ee2eb46f0cd1caa802f072b661c53064f12eefbbd151120',1,'arcade::Pacman']]],
+  ['_5f2d_1255',['_2D',['../classarcade_1_1_pacman.html#ad2416d3e90305322b7ee2eb46f0cd1caa8cf93a3cf4b8ee9a975671c37039d549',1,'arcade::Pacman']]]
 ];

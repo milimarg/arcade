@@ -1,9 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classarcade_1_1_i_game_module.html" title=" " alt="" coords="5,107,171,133"/>
-<area shape="rect" id="node2" href="$classarcade_1_1_a_game_module.html" title=" " alt="" coords="219,107,389,133"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_doom.html" title=" " alt="" coords="452,5,565,32"/>
-<area shape="rect" id="node4" href="$classarcade_1_1_main_menu.html" title=" " alt="" coords="437,56,580,83"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_pacman.html" title=" " alt="" coords="446,107,571,133"/>
-<area shape="rect" id="node6" href="$classarcade_1_1_snake.html" title=" " alt="" coords="452,157,565,184"/>
-<area shape="rect" id="node7" href="$classarcade_1_1_solar_fox.html" title=" " alt="" coords="443,208,574,235"/>
+<area shape="rect" id="node1" href="$classarcade_1_1_i_event.html" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_event.html" title=" " alt="" coords="168,5,279,32"/>
 </map>

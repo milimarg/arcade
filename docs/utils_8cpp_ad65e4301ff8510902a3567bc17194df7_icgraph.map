@@ -1,7 +1,8 @@
 <map id="calc_dist" name="calc_dist">
-<area shape="rect" id="node1" title=" " alt="" coords="728,5,807,32"/>
-<area shape="rect" id="node2" href="$my_8hpp.html#aea4647988cfdd11eb81abc555ee2086d" title=" " alt="" coords="547,5,680,32"/>
-<area shape="rect" id="node3" href="$my_8hpp.html#aa14c8c4993b5be1a914949e2c85d4b67" title=" " alt="" coords="380,5,499,32"/>
-<area shape="rect" id="node4" href="$my_8hpp.html#ac9eda6def06d3a17bbc4eaedcb6c740e" title=" " alt="" coords="220,5,332,32"/>
-<area shape="rect" id="node5" href="$classarcade_1_1_doom.html#aca9a2b6e5c44e6b666248184ec8d3975" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="740,31,819,57"/>
+<area shape="rect" id="node2" href="$my_8hpp.html#aea4647988cfdd11eb81abc555ee2086d" title=" " alt="" coords="559,31,692,57"/>
+<area shape="rect" id="node3" href="$my_8hpp.html#aa14c8c4993b5be1a914949e2c85d4b67" title=" " alt="" coords="392,31,511,57"/>
+<area shape="rect" id="node4" href="$my_8hpp.html#ac9eda6def06d3a17bbc4eaedcb6c740e" title=" " alt="" coords="232,31,344,57"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_doom.html#aca9a2b6e5c44e6b666248184ec8d3975" title=" " alt="" coords="11,5,178,32"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_pacman.html#afd59956c48e690e593cb71fdea146dd5" title=" " alt="" coords="5,56,184,83"/>
 </map>

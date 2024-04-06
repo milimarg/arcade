@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>arcade</b></li><li class="navelem"><a class="el" href="classarcade_1_1_i_event.html">IEvent</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacearcade.html">arcade</a></li><li class="navelem"><a class="el" href="classarcade_1_1_i_event.html">IEvent</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,6 +73,8 @@ $(function() {
 <div class="title">arcade::IEvent Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_i_event_8hpp_source.html">IEvent.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for arcade::IEvent:</div>
 <div class="dyncontent">
@@ -85,25 +87,269 @@ Inheritance diagram for arcade::IEvent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a359934a001d072464c52fa668974271b"><td class="memItemLeft" align="right" valign="top"><a id="a359934a001d072464c52fa668974271b"></a>
-virtual Key&#160;</td><td class="memItemRight" valign="bottom"><b>getEvent</b> ()=0</td></tr>
-<tr class="separator:a359934a001d072464c52fa668974271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a170eb2aa50961f741cf67e9d12175b24"><td class="memItemLeft" align="right" valign="top"><a id="a170eb2aa50961f741cf67e9d12175b24"></a>
-virtual ChangeKey&#160;</td><td class="memItemRight" valign="bottom"><b>getChangeEvent</b> ()=0</td></tr>
-<tr class="separator:a170eb2aa50961f741cf67e9d12175b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3218a24b07ef91051543909b55373b6"><td class="memItemLeft" align="right" valign="top"><a id="ac3218a24b07ef91051543909b55373b6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key)=0</td></tr>
+<tr class="memitem:aae8a76ab5e350aa8ad5c1c35e3712999"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#aae8a76ab5e350aa8ad5c1c35e3712999">~IEvent</a> ()=default</td></tr>
+<tr class="separator:aae8a76ab5e350aa8ad5c1c35e3712999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112e714166ced329d7f6898a2638c623"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623">getEvent</a> ()=0</td></tr>
+<tr class="separator:a112e714166ced329d7f6898a2638c623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc27435b3ac7949c6cbd5c891d35abe"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#a3bc27435b3ac7949c6cbd5c891d35abe">getChangeEvent</a> ()=0</td></tr>
+<tr class="separator:a3bc27435b3ac7949c6cbd5c891d35abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3218a24b07ef91051543909b55373b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#ac3218a24b07ef91051543909b55373b6">pushEvent</a> (const <a class="el" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;key)=0</td></tr>
 <tr class="separator:ac3218a24b07ef91051543909b55373b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb469a183832dcce8319147dbd63f9f5"><td class="memItemLeft" align="right" valign="top"><a id="acb469a183832dcce8319147dbd63f9f5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pushChangeEvent</b> (const ChangeKey &amp;changeKey)=0</td></tr>
+<tr class="memitem:a61b1f1a60f3ea48570c0b721f77ae923"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#a61b1f1a60f3ea48570c0b721f77ae923">pushEvent</a> (const <a class="el" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;key, std::pair&lt; int, int &gt; mouseCoords)=0</td></tr>
+<tr class="separator:a61b1f1a60f3ea48570c0b721f77ae923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb469a183832dcce8319147dbd63f9f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#acb469a183832dcce8319147dbd63f9f5">pushChangeEvent</a> (const <a class="el" href="namespacearcade.html#a242d62fa4da7e6f7c7c6c5687a4d0ecc">ChangeKey</a> &amp;changeKey)=0</td></tr>
 <tr class="separator:acb469a183832dcce8319147dbd63f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf566dcdf182f661b59727264281632a"><td class="memItemLeft" align="right" valign="top"><a id="adf566dcdf182f661b59727264281632a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clearEventQueue</b> ()=0</td></tr>
+<tr class="memitem:adf566dcdf182f661b59727264281632a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#adf566dcdf182f661b59727264281632a">clearEventQueue</a> ()=0</td></tr>
 <tr class="separator:adf566dcdf182f661b59727264281632a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00d550501b70f1c88b5e145ceb6f28be"><td class="memItemLeft" align="right" valign="top"><a id="a00d550501b70f1c88b5e145ceb6f28be"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clearChangeEventQueue</b> ()=0</td></tr>
+<tr class="memitem:a00d550501b70f1c88b5e145ceb6f28be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_event.html#a00d550501b70f1c88b5e145ceb6f28be">clearChangeEventQueue</a> ()=0</td></tr>
 <tr class="separator:a00d550501b70f1c88b5e145ceb6f28be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_i_event_8hpp_source.html#l00015">15</a> of file <a class="el" href="_i_event_8hpp_source.html">IEvent.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aae8a76ab5e350aa8ad5c1c35e3712999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8a76ab5e350aa8ad5c1c35e3712999">&#9670;&nbsp;</a></span>~IEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual arcade::IEvent::~IEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a00d550501b70f1c88b5e145ceb6f28be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d550501b70f1c88b5e145ceb6f28be">&#9670;&nbsp;</a></span>clearChangeEventQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void arcade::IEvent::clearChangeEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">arcade::Event</a>.</p>
+
+</div>
+</div>
+<a id="adf566dcdf182f661b59727264281632a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf566dcdf182f661b59727264281632a">&#9670;&nbsp;</a></span>clearEventQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void arcade::IEvent::clearEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">arcade::Event</a>.</p>
+
+</div>
+</div>
+<a id="a3bc27435b3ac7949c6cbd5c891d35abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc27435b3ac7949c6cbd5c891d35abe">&#9670;&nbsp;</a></span>getChangeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::IEvent::getChangeEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#adbd389d5f5e55085bac7c63c51e3a002">arcade::Event</a>.</p>
+
+</div>
+</div>
+<a id="a112e714166ced329d7f6898a2638c623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112e714166ced329d7f6898a2638c623">&#9670;&nbsp;</a></span>getEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::IEvent::getEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#a80a5dd808827fb2dc0aaa7e161df7363">arcade::Event</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classarcade_1_1_i_event_a112e714166ced329d7f6898a2638c623_icgraph.png" border="0" usemap="#aclassarcade_1_1_i_event_a112e714166ced329d7f6898a2638c623_icgraph" alt=""/></div>
+<map name="aclassarcade_1_1_i_event_a112e714166ced329d7f6898a2638c623_icgraph" id="aclassarcade_1_1_i_event_a112e714166ced329d7f6898a2638c623_icgraph">
+<area shape="rect" title=" " alt="" coords="284,132,465,159"/>
+<area shape="rect" href="classarcade_1_1_doom.html#afbde0757e65b25c19cf288a3010b0366" title=" " alt="" coords="20,5,221,32"/>
+<area shape="rect" href="classarcade_1_1_main_menu.html#a3373d94239c4704846d1aefe5e56bd4e" title=" " alt="" coords="5,56,236,83"/>
+<area shape="rect" href="classarcade_1_1_nibbler.html#a2571d4375faa98829b5715825ad4781e" title=" " alt="" coords="16,107,225,133"/>
+<area shape="rect" href="classarcade_1_1_pacman.html#a9918b67c24cabe326b71abe6fa98e190" title=" " alt="" coords="14,157,227,184"/>
+<area shape="rect" href="classarcade_1_1_snake.html#ac94c2b55dd7014cd42459162ed5ef272" title=" " alt="" coords="20,208,221,235"/>
+<area shape="rect" href="classarcade_1_1_solar_fox.html#ac36b9d59b46e35cf209e21dbe338156b" title=" " alt="" coords="11,259,230,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb469a183832dcce8319147dbd63f9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb469a183832dcce8319147dbd63f9f5">&#9670;&nbsp;</a></span>pushChangeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void arcade::IEvent::pushChangeEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacearcade.html#a242d62fa4da7e6f7c7c6c5687a4d0ecc">ChangeKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>changeKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">arcade::Event</a>.</p>
+
+</div>
+</div>
+<a id="ac3218a24b07ef91051543909b55373b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3218a24b07ef91051543909b55373b6">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void arcade::IEvent::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">arcade::Event</a>.</p>
+
+</div>
+</div>
+<a id="a61b1f1a60f3ea48570c0b721f77ae923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b1f1a60f3ea48570c0b721f77ae923">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void arcade::IEvent::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacearcade.html#a52a577b6127e6275047bef2a793bce6b">Key</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>mouseCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">arcade::Event</a>, <a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">arcade::Event</a>, and <a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">arcade::Event</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Includes/<a class="el" href="_i_event_8hpp_source.html">IEvent.hpp</a></li>
 </ul>

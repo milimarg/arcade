@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n_5fkey_1101',['N_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba2c6d858c56677503a8f2952ded2369bc',1,'arcade']]],
-  ['next_5fgame_5flib_1102',['NEXT_GAME_LIB',['../namespacearcade.html#a242d62fa4da7e6f7c7c6c5687a4d0ecca8613fe6498beb5953e5eb50e4e8dc606',1,'arcade']]],
-  ['next_5fgraphical_5flib_1103',['NEXT_GRAPHICAL_LIB',['../namespacearcade.html#a242d62fa4da7e6f7c7c6c5687a4d0eccaa0ca7f630556735e78e1c8952a7ad036',1,'arcade']]],
-  ['none_1104',['NONE',['../classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4ab50339a10e1de285ac99d4c3990b8693',1,'arcade::IPixel::NONE()'],['../classarcade_1_1_pacman.html#a64ec9e7899ecb0470424f40d781539b6ab50339a10e1de285ac99d4c3990b8693',1,'arcade::Pacman::NONE()'],['../classarcade_1_1_entity.html#a22c5aaf71af33b1d4813ad9c2aaaf18bab50339a10e1de285ac99d4c3990b8693',1,'arcade::Entity::NONE()']]]
+  ['m_5fkey_1287',['M_KEY',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6baa6e94ec7c3b6dafbf774c01fae6ddec3',1,'arcade']]],
+  ['main_5fmenu_1288',['MAIN_MENU',['../namespacearcade.html#a242d62fa4da7e6f7c7c6c5687a4d0eccaa16d505f03a4b6f35486f65f6a61317e',1,'arcade']]],
+  ['mouse_5fbutton_5fleft_1289',['MOUSE_BUTTON_LEFT',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba31359f11d77e484ea0e7f3c3863ed075',1,'arcade']]],
+  ['mouse_5fbutton_5fright_1290',['MOUSE_BUTTON_RIGHT',['../namespacearcade.html#a52a577b6127e6275047bef2a793bce6ba4de1610333b3be6629b71ffd509788be',1,'arcade']]]
 ];

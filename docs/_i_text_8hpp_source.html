@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_83e6bb2fd5fc2e8e9d317886e7b67d68.html">marg</a></li><li class="navelem"><a class="el" href="dir_4c91b22ab8fd933d4228e45ab3086540.html">EPITECH_PROJECTS</a></li><li class="navelem"><a class="el" href="dir_800dcb4e9d93feb320ea4f8afbc53c8e.html">B-OOP-400-STG-4-1-arcade-noe.tritsch</a></li><li class="navelem"><a class="el" href="dir_111ef8390d61983fe1ec710b3d5894c8.html">Includes</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_393706d2dab13d62a4cc4a6b8ed73447.html">EPITECH_PROJECTS</a></li><li class="navelem"><a class="el" href="dir_20bdbfea4f84cfd50e6a9602ecdc6d59.html">B-OOP-400-STG-4-1-arcade-noe.tritsch</a></li><li class="navelem"><a class="el" href="dir_733abfe8d36b312c0ed5b8045ee1bd19.html">Includes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,7 +70,7 @@ $(function() {
 <div class="title">IText.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_i_text_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** B-OOP-400-STG-4-1-arcade-noe.tritsch</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
@@ -81,28 +81,43 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define ITEXT_HPP_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &lt;string&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>arcade</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_text.html">IText</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keyword">using</span> Color = <span class="keywordtype">unsigned</span> int;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">   16</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> = <span class="keywordtype">unsigned</span> int;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">virtual</span> Color getRed() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">virtual</span> Color getGreen() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">virtual</span> Color getBlue() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">virtual</span> Color getAlpha() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">virtual</span> std::string getStr() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRed(Color red) = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setGreen(Color green) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setBlue(Color blue) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAlpha(Color alpha) = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setStr(<span class="keyword">const</span> std::string &amp;str) = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ITEXT_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_i_text_html"><div class="ttname"><a href="classarcade_1_1_i_text.html">arcade::IText</a></div><div class="ttdef"><b>Definition:</b> IText.hpp:14</div></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a013679df1cd91b93fa818c4a587daccd">   18</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_text.html#a013679df1cd91b93fa818c4a587daccd">~IText</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#af6af9eb850a3d804d03e68748e0dc9ad">   20</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> <a class="code" href="classarcade_1_1_i_text.html#af6af9eb850a3d804d03e68748e0dc9ad">getRed</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a31adabcafe32f8ef940687686981676c">   21</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> <a class="code" href="classarcade_1_1_i_text.html#a31adabcafe32f8ef940687686981676c">getGreen</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#ab2953e1d2142b8820e256fe0f9dd59ed">   22</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> <a class="code" href="classarcade_1_1_i_text.html#ab2953e1d2142b8820e256fe0f9dd59ed">getBlue</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a3ecf39932963812176b7466b517994ca">   23</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> <a class="code" href="classarcade_1_1_i_text.html#a3ecf39932963812176b7466b517994ca">getAlpha</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a7c3cd34ab8dc8e606a91a50d3dc20262">   24</a></span>&#160;            <span class="keyword">virtual</span> std::string <a class="code" href="classarcade_1_1_i_text.html#a7c3cd34ab8dc8e606a91a50d3dc20262">getStr</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a4722c0826b4ca0c0bdf042e5487a7aec">   26</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_text.html#a4722c0826b4ca0c0bdf042e5487a7aec">setRed</a>(<a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> red) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#abd047604b6df99964a591d1f07890505">   27</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_text.html#abd047604b6df99964a591d1f07890505">setGreen</a>(<a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> green) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a996ace646d9328c2186f7136f8080452">   28</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_text.html#a996ace646d9328c2186f7136f8080452">setBlue</a>(<a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> blue) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#a85f02d8cac0258fea3f99e12b1c02fef">   29</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_text.html#a85f02d8cac0258fea3f99e12b1c02fef">setAlpha</a>(<a class="code" href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">Color</a> alpha) = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_text.html#ab5ad4968bf913735c67bee0a64d81226">   30</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_text.html#ab5ad4968bf913735c67bee0a64d81226">setStr</a>(<span class="keyword">const</span> std::string &amp;str) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ITEXT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html"><div class="ttname"><a href="classarcade_1_1_i_text.html">arcade::IText</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_text_8hpp_source.html#l00014">IText.hpp:14</a></div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a013679df1cd91b93fa818c4a587daccd"><div class="ttname"><a href="classarcade_1_1_i_text.html#a013679df1cd91b93fa818c4a587daccd">arcade::IText::~IText</a></div><div class="ttdeci">virtual ~IText()=default</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a31adabcafe32f8ef940687686981676c"><div class="ttname"><a href="classarcade_1_1_i_text.html#a31adabcafe32f8ef940687686981676c">arcade::IText::getGreen</a></div><div class="ttdeci">virtual Color getGreen() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a3ecf39932963812176b7466b517994ca"><div class="ttname"><a href="classarcade_1_1_i_text.html#a3ecf39932963812176b7466b517994ca">arcade::IText::getAlpha</a></div><div class="ttdeci">virtual Color getAlpha() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a4722c0826b4ca0c0bdf042e5487a7aec"><div class="ttname"><a href="classarcade_1_1_i_text.html#a4722c0826b4ca0c0bdf042e5487a7aec">arcade::IText::setRed</a></div><div class="ttdeci">virtual void setRed(Color red)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a7c3cd34ab8dc8e606a91a50d3dc20262"><div class="ttname"><a href="classarcade_1_1_i_text.html#a7c3cd34ab8dc8e606a91a50d3dc20262">arcade::IText::getStr</a></div><div class="ttdeci">virtual std::string getStr() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a85f02d8cac0258fea3f99e12b1c02fef"><div class="ttname"><a href="classarcade_1_1_i_text.html#a85f02d8cac0258fea3f99e12b1c02fef">arcade::IText::setAlpha</a></div><div class="ttdeci">virtual void setAlpha(Color alpha)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_a996ace646d9328c2186f7136f8080452"><div class="ttname"><a href="classarcade_1_1_i_text.html#a996ace646d9328c2186f7136f8080452">arcade::IText::setBlue</a></div><div class="ttdeci">virtual void setBlue(Color blue)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_ab2953e1d2142b8820e256fe0f9dd59ed"><div class="ttname"><a href="classarcade_1_1_i_text.html#ab2953e1d2142b8820e256fe0f9dd59ed">arcade::IText::getBlue</a></div><div class="ttdeci">virtual Color getBlue() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_ab5ad4968bf913735c67bee0a64d81226"><div class="ttname"><a href="classarcade_1_1_i_text.html#ab5ad4968bf913735c67bee0a64d81226">arcade::IText::setStr</a></div><div class="ttdeci">virtual void setStr(const std::string &amp;str)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_abd047604b6df99964a591d1f07890505"><div class="ttname"><a href="classarcade_1_1_i_text.html#abd047604b6df99964a591d1f07890505">arcade::IText::setGreen</a></div><div class="ttdeci">virtual void setGreen(Color green)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_acfa863d1417b3da03779b8ae6ddbdd7f"><div class="ttname"><a href="classarcade_1_1_i_text.html#acfa863d1417b3da03779b8ae6ddbdd7f">arcade::IText::Color</a></div><div class="ttdeci">unsigned int Color</div><div class="ttdef"><b>Definition:</b> <a href="_i_text_8hpp_source.html#l00016">IText.hpp:16</a></div></div>
+<div class="ttc" id="aclassarcade_1_1_i_text_html_af6af9eb850a3d804d03e68748e0dc9ad"><div class="ttname"><a href="classarcade_1_1_i_text.html#af6af9eb850a3d804d03e68748e0dc9ad">arcade::IText::getRed</a></div><div class="ttdeci">virtual Color getRed() const =0</div></div>
+<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> <a href="_doom_8cpp_source.html#l00011">Doom.cpp:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,6 @@
 <map id="sort_sectors" name="sort_sectors">
-<area shape="rect" id="node1" title=" " alt="" coords="380,5,481,32"/>
-<area shape="rect" id="node2" href="$my_8hpp.html#ac9eda6def06d3a17bbc4eaedcb6c740e" title=" " alt="" coords="220,5,332,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_doom.html#aca9a2b6e5c44e6b666248184ec8d3975" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="392,31,493,57"/>
+<area shape="rect" id="node2" href="$my_8hpp.html#ac9eda6def06d3a17bbc4eaedcb6c740e" title=" " alt="" coords="232,31,344,57"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_doom.html#aca9a2b6e5c44e6b666248184ec8d3975" title=" " alt="" coords="11,5,178,32"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_pacman.html#afd59956c48e690e593cb71fdea146dd5" title=" " alt="" coords="5,56,184,83"/>
 </map>
