@@ -73,6 +73,8 @@ $(function() {
 <div class="title">arcade::Pixel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_pixel_8hpp_source.html">Pixel.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for arcade::Pixel:</div>
 <div class="dyncontent">
@@ -94,88 +96,781 @@ Collaboration diagram for arcade::Pixel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adf1d09644510550b9a3176c3d20db281"><td class="memItemLeft" align="right" valign="top"><a id="adf1d09644510550b9a3176c3d20db281"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Pixel</b> (Color red, Color green, Color blue, Color alpha=255, PixelType pixelType=PixelType::DEFAULT, char charValue=' ', const std::string &amp;texturePath=&quot;&quot;, Rotation rotation=Rotation::R0, std::pair&lt; int, int &gt; rectSize=std::make_pair(0, 0), std::pair&lt; int, int &gt; rectPosition=std::make_pair(0, 0))</td></tr>
+<tr class="memitem:adf1d09644510550b9a3176c3d20db281"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#adf1d09644510550b9a3176c3d20db281">Pixel</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> red, <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> green, <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> blue, <a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> alpha=255, <a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a> pixelType=PixelType::DEFAULT, char charValue=' ', const std::string &amp;texturePath=&quot;&quot;, <a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a> rotation=Rotation::R0, std::pair&lt; int, int &gt; rectSize=std::make_pair(0, 0), std::pair&lt; int, int &gt; rectPosition=std::make_pair(0, 0))</td></tr>
 <tr class="separator:adf1d09644510550b9a3176c3d20db281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d2ee77a61e8877b31aa50db6ca288a"><td class="memItemLeft" align="right" valign="top"><a id="ab6d2ee77a61e8877b31aa50db6ca288a"></a>
-Color&#160;</td><td class="memItemRight" valign="bottom"><b>getRed</b> () const override</td></tr>
+<tr class="memitem:ab6d2ee77a61e8877b31aa50db6ca288a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#ab6d2ee77a61e8877b31aa50db6ca288a">getRed</a> () const override</td></tr>
 <tr class="separator:ab6d2ee77a61e8877b31aa50db6ca288a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbad59e79cb5da36ed4099892bb87f06"><td class="memItemLeft" align="right" valign="top"><a id="acbad59e79cb5da36ed4099892bb87f06"></a>
-Color&#160;</td><td class="memItemRight" valign="bottom"><b>getGreen</b> () const override</td></tr>
+<tr class="memitem:acbad59e79cb5da36ed4099892bb87f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#acbad59e79cb5da36ed4099892bb87f06">getGreen</a> () const override</td></tr>
 <tr class="separator:acbad59e79cb5da36ed4099892bb87f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ab3a43dd1b92a5bad646ab9b9985c1"><td class="memItemLeft" align="right" valign="top"><a id="a19ab3a43dd1b92a5bad646ab9b9985c1"></a>
-Color&#160;</td><td class="memItemRight" valign="bottom"><b>getBlue</b> () const override</td></tr>
+<tr class="memitem:a19ab3a43dd1b92a5bad646ab9b9985c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a19ab3a43dd1b92a5bad646ab9b9985c1">getBlue</a> () const override</td></tr>
 <tr class="separator:a19ab3a43dd1b92a5bad646ab9b9985c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d9c67bd80befda57b4301490c8c44e"><td class="memItemLeft" align="right" valign="top"><a id="a94d9c67bd80befda57b4301490c8c44e"></a>
-Color&#160;</td><td class="memItemRight" valign="bottom"><b>getAlpha</b> () const override</td></tr>
+<tr class="memitem:a94d9c67bd80befda57b4301490c8c44e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a94d9c67bd80befda57b4301490c8c44e">getAlpha</a> () const override</td></tr>
 <tr class="separator:a94d9c67bd80befda57b4301490c8c44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b9fe867abf82ef61623e3cec78c0e92"><td class="memItemLeft" align="right" valign="top"><a id="a9b9fe867abf82ef61623e3cec78c0e92"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>getChar</b> () const override</td></tr>
+<tr class="memitem:a9b9fe867abf82ef61623e3cec78c0e92"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a9b9fe867abf82ef61623e3cec78c0e92">getChar</a> () const override</td></tr>
 <tr class="separator:a9b9fe867abf82ef61623e3cec78c0e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61bf034def3a210bdc96ae8ef1136e7e"><td class="memItemLeft" align="right" valign="top"><a id="a61bf034def3a210bdc96ae8ef1136e7e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getTexturePath</b> () const override</td></tr>
+<tr class="memitem:a61bf034def3a210bdc96ae8ef1136e7e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a61bf034def3a210bdc96ae8ef1136e7e">getTexturePath</a> () const override</td></tr>
 <tr class="separator:a61bf034def3a210bdc96ae8ef1136e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2679f7685c27c0b61212bd0d7b7115be"><td class="memItemLeft" align="right" valign="top"><a id="a2679f7685c27c0b61212bd0d7b7115be"></a>
-Rotation&#160;</td><td class="memItemRight" valign="bottom"><b>getRotation</b> () const override</td></tr>
+<tr class="memitem:a2679f7685c27c0b61212bd0d7b7115be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a2679f7685c27c0b61212bd0d7b7115be">getRotation</a> () const override</td></tr>
 <tr class="separator:a2679f7685c27c0b61212bd0d7b7115be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f9a3ae32a57f738ca04658342336eac"><td class="memItemLeft" align="right" valign="top"><a id="a9f9a3ae32a57f738ca04658342336eac"></a>
-PixelType&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const override</td></tr>
+<tr class="memitem:a9f9a3ae32a57f738ca04658342336eac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a9f9a3ae32a57f738ca04658342336eac">getType</a> () const override</td></tr>
 <tr class="separator:a9f9a3ae32a57f738ca04658342336eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7f6209a27558f9d90af5f42e783f39"><td class="memItemLeft" align="right" valign="top"><a id="a6a7f6209a27558f9d90af5f42e783f39"></a>
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRectSize</b> () const override</td></tr>
+<tr class="memitem:a6a7f6209a27558f9d90af5f42e783f39"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a6a7f6209a27558f9d90af5f42e783f39">getRectSize</a> () const override</td></tr>
 <tr class="separator:a6a7f6209a27558f9d90af5f42e783f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37e3710965d0ec928119b3368033e5b4"><td class="memItemLeft" align="right" valign="top"><a id="a37e3710965d0ec928119b3368033e5b4"></a>
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRectPosition</b> () const override</td></tr>
+<tr class="memitem:a37e3710965d0ec928119b3368033e5b4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a37e3710965d0ec928119b3368033e5b4">getRectPosition</a> () const override</td></tr>
 <tr class="separator:a37e3710965d0ec928119b3368033e5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45d4115fc7753ce7e29f42c0a17b0af3"><td class="memItemLeft" align="right" valign="top"><a id="a45d4115fc7753ce7e29f42c0a17b0af3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRed</b> (Color red) override</td></tr>
+<tr class="memitem:a45d4115fc7753ce7e29f42c0a17b0af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a45d4115fc7753ce7e29f42c0a17b0af3">setRed</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> red) override</td></tr>
 <tr class="separator:a45d4115fc7753ce7e29f42c0a17b0af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9798bcbb04a48d26209785639c6b8e"><td class="memItemLeft" align="right" valign="top"><a id="ace9798bcbb04a48d26209785639c6b8e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setGreen</b> (Color green) override</td></tr>
+<tr class="memitem:ace9798bcbb04a48d26209785639c6b8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#ace9798bcbb04a48d26209785639c6b8e">setGreen</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> green) override</td></tr>
 <tr class="separator:ace9798bcbb04a48d26209785639c6b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5a5c3007d9c2440f9fd67f5f584bbf"><td class="memItemLeft" align="right" valign="top"><a id="a4b5a5c3007d9c2440f9fd67f5f584bbf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlue</b> (Color blue) override</td></tr>
+<tr class="memitem:a4b5a5c3007d9c2440f9fd67f5f584bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a4b5a5c3007d9c2440f9fd67f5f584bbf">setBlue</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> blue) override</td></tr>
 <tr class="separator:a4b5a5c3007d9c2440f9fd67f5f584bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61306c64ca5cd58fd86cca30b2834081"><td class="memItemLeft" align="right" valign="top"><a id="a61306c64ca5cd58fd86cca30b2834081"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlpha</b> (Color alpha) override</td></tr>
+<tr class="memitem:a61306c64ca5cd58fd86cca30b2834081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a61306c64ca5cd58fd86cca30b2834081">setAlpha</a> (<a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> alpha) override</td></tr>
 <tr class="separator:a61306c64ca5cd58fd86cca30b2834081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19da49deb85db5d531c9cfa42f5e4dba"><td class="memItemLeft" align="right" valign="top"><a id="a19da49deb85db5d531c9cfa42f5e4dba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChar</b> (char charValue) override</td></tr>
+<tr class="memitem:a19da49deb85db5d531c9cfa42f5e4dba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a19da49deb85db5d531c9cfa42f5e4dba">setChar</a> (char charValue) override</td></tr>
 <tr class="separator:a19da49deb85db5d531c9cfa42f5e4dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6001963e06a9812d2bb8c787a925da62"><td class="memItemLeft" align="right" valign="top"><a id="a6001963e06a9812d2bb8c787a925da62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTexturePath</b> (const std::string &amp;path) override</td></tr>
+<tr class="memitem:a6001963e06a9812d2bb8c787a925da62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a6001963e06a9812d2bb8c787a925da62">setTexturePath</a> (const std::string &amp;path) override</td></tr>
 <tr class="separator:a6001963e06a9812d2bb8c787a925da62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b6cd096d1c88471d9bb5e81b4907859"><td class="memItemLeft" align="right" valign="top"><a id="a6b6cd096d1c88471d9bb5e81b4907859"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRotation</b> (Rotation rotation) override</td></tr>
+<tr class="memitem:a6b6cd096d1c88471d9bb5e81b4907859"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a6b6cd096d1c88471d9bb5e81b4907859">setRotation</a> (<a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a> rotation) override</td></tr>
 <tr class="separator:a6b6cd096d1c88471d9bb5e81b4907859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23480fcadd10d5d5ec45e7abc90c0f40"><td class="memItemLeft" align="right" valign="top"><a id="a23480fcadd10d5d5ec45e7abc90c0f40"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (PixelType type) override</td></tr>
+<tr class="memitem:a23480fcadd10d5d5ec45e7abc90c0f40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a23480fcadd10d5d5ec45e7abc90c0f40">setType</a> (<a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a> type) override</td></tr>
 <tr class="separator:a23480fcadd10d5d5ec45e7abc90c0f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a354b8c5e2c0787c4183e9b8aeff8ee86"><td class="memItemLeft" align="right" valign="top"><a id="a354b8c5e2c0787c4183e9b8aeff8ee86"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRectSize</b> (std::pair&lt; int, int &gt; rectSize) override</td></tr>
+<tr class="memitem:a354b8c5e2c0787c4183e9b8aeff8ee86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a354b8c5e2c0787c4183e9b8aeff8ee86">setRectSize</a> (std::pair&lt; int, int &gt; rectSize) override</td></tr>
 <tr class="separator:a354b8c5e2c0787c4183e9b8aeff8ee86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2be9b0ce88a938aaa4816903012c40"><td class="memItemLeft" align="right" valign="top"><a id="a5a2be9b0ce88a938aaa4816903012c40"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRectPosition</b> (std::pair&lt; int, int &gt; rectPosition) override</td></tr>
+<tr class="memitem:a5a2be9b0ce88a938aaa4816903012c40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_pixel.html#a5a2be9b0ce88a938aaa4816903012c40">setRectPosition</a> (std::pair&lt; int, int &gt; rectPosition) override</td></tr>
 <tr class="separator:a5a2be9b0ce88a938aaa4816903012c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classarcade_1_1_i_pixel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classarcade_1_1_i_pixel')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classarcade_1_1_i_pixel.html">arcade::IPixel</a></td></tr>
-<tr class="memitem:a52de4dbb2dbe9b0b8e2010bdda8360f4 inherit pub_types_classarcade_1_1_i_pixel"><td class="memItemLeft" align="right" valign="top"><a id="a52de4dbb2dbe9b0b8e2010bdda8360f4"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PixelType</b> { <b>DEFAULT</b>
+<tr class="memitem:a52de4dbb2dbe9b0b8e2010bdda8360f4 inherit pub_types_classarcade_1_1_i_pixel"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a> { <b>DEFAULT</b>
 , <b>TEXTURED</b>
 , <b>NONE</b>
  }</td></tr>
 <tr class="separator:a52de4dbb2dbe9b0b8e2010bdda8360f4 inherit pub_types_classarcade_1_1_i_pixel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb0b71dd6a5cc15426e80c1b461bac7 inherit pub_types_classarcade_1_1_i_pixel"><td class="memItemLeft" align="right" valign="top"><a id="a3eb0b71dd6a5cc15426e80c1b461bac7"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Rotation</b> { <b>R0</b>
+<tr class="memitem:a3eb0b71dd6a5cc15426e80c1b461bac7 inherit pub_types_classarcade_1_1_i_pixel"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a> { <b>R0</b>
 , <b>R90</b>
 , <b>R180</b>
 , <b>R270</b>
  }</td></tr>
 <tr class="separator:a3eb0b71dd6a5cc15426e80c1b461bac7 inherit pub_types_classarcade_1_1_i_pixel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad139b83e47dc0b49f2f631667385bc6e inherit pub_types_classarcade_1_1_i_pixel"><td class="memItemLeft" align="right" valign="top"><a id="ad139b83e47dc0b49f2f631667385bc6e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Color</b> = unsigned int</td></tr>
+<tr class="memitem:ad139b83e47dc0b49f2f631667385bc6e inherit pub_types_classarcade_1_1_i_pixel"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a> = unsigned int</td></tr>
 <tr class="separator:ad139b83e47dc0b49f2f631667385bc6e inherit pub_types_classarcade_1_1_i_pixel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classarcade_1_1_pixel.html">Pixel</a> Class </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adf1d09644510550b9a3176c3d20db281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1d09644510550b9a3176c3d20db281">&#9670;&nbsp;</a></span>Pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arcade::Pixel::Pixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>255</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a>&#160;</td>
+          <td class="paramname"><em>pixelType</em> = <code>PixelType::DEFAULT</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>charValue</em> = <code>'&#160;'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>texturePath</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a>&#160;</td>
+          <td class="paramname"><em>rotation</em> = <code>Rotation::R0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>rectSize</em> = <code>std::make_pair(0,&#160;0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>rectPosition</em> = <code>std::make_pair(0,&#160;0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates pixel </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">red</td><td>red color value </td></tr>
+    <tr><td class="paramname">green</td><td>green color value </td></tr>
+    <tr><td class="paramname">blue</td><td>blue color value </td></tr>
+    <tr><td class="paramname">alpha</td><td>alpha color value </td></tr>
+    <tr><td class="paramname">pixelType</td><td>type of pixel </td></tr>
+    <tr><td class="paramname">charValue</td><td>character displayed </td></tr>
+    <tr><td class="paramname">texturePath</td><td>texture path </td></tr>
+    <tr><td class="paramname">rotation</td><td>rotation of pixel (in degrees) </td></tr>
+    <tr><td class="paramname">rectSize</td><td>texture rectangle size </td></tr>
+    <tr><td class="paramname">rectPosition</td><td>texture rectangle position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a94d9c67bd80befda57b4301490c8c44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d9c67bd80befda57b4301490c8c44e">&#9670;&nbsp;</a></span>getAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Pixel::Color</a> arcade::Pixel::getAlpha </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>alpha color value </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a04081702903941096accae528ddff3e3">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a19ab3a43dd1b92a5bad646ab9b9985c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ab3a43dd1b92a5bad646ab9b9985c1">&#9670;&nbsp;</a></span>getBlue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Pixel::Color</a> arcade::Pixel::getBlue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>blue color value </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a38d42a622325286696eeae983cc4d488">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a9b9fe867abf82ef61623e3cec78c0e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9fe867abf82ef61623e3cec78c0e92">&#9670;&nbsp;</a></span>getChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char arcade::Pixel::getChar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>char displayed for this pixel </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a96e3fe6d11ab376526c07b27bca2539d">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="acbad59e79cb5da36ed4099892bb87f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbad59e79cb5da36ed4099892bb87f06">&#9670;&nbsp;</a></span>getGreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Pixel::Color</a> arcade::Pixel::getGreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>green color value </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#ad89c715a0de2016f06e16ee19c82aa75">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a37e3710965d0ec928119b3368033e5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e3710965d0ec928119b3368033e5b4">&#9670;&nbsp;</a></span>getRectPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; int, int &gt; arcade::Pixel::getRectPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>texture rectangle position </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a4aa3f4d83c65cc23d71dc0753622c7d8">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a6a7f6209a27558f9d90af5f42e783f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7f6209a27558f9d90af5f42e783f39">&#9670;&nbsp;</a></span>getRectSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; int, int &gt; arcade::Pixel::getRectSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>texture rectangle size </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a903c846ee754e393795564f9707c83fb">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="ab6d2ee77a61e8877b31aa50db6ca288a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d2ee77a61e8877b31aa50db6ca288a">&#9670;&nbsp;</a></span>getRed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Pixel::Color</a> arcade::Pixel::getRed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>red color value </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#aded404fa512de87a83eebe02daae6bf3">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a2679f7685c27c0b61212bd0d7b7115be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2679f7685c27c0b61212bd0d7b7115be">&#9670;&nbsp;</a></span>getRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Pixel::Rotation</a> arcade::Pixel::getRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>rotation of pixel (in degrees) </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a9d61a42c421b4e508db4adcec68f1ac7">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a61bf034def3a210bdc96ae8ef1136e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61bf034def3a210bdc96ae8ef1136e7e">&#9670;&nbsp;</a></span>getTexturePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string arcade::Pixel::getTexturePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>texture path </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a1ddd399065f32b0f5388a527bc671d60">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a9f9a3ae32a57f738ca04658342336eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9a3ae32a57f738ca04658342336eac">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">Pixel::PixelType</a> arcade::Pixel::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>type of pixel </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a10c17b5a42965af34cd79c1c5aaaf167">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a61306c64ca5cd58fd86cca30b2834081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61306c64ca5cd58fd86cca30b2834081">&#9670;&nbsp;</a></span>setAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setAlpha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>alpha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets alpha color value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alpha</td><td>alpha value to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a4366c2473885839711fe0d315e2f0eb4">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a4b5a5c3007d9c2440f9fd67f5f584bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5a5c3007d9c2440f9fd67f5f584bbf">&#9670;&nbsp;</a></span>setBlue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setBlue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>blue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets blue color value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blue</td><td>blue value to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a59868e7511ae5dbede38bbf4ea599002">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a19da49deb85db5d531c9cfa42f5e4dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19da49deb85db5d531c9cfa42f5e4dba">&#9670;&nbsp;</a></span>setChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setChar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>charValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets character for this pixel </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">charValue</td><td>character to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#ad12a53f87a95c71b3ba62dda0f2a3dc6">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="ace9798bcbb04a48d26209785639c6b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9798bcbb04a48d26209785639c6b8e">&#9670;&nbsp;</a></span>setGreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setGreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>green</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets green color value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">green</td><td>green value to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a50a267f53aa8855e9d851072f7a83375">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a5a2be9b0ce88a938aaa4816903012c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2be9b0ce88a938aaa4816903012c40">&#9670;&nbsp;</a></span>setRectPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setRectPosition </td>
+          <td>(</td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>rectPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets texture rectangle position </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectPosition</td><td>texture rectangle position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a4ff6b05094bbbab649dbf34e2df8df99">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a354b8c5e2c0787c4183e9b8aeff8ee86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354b8c5e2c0787c4183e9b8aeff8ee86">&#9670;&nbsp;</a></span>setRectSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setRectSize </td>
+          <td>(</td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>rectSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets texture rectangle size </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectSize</td><td>texture rectangle size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a7ecf651611b5c84453b13945e61ebf10">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a45d4115fc7753ce7e29f42c0a17b0af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d4115fc7753ce7e29f42c0a17b0af3">&#9670;&nbsp;</a></span>setRed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setRed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#ad139b83e47dc0b49f2f631667385bc6e">Color</a>&#160;</td>
+          <td class="paramname"><em>red</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets red color value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">red</td><td>red value to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a88aac7cd0ca517aa0ae91df07847a51c">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a6b6cd096d1c88471d9bb5e81b4907859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6cd096d1c88471d9bb5e81b4907859">&#9670;&nbsp;</a></span>setRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setRotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#a3eb0b71dd6a5cc15426e80c1b461bac7">Rotation</a>&#160;</td>
+          <td class="paramname"><em>rotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets pixel rotation (in degrees) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation</td><td>pixel rotation to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a8a5c204a7e1f1f76c9b2b8f0f3769d3a">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a6001963e06a9812d2bb8c787a925da62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6001963e06a9812d2bb8c787a925da62">&#9670;&nbsp;</a></span>setTexturePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setTexturePath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets pixel texture path </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>path of texture to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#ae88beeec570db2b3e53ec6e44199f4d9">arcade::IPixel</a>.</p>
+
+</div>
+</div>
+<a id="a23480fcadd10d5d5ec45e7abc90c0f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23480fcadd10d5d5ec45e7abc90c0f40">&#9670;&nbsp;</a></span>setType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Pixel::setType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4">PixelType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets <a class="el" href="classarcade_1_1_pixel.html">Pixel</a> Type </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>pixel type to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_pixel.html#a8aa98e8a7541c1c7f27d645b4c13a8af">arcade::IPixel</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Includes/<a class="el" href="_pixel_8hpp_source.html">Pixel.hpp</a></li>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Sources/Pixels/Pixel.cpp</li>

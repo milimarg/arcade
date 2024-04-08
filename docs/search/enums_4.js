@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ghoststate_1244',['GhostState',['../classarcade_1_1_pacman.html#ade2c6c0e6495a4aa5779c0f4b092b2a6',1,'arcade::Pacman']]],
-  ['gumgumstate_1245',['GumGumState',['../classarcade_1_1_pacman.html#a59336203783d213d3beca56293c5d083',1,'arcade::Pacman']]]
+  ['pixeltype_622',['PixelType',['../classarcade_1_1_i_pixel.html#a52de4dbb2dbe9b0b8e2010bdda8360f4',1,'arcade::IPixel']]]
 ];

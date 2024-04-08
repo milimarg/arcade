@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['top_1211',['top',['../structid__rect.html#ae954544e0a17838914f5cf1798bbe6d8',1,'id_rect::top()'],['../structsectors__s.html#a289fe7af035d57e5a0e04e6352d6d3fd',1,'sectors_s::top()'],['../structid___color_box.html#a20f17a41e4c6d0fb40e2c5038b29cb7a',1,'id_ColorBox::top()']]],
-  ['top1_1212',['top1',['../structcoordinates__wall.html#a9cfc1b645f1dbb6ceaa6eced835963c9',1,'coordinates_wall']]],
-  ['top2_1213',['top2',['../structcoordinates__wall.html#a19e4523301c59bcb6a4e2499952ecc10',1,'coordinates_wall']]],
-  ['type_1214',['type',['../structmy__idt1.html#a1f97f8af16974860addda9004019a901',1,'my_idt1']]]
+  ['x_609',['x',['../structid___vec2.html#ae53367d4a84673f6869a64ebeb930f2d',1,'id_Vec2::x()'],['../structid___vec3.html#abd012ff48f3e5537b7ab14d6cb951287',1,'id_Vec3::x()'],['../structmy__idt1__player.html#aca8b06d7c46219bd00bf95eb91664014',1,'my_idt1_player::x()']]],
+  ['x1_610',['x1',['../structcoordinates__wall.html#abbf4606021e00b8b60b30f2f431a4417',1,'coordinates_wall']]],
+  ['x2_611',['x2',['../structcoordinates__wall.html#adb8e4a0260edace00a7b6eafa4927177',1,'coordinates_wall']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['orientation_224',['Orientation',['../classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85a',1,'arcade::Entity']]]
+  ['ghoststate_619',['GhostState',['../classarcade_1_1_pacman.html#ade2c6c0e6495a4aa5779c0f4b092b2a6',1,'arcade::Pacman']]],
+  ['gumgumstate_620',['GumGumState',['../classarcade_1_1_pacman.html#a59336203783d213d3beca56293c5d083',1,'arcade::Pacman']]]
 ];

@@ -90,7 +90,7 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #include &quot;Texts.hpp&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    #define STB_IMAGE_IMPLEMENTATION</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #include &quot;./Texture.hpp&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #include &quot;../Sources/Texture/Texture.hpp&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">enum class</span> ButtonPressed {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    LEFT,</div>
@@ -107,104 +107,165 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">class </span>Event : <span class="keyword">public</span> IEvent {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Event();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            ~Event();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            std::unique_ptr&lt;IEventInfo&gt; getEvent() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::unique_ptr&lt;IEventInfo&gt; getChangeEvent() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">class </span>Event : <span class="keyword">public</span> IEvent {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            Event();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            ~Event();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">void</span> pushEvent(<span class="keyword">const</span> Key &amp;key) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">void</span> pushEvent(<span class="keyword">const</span> Key &amp;key, std::pair&lt;int, int&gt; mouseCoords) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> pushChangeEvent(<span class="keyword">const</span> ChangeKey &amp;changeKey) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> clearEventQueue() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> clearChangeEventQueue() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::queue&lt;std::unique_ptr&lt;IEventInfo&gt;&gt; _eventQueue;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            std::queue&lt;std::unique_ptr&lt;IEventInfo&gt;&gt; _changeEventQueue;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">   50</a></span>&#160;            std::unique_ptr&lt;IEventInfo&gt; <a class="code" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">getEvent</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">   56</a></span>&#160;            std::unique_ptr&lt;IEventInfo&gt; <a class="code" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">getChangeEvent</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">class </span>Window : <span class="keyword">public</span> GraphicalWindow {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            Window();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            ~Window();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">void</span> openWindow(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">void</span> closeWindow() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">void</span> resizeWindow(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">bool</span> isOpen() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">void</span> clearScreen() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">void</span> displayPixels(IPixels *pixels) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">void</span> displayTexts(ITexts *texts) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">void</span> display() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordtype">void</span> displayDefaultPixel(<span class="keyword">const</span> std::pair&lt;int, int&gt; &amp;coords, <span class="keyword">const</span> <a class="code" href="classarcade_1_1_pixel.html">arcade::Pixel</a> &amp;pixel,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordtype">float</span> currentPixelSize_X, <span class="keywordtype">float</span> currentPixelSize_Y);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">void</span> displayTexturedPixel(<span class="keyword">const</span> std::pair&lt;int, int&gt; &amp;coords, <span class="keyword">const</span> <a class="code" href="classarcade_1_1_pixel.html">arcade::Pixel</a> &amp;pixel);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordtype">int</span> _windowWidth;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">int</span> _windowHeight;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">bool</span> _isOpenFlag;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            std::unordered_map&lt;std::string, Texture&gt; _textureMap;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">int</span> id;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html">   83</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_open_g_l.html">OpenGL</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classarcade_1_1_open_g_l.html">OpenGL</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            ~<a class="code" href="classarcade_1_1_open_g_l.html">OpenGL</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordtype">void</span> init() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">void</span> stop() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            std::string getName() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">   62</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">pushEvent</a>(<span class="keyword">const</span> Key &amp;key) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">   69</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">pushEvent</a>(<span class="keyword">const</span> Key &amp;key, std::pair&lt;int, int&gt; mouseCoords) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">   75</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">pushChangeEvent</a>(<span class="keyword">const</span> ChangeKey &amp;changeKey) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">   80</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">clearEventQueue</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">   85</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">clearChangeEventQueue</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            std::queue&lt;std::unique_ptr&lt;IEventInfo&gt;&gt; _eventQueue;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            std::queue&lt;std::unique_ptr&lt;IEventInfo&gt;&gt; _changeEventQueue;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    };</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *getEventWrapper() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> *getWindowWrapper() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">void</span> updatePixelsWrapper(<a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *pixels) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">void</span> updateTextsWrapper(<a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *texts) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span> pollEvents() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_window.html">Window</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_graphical_window.html">GraphicalWindow</a> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="classarcade_1_1_window.html">Window</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            ~<a class="code" href="classarcade_1_1_window.html">Window</a>();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">void</span> display() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *createEventObject() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> *createWindowObject() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *_pixels;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *_texts;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            std::unique_ptr&lt;IEvent&gt; _event;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            std::unique_ptr&lt;IWindow&gt; _window;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            std::unordered_map&lt;unsigned char, Key&gt; _keyTable;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            std::unordered_map&lt;unsigned char, Key&gt; _specialKeyTable;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            std::unordered_map&lt;unsigned char, ChangeKey&gt; _specialChangeKeyTable;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            std::unordered_map&lt;unsigned char, ChangeKey&gt; _changeKeyTable;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    };</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::string getType() {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;graphical&quot;</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::unique_ptr&lt;arcade::IGraphicalModule&gt; entryPoint() {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;arcade::OpenGL&gt;();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !OpenGL_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:15</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> IGraphicalModule.hpp:24</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_pixels_html"><div class="ttname"><a href="classarcade_1_1_i_pixels.html">arcade::IPixels</a></div><div class="ttdef"><b>Definition:</b> IPixels.hpp:17</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_texts_html"><div class="ttname"><a href="classarcade_1_1_i_texts.html">arcade::ITexts</a></div><div class="ttdef"><b>Definition:</b> ITexts.hpp:18</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_window_html"><div class="ttname"><a href="classarcade_1_1_i_window.html">arcade::IWindow</a></div><div class="ttdef"><b>Definition:</b> IWindow.hpp:16</div></div>
-<div class="ttc" id="aclassarcade_1_1_open_g_l_html"><div class="ttname"><a href="classarcade_1_1_open_g_l.html">arcade::OpenGL</a></div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:83</div></div>
-<div class="ttc" id="aclassarcade_1_1_pixel_html"><div class="ttname"><a href="classarcade_1_1_pixel.html">arcade::Pixel</a></div><div class="ttdef"><b>Definition:</b> Pixel.hpp:14</div></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#a6a52160e11a8e706ff5006904f615861">  105</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#a6a52160e11a8e706ff5006904f615861">openWindow</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#aad0b3a30776b4ab425694f3c4be00f1b">  110</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#aad0b3a30776b4ab425694f3c4be00f1b">closeWindow</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#a5ddf0285e223a88f25fd204a52fbf1c3">  117</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#a5ddf0285e223a88f25fd204a52fbf1c3">resizeWindow</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#ad09a4528241afd05804bd0f453a050cb">  123</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_window.html#ad09a4528241afd05804bd0f453a050cb">isOpen</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#ab5af63853608ae834ddbd62cb3b9e6b4">  128</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#ab5af63853608ae834ddbd62cb3b9e6b4">clearScreen</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#a27e4407bbc07f986cebf7c1407c68eea">  134</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#a27e4407bbc07f986cebf7c1407c68eea">displayPixels</a>(<a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *pixels) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#afe10e81bafa8d1da8cd4de50a0dd6dfb">displayDefaultPixel</a>(<span class="keyword">const</span> std::pair&lt;int, int&gt; &amp;coords, <span class="keyword">const</span> <a class="code" href="classarcade_1_1_pixel.html">arcade::Pixel</a> &amp;pixel, <span class="keywordtype">float</span> shiftX, <span class="keywordtype">float</span> shiftY);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#ac3b116c3b33632354cfac9cd0fc67813">  150</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#ac3b116c3b33632354cfac9cd0fc67813">displayTexturedPixel</a>(<span class="keyword">const</span> std::pair&lt;int, int&gt; &amp;coords, <span class="keyword">const</span> <a class="code" href="classarcade_1_1_pixel.html">arcade::Pixel</a> &amp;pixel);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#ae6774cf33cfe6aacee7e063b747658b5">  156</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#ae6774cf33cfe6aacee7e063b747658b5">displayTexts</a>(<a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *texts) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classarcade_1_1_window.html#a0ff593dc293dcc993976bdeb37b31181">  161</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_window.html#a0ff593dc293dcc993976bdeb37b31181">display</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordtype">int</span> _windowWidth;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordtype">int</span> _windowHeight;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordtype">bool</span> _isOpenFlag;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            std::unordered_map&lt;std::string, Texture&gt; _textureMap;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordtype">int</span> id;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    };</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html">  174</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_open_g_l.html">OpenGL</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <a class="code" href="classarcade_1_1_open_g_l.html">OpenGL</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            ~<a class="code" href="classarcade_1_1_open_g_l.html">OpenGL</a>();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_open_g_l.html#abe1e41de71383e171db66ba90e5c8a1e">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_open_g_l.html#a66884ead7f8d4caa8d44ab66d4776fc2">stop</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            std::string <a class="code" href="classarcade_1_1_open_g_l.html#a61cc308ab08fe9e9ade0e8fafede512d">getName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *<a class="code" href="classarcade_1_1_open_g_l.html#a71f9dd958c21d5df80eead14ee820978">getEventWrapper</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> *<a class="code" href="classarcade_1_1_open_g_l.html#a5b4fa54e1249b98ce26e389db8f8de6a">getWindowWrapper</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_open_g_l.html#a79dfc324537642389ca267394956a56e">updatePixelsWrapper</a>(<a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *pixels) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_open_g_l.html#a259d121601c9084ecff21069b3b8a501">updateTextsWrapper</a>(<a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *texts) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_open_g_l.html#a5bb6e4099a8e6879d52dd4772230c6bf">pollEvents</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_open_g_l.html#ae3f1b950c6ed69929508370be943cde4">display</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *<a class="code" href="classarcade_1_1_open_g_l.html#a2ca9ede3d4f32039fe07e1012fe692ed">createEventObject</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> *<a class="code" href="classarcade_1_1_open_g_l.html#ad4ee0c3ca71bbc28aac07f46d5bcb0b7">createWindowObject</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#ad8205c5903ef808add2f4ff5acc21b8a">  245</a></span>&#160;            <a class="code" href="classarcade_1_1_i_pixels.html">IPixels</a> *<a class="code" href="classarcade_1_1_open_g_l.html#ad8205c5903ef808add2f4ff5acc21b8a">_pixels</a>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#a2060c84dbef360af20b5136796ade198">  250</a></span>&#160;            <a class="code" href="classarcade_1_1_i_texts.html">ITexts</a> *<a class="code" href="classarcade_1_1_open_g_l.html#a2060c84dbef360af20b5136796ade198">_texts</a>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#a40a367f6d4f87318d0bd3d407005cbbf">  255</a></span>&#160;            std::unique_ptr&lt;IEvent&gt; <a class="code" href="classarcade_1_1_open_g_l.html#a40a367f6d4f87318d0bd3d407005cbbf">_event</a>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#a8b623ceebc0ae76b067ae2ac7e94348c">  260</a></span>&#160;            std::unique_ptr&lt;IWindow&gt; <a class="code" href="classarcade_1_1_open_g_l.html#a8b623ceebc0ae76b067ae2ac7e94348c">_window</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#ae9b2e89c2d48fc9d117a2027d4a7d727">  265</a></span>&#160;            std::unordered_map&lt;unsigned char, Key&gt; <a class="code" href="classarcade_1_1_open_g_l.html#ae9b2e89c2d48fc9d117a2027d4a7d727">_keyTable</a>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#a0c667236586a259fe6e17b0aa91883b0">  270</a></span>&#160;            std::unordered_map&lt;unsigned char, Key&gt; <a class="code" href="classarcade_1_1_open_g_l.html#a0c667236586a259fe6e17b0aa91883b0">_specialKeyTable</a>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#a6c7f5a1fde12698dc3a12730b5d71501">  275</a></span>&#160;            std::unordered_map&lt;unsigned char, ChangeKey&gt; <a class="code" href="classarcade_1_1_open_g_l.html#a6c7f5a1fde12698dc3a12730b5d71501">_changeKeyTable</a>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="classarcade_1_1_open_g_l.html#a3f2bf63925891ed8a79351efefdf54fb">  280</a></span>&#160;            std::unordered_map&lt;unsigned char, ChangeKey&gt; <a class="code" href="classarcade_1_1_open_g_l.html#a3f2bf63925891ed8a79351efefdf54fb">_specialChangeKeyTable</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    };</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::string getType() {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;graphical&quot;</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    std::unique_ptr&lt;arcade::IGraphicalModule&gt; entryPoint() {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;arcade::OpenGL&gt;();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !OpenGL_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_a131c08c7d1dc992dc3c7116c2fd9e494"><div class="ttname"><a href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">arcade::Event::pushEvent</a></div><div class="ttdeci">void pushEvent(const Key &amp;key) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_a5329e1694ca5a6476e08227718b70a9c"><div class="ttname"><a href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">arcade::Event::getEvent</a></div><div class="ttdeci">std::unique_ptr&lt; IEventInfo &gt; getEvent() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_a5b6076f93241fe94ceb88ad05957b950"><div class="ttname"><a href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">arcade::Event::getChangeEvent</a></div><div class="ttdeci">std::unique_ptr&lt; IEventInfo &gt; getChangeEvent() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_a6cb094e77a59440f66a5954c20c09589"><div class="ttname"><a href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">arcade::Event::clearChangeEventQueue</a></div><div class="ttdeci">void clearChangeEventQueue() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_aa1668dfeeac80a791898383deaba1f69"><div class="ttname"><a href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">arcade::Event::clearEventQueue</a></div><div class="ttdeci">void clearEventQueue() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_ad87928fda176fe795ec6569d80cf7739"><div class="ttname"><a href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">arcade::Event::pushEvent</a></div><div class="ttdeci">void pushEvent(const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_event_html_aff950591dd19cea87d6365395acb2a1f"><div class="ttname"><a href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">arcade::Event::pushChangeEvent</a></div><div class="ttdeci">void pushChangeEvent(const ChangeKey &amp;changeKey) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_graphical_window_html"><div class="ttname"><a href="classarcade_1_1_graphical_window.html">arcade::GraphicalWindow</a></div><div class="ttdef"><b>Definition:</b> GraphicalWindow.hpp:17</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:18</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> IGraphicalModule.hpp:27</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_pixels_html"><div class="ttname"><a href="classarcade_1_1_i_pixels.html">arcade::IPixels</a></div><div class="ttdef"><b>Definition:</b> IPixels.hpp:20</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_texts_html"><div class="ttname"><a href="classarcade_1_1_i_texts.html">arcade::ITexts</a></div><div class="ttdef"><b>Definition:</b> ITexts.hpp:21</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_window_html"><div class="ttname"><a href="classarcade_1_1_i_window.html">arcade::IWindow</a></div><div class="ttdef"><b>Definition:</b> IWindow.hpp:19</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html"><div class="ttname"><a href="classarcade_1_1_open_g_l.html">arcade::OpenGL</a></div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:174</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a0c667236586a259fe6e17b0aa91883b0"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a0c667236586a259fe6e17b0aa91883b0">arcade::OpenGL::_specialKeyTable</a></div><div class="ttdeci">std::unordered_map&lt; unsigned char, Key &gt; _specialKeyTable</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:270</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a2060c84dbef360af20b5136796ade198"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a2060c84dbef360af20b5136796ade198">arcade::OpenGL::_texts</a></div><div class="ttdeci">ITexts * _texts</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:250</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a259d121601c9084ecff21069b3b8a501"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a259d121601c9084ecff21069b3b8a501">arcade::OpenGL::updateTextsWrapper</a></div><div class="ttdeci">void updateTextsWrapper(ITexts *texts) override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:315</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a2ca9ede3d4f32039fe07e1012fe692ed"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a2ca9ede3d4f32039fe07e1012fe692ed">arcade::OpenGL::createEventObject</a></div><div class="ttdeci">IEvent * createEventObject() override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:411</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a3f2bf63925891ed8a79351efefdf54fb"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a3f2bf63925891ed8a79351efefdf54fb">arcade::OpenGL::_specialChangeKeyTable</a></div><div class="ttdeci">std::unordered_map&lt; unsigned char, ChangeKey &gt; _specialChangeKeyTable</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:280</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a40a367f6d4f87318d0bd3d407005cbbf"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a40a367f6d4f87318d0bd3d407005cbbf">arcade::OpenGL::_event</a></div><div class="ttdeci">std::unique_ptr&lt; IEvent &gt; _event</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:255</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a5b4fa54e1249b98ce26e389db8f8de6a"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a5b4fa54e1249b98ce26e389db8f8de6a">arcade::OpenGL::getWindowWrapper</a></div><div class="ttdeci">IWindow * getWindowWrapper() const override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:305</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a5bb6e4099a8e6879d52dd4772230c6bf"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a5bb6e4099a8e6879d52dd4772230c6bf">arcade::OpenGL::pollEvents</a></div><div class="ttdeci">void pollEvents() override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:362</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a61cc308ab08fe9e9ade0e8fafede512d"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a61cc308ab08fe9e9ade0e8fafede512d">arcade::OpenGL::getName</a></div><div class="ttdeci">std::string getName() const override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:295</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a66884ead7f8d4caa8d44ab66d4776fc2"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a66884ead7f8d4caa8d44ab66d4776fc2">arcade::OpenGL::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:291</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a6c7f5a1fde12698dc3a12730b5d71501"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a6c7f5a1fde12698dc3a12730b5d71501">arcade::OpenGL::_changeKeyTable</a></div><div class="ttdeci">std::unordered_map&lt; unsigned char, ChangeKey &gt; _changeKeyTable</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:275</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a71f9dd958c21d5df80eead14ee820978"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a71f9dd958c21d5df80eead14ee820978">arcade::OpenGL::getEventWrapper</a></div><div class="ttdeci">IEvent * getEventWrapper() const override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:300</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a79dfc324537642389ca267394956a56e"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a79dfc324537642389ca267394956a56e">arcade::OpenGL::updatePixelsWrapper</a></div><div class="ttdeci">void updatePixelsWrapper(IPixels *pixels) override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:310</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_a8b623ceebc0ae76b067ae2ac7e94348c"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#a8b623ceebc0ae76b067ae2ac7e94348c">arcade::OpenGL::_window</a></div><div class="ttdeci">std::unique_ptr&lt; IWindow &gt; _window</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:260</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_abe1e41de71383e171db66ba90e5c8a1e"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#abe1e41de71383e171db66ba90e5c8a1e">arcade::OpenGL::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:283</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_ad4ee0c3ca71bbc28aac07f46d5bcb0b7"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#ad4ee0c3ca71bbc28aac07f46d5bcb0b7">arcade::OpenGL::createWindowObject</a></div><div class="ttdeci">IWindow * createWindowObject() override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:417</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_ad8205c5903ef808add2f4ff5acc21b8a"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#ad8205c5903ef808add2f4ff5acc21b8a">arcade::OpenGL::_pixels</a></div><div class="ttdeci">IPixels * _pixels</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:245</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_ae3f1b950c6ed69929508370be943cde4"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#ae3f1b950c6ed69929508370be943cde4">arcade::OpenGL::display</a></div><div class="ttdeci">void display() const override</div><div class="ttdef"><b>Definition:</b> OpenGL.cpp:320</div></div>
+<div class="ttc" id="aclassarcade_1_1_open_g_l_html_ae9b2e89c2d48fc9d117a2027d4a7d727"><div class="ttname"><a href="classarcade_1_1_open_g_l.html#ae9b2e89c2d48fc9d117a2027d4a7d727">arcade::OpenGL::_keyTable</a></div><div class="ttdeci">std::unordered_map&lt; unsigned char, Key &gt; _keyTable</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:265</div></div>
+<div class="ttc" id="aclassarcade_1_1_pixel_html"><div class="ttname"><a href="classarcade_1_1_pixel.html">arcade::Pixel</a></div><div class="ttdef"><b>Definition:</b> Pixel.hpp:17</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html"><div class="ttname"><a href="classarcade_1_1_window.html">arcade::Window</a></div><div class="ttdef"><b>Definition:</b> NCurses.hpp:88</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_a0ff593dc293dcc993976bdeb37b31181"><div class="ttname"><a href="classarcade_1_1_window.html#a0ff593dc293dcc993976bdeb37b31181">arcade::Window::display</a></div><div class="ttdeci">void display() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_a27e4407bbc07f986cebf7c1407c68eea"><div class="ttname"><a href="classarcade_1_1_window.html#a27e4407bbc07f986cebf7c1407c68eea">arcade::Window::displayPixels</a></div><div class="ttdeci">void displayPixels(IPixels *pixels) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_a5ddf0285e223a88f25fd204a52fbf1c3"><div class="ttname"><a href="classarcade_1_1_window.html#a5ddf0285e223a88f25fd204a52fbf1c3">arcade::Window::resizeWindow</a></div><div class="ttdeci">void resizeWindow(int width, int height) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_a6a52160e11a8e706ff5006904f615861"><div class="ttname"><a href="classarcade_1_1_window.html#a6a52160e11a8e706ff5006904f615861">arcade::Window::openWindow</a></div><div class="ttdeci">void openWindow(int width, int height) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_aad0b3a30776b4ab425694f3c4be00f1b"><div class="ttname"><a href="classarcade_1_1_window.html#aad0b3a30776b4ab425694f3c4be00f1b">arcade::Window::closeWindow</a></div><div class="ttdeci">void closeWindow() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_ab5af63853608ae834ddbd62cb3b9e6b4"><div class="ttname"><a href="classarcade_1_1_window.html#ab5af63853608ae834ddbd62cb3b9e6b4">arcade::Window::clearScreen</a></div><div class="ttdeci">void clearScreen() override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_ac3b116c3b33632354cfac9cd0fc67813"><div class="ttname"><a href="classarcade_1_1_window.html#ac3b116c3b33632354cfac9cd0fc67813">arcade::Window::displayTexturedPixel</a></div><div class="ttdeci">void displayTexturedPixel(const std::pair&lt; int, int &gt; &amp;coords, const arcade::Pixel &amp;pixel)</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_ad09a4528241afd05804bd0f453a050cb"><div class="ttname"><a href="classarcade_1_1_window.html#ad09a4528241afd05804bd0f453a050cb">arcade::Window::isOpen</a></div><div class="ttdeci">bool isOpen() const override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_ae6774cf33cfe6aacee7e063b747658b5"><div class="ttname"><a href="classarcade_1_1_window.html#ae6774cf33cfe6aacee7e063b747658b5">arcade::Window::displayTexts</a></div><div class="ttdeci">void displayTexts(ITexts *texts) override</div></div>
+<div class="ttc" id="aclassarcade_1_1_window_html_afe10e81bafa8d1da8cd4de50a0dd6dfb"><div class="ttname"><a href="classarcade_1_1_window.html#afe10e81bafa8d1da8cd4de50a0dd6dfb">arcade::Window::displayDefaultPixel</a></div><div class="ttdeci">void displayDefaultPixel(const std::pair&lt; int, int &gt; &amp;coords, const arcade::Pixel &amp;pixel, int shiftX, int shiftY)</div><div class="ttdef"><b>Definition:</b> NCurses.cpp:312</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

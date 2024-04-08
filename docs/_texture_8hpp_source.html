@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>arcade: /home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/OpenGL/Texture.hpp Source File</title>
+<title>arcade: /home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Sources/Texture/Texture.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_393706d2dab13d62a4cc4a6b8ed73447.html">EPITECH_PROJECTS</a></li><li class="navelem"><a class="el" href="dir_20bdbfea4f84cfd50e6a9602ecdc6d59.html">B-OOP-400-STG-4-1-arcade-noe.tritsch</a></li><li class="navelem"><a class="el" href="dir_09f39acf70e8b497ddafa6e40bbdefaf.html">OpenGL</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_393706d2dab13d62a4cc4a6b8ed73447.html">EPITECH_PROJECTS</a></li><li class="navelem"><a class="el" href="dir_20bdbfea4f84cfd50e6a9602ecdc6d59.html">B-OOP-400-STG-4-1-arcade-noe.tritsch</a></li><li class="navelem"><a class="el" href="dir_87d152e99ebd0a4b9f6bb45b7fa26072.html">Sources</a></li><li class="navelem"><a class="el" href="dir_959d1364cbcc6efb75983b16f782e185.html">Texture</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,31 +80,40 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_TEXTURE_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_TEXTURE_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &quot;Rect.hpp&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;stb_image.hpp&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &quot;../../OpenGL/Rect.hpp&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;../../Includes/stb_image.hpp&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #include &quot;Error.hpp&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_texture.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_texture.html">Texture</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_texture.html">Texture</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_texture.html">Texture</a>(<span class="keyword">const</span> std::string &amp;path);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ~<a class="code" href="class_texture.html">Texture</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> getWidth()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _width; }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> getHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _height; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> getChannels()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _channels; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> getTextureSize()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _width * _height * _channels; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *getBuffer() { <span class="keywordflow">return</span> _buffer; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::string _filePath;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *_buffer;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> _width;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> _height;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> _channels;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_texture.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_texture.html">Texture</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_texture.html">Texture</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_texture.html">Texture</a>(<span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~<a class="code" href="class_texture.html">Texture</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_texture.html#a2c2b502138a1a1786c4bf74016620885">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_texture.html#a2c2b502138a1a1786c4bf74016620885">getWidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _width; }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_TEXTURE_HPP</span></div>
-<div class="ttc" id="aclass_texture_html"><div class="ttname"><a href="class_texture.html">Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.hpp:15</div></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_texture.html#a23c3c1315267a5521d824982bb8d208c">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_texture.html#a23c3c1315267a5521d824982bb8d208c">getHeight</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _height; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_texture.html#ac45ceb8ab0838e7321c30bdb037e85dd">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_texture.html#ac45ceb8ab0838e7321c30bdb037e85dd">getChannels</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _channels; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_texture.html#a5f288ad6ca5b1c69b422c684cba8ada7">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_texture.html#a5f288ad6ca5b1c69b422c684cba8ada7">getTextureSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _width * _height * _channels; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_texture.html#a835c2ffd13b2271c5bf94036ea727a08">   56</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="class_texture.html#a835c2ffd13b2271c5bf94036ea727a08">getBuffer</a>() { <span class="keywordflow">return</span> _buffer; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::string _filePath;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *_buffer;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> _width;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> _height;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> _channels;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//B_OOP_400_STG_4_1_ARCADE_NOE_TRITSCH_TEXTURE_HPP</span></div>
+<div class="ttc" id="aclass_texture_html"><div class="ttname"><a href="class_texture.html">Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.hpp:18</div></div>
+<div class="ttc" id="aclass_texture_html_a23c3c1315267a5521d824982bb8d208c"><div class="ttname"><a href="class_texture.html#a23c3c1315267a5521d824982bb8d208c">Texture::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdef"><b>Definition:</b> Texture.hpp:38</div></div>
+<div class="ttc" id="aclass_texture_html_a2c2b502138a1a1786c4bf74016620885"><div class="ttname"><a href="class_texture.html#a2c2b502138a1a1786c4bf74016620885">Texture::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdef"><b>Definition:</b> Texture.hpp:32</div></div>
+<div class="ttc" id="aclass_texture_html_a5f288ad6ca5b1c69b422c684cba8ada7"><div class="ttname"><a href="class_texture.html#a5f288ad6ca5b1c69b422c684cba8ada7">Texture::getTextureSize</a></div><div class="ttdeci">int getTextureSize() const</div><div class="ttdef"><b>Definition:</b> Texture.hpp:50</div></div>
+<div class="ttc" id="aclass_texture_html_a835c2ffd13b2271c5bf94036ea727a08"><div class="ttname"><a href="class_texture.html#a835c2ffd13b2271c5bf94036ea727a08">Texture::getBuffer</a></div><div class="ttdeci">const unsigned char * getBuffer()</div><div class="ttdef"><b>Definition:</b> Texture.hpp:56</div></div>
+<div class="ttc" id="aclass_texture_html_ac45ceb8ab0838e7321c30bdb037e85dd"><div class="ttname"><a href="class_texture.html#ac45ceb8ab0838e7321c30bdb037e85dd">Texture::getChannels</a></div><div class="ttdeci">int getChannels() const</div><div class="ttdef"><b>Definition:</b> Texture.hpp:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

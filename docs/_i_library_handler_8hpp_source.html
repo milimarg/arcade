@@ -87,20 +87,23 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_library_handler.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_library_handler.html">ILibraryHandler</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_library_handler.html">ILibraryHandler</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isOpen() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">virtual</span> std::string getLastError() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> close() = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ILIBRARYHANDLER_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_i_library_handler_html"><div class="ttname"><a href="classarcade_1_1_i_library_handler.html">arcade::ILibraryHandler</a></div><div class="ttdef"><b>Definition:</b> ILibraryHandler.hpp:18</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_library_handler.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_library_handler.html">ILibraryHandler</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_library_handler.html">ILibraryHandler</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_library_handler.html#a1e3de96a9af2930d61304722d8de50b5">   29</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_i_library_handler.html#a1e3de96a9af2930d61304722d8de50b5">isOpen</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_library_handler.html#a7f6eaf916e93a69d2c53eeb20da21b15">   35</a></span>&#160;            <span class="keyword">virtual</span> std::string <a class="code" href="classarcade_1_1_i_library_handler.html#a7f6eaf916e93a69d2c53eeb20da21b15">getLastError</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_library_handler.html#a8cdd7d6fa67799ff79a0b89fb28355f5">   40</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_library_handler.html#a8cdd7d6fa67799ff79a0b89fb28355f5">close</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ILIBRARYHANDLER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_i_library_handler_html"><div class="ttname"><a href="classarcade_1_1_i_library_handler.html">arcade::ILibraryHandler</a></div><div class="ttdef"><b>Definition:</b> ILibraryHandler.hpp:21</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_library_handler_html_a1e3de96a9af2930d61304722d8de50b5"><div class="ttname"><a href="classarcade_1_1_i_library_handler.html#a1e3de96a9af2930d61304722d8de50b5">arcade::ILibraryHandler::isOpen</a></div><div class="ttdeci">virtual bool isOpen() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_library_handler_html_a7f6eaf916e93a69d2c53eeb20da21b15"><div class="ttname"><a href="classarcade_1_1_i_library_handler.html#a7f6eaf916e93a69d2c53eeb20da21b15">arcade::ILibraryHandler::getLastError</a></div><div class="ttdeci">virtual std::string getLastError() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_library_handler_html_a8cdd7d6fa67799ff79a0b89fb28355f5"><div class="ttname"><a href="classarcade_1_1_i_library_handler.html#a8cdd7d6fa67799ff79a0b89fb28355f5">arcade::ILibraryHandler::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

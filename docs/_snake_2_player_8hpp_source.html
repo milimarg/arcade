@@ -88,60 +88,97 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">class </span>Player {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">enum class</span> Direction {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                UP,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                RIGHT,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                DOWN,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                LEFT</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            Player(std::size_t size = 4, Direction direction = Direction::RIGHT, <span class="keywordtype">float</span> moveSpeed = 0.1f);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            ~Player();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">void</span> init(std::pair&lt;int, int&gt; position);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">void</span> setIsDead(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">void</span> setDirection(Direction direction);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">void</span> setNextDirection(Direction direction);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">bool</span> getIsDead() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Direction getDirection() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt; getBody() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            std::pair&lt;int, int&gt; getHead() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt;::const_iterator getTailIt() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt;::const_iterator getEndIt() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">float</span> getMoveSpeed() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">bool</span> getIsReversed() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">void</span> addBodyPart(<span class="keywordtype">int</span> n = 1);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">void</span> resetBody();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> setMoveSpeed(<span class="keywordtype">float</span> moveSpeed, <span class="keywordtype">float</span> duration);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">void</span> resetMoveSpeed();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> setIsReversed(<span class="keywordtype">bool</span> isReversed);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">void</span> updatePosition();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> updateTime(<span class="keywordtype">float</span> deltaTime);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">class </span>Player {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">   27</a></span>&#160;            <span class="keyword">enum class</span> <a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                UP,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                RIGHT,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                DOWN,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                LEFT</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#add9a320c84b05fcf6b77dd6d5ed26238">   40</a></span>&#160;            <a class="code" href="classarcade_1_1_player.html#add9a320c84b05fcf6b77dd6d5ed26238">Player</a>(std::size_t size = 4, <a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> direction = Direction::RIGHT, <span class="keywordtype">float</span> moveSpeed = 0.1f);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            ~<a class="code" href="classarcade_1_1_player.html">Player</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a9dc0964ee3fe56f484c35c38e6a1ce49">   47</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a9dc0964ee3fe56f484c35c38e6a1ce49">init</a>(std::pair&lt;int, int&gt; position);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#aa013752b9e7769c5ce1d15c101369642">   53</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#aa013752b9e7769c5ce1d15c101369642">setIsDead</a>(<span class="keywordtype">bool</span> state);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">bool</span> collideWithBody(std::pair&lt;int, int&gt; position) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt; _body;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">bool</span> _isDead;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            Direction _direction;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            Direction _nextDirection;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">float</span> _defaultMoveSpeed;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">float</span> _currentMoveSpeed;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">float</span> _changedMoveSpeed;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">bool</span> _isReversed;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">float</span> _reversedTimeBank;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">float</span> _speedChangeTimeBank;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">float</span> _speedIncreaseTimeBank;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    };</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !PLAYER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9">   59</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9">setDirection</a>(<a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> direction);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a3fa840016ebc04c18a28f2792a2ade40">   65</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a3fa840016ebc04c18a28f2792a2ade40">setNextDirection</a>(<a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> direction);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a3eb4701356ae034fa5772392e8ad35fc">   71</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_player.html#a3eb4701356ae034fa5772392e8ad35fc">getIsDead</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a85a3bba79d14d7ff9d2bedc2876d98ed">   77</a></span>&#160;            <a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> <a class="code" href="classarcade_1_1_player.html#a85a3bba79d14d7ff9d2bedc2876d98ed">getDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a2b31bfd017291060c0b2e13008129031">   83</a></span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt; <a class="code" href="classarcade_1_1_player.html#a2b31bfd017291060c0b2e13008129031">getBody</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a288af5f8d0233cb5e62d12033630936d">   89</a></span>&#160;            std::pair&lt;int, int&gt; <a class="code" href="classarcade_1_1_player.html#a288af5f8d0233cb5e62d12033630936d">getHead</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a345601e9a32ba2165a5562eb19b3175b">   94</a></span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt;::const_iterator <a class="code" href="classarcade_1_1_player.html#a345601e9a32ba2165a5562eb19b3175b">getTailIt</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a1d718bc5147cef4d24c269871477ecca">   99</a></span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt;::const_iterator <a class="code" href="classarcade_1_1_player.html#a1d718bc5147cef4d24c269871477ecca">getEndIt</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a1a64815325ed739fc91c9192e92fa3a0">  104</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classarcade_1_1_player.html#a1a64815325ed739fc91c9192e92fa3a0">getMoveSpeed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a91ac9e60c8bc7ac487a08f48eb7ee405">  110</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_player.html#a91ac9e60c8bc7ac487a08f48eb7ee405">getIsReversed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a0d05a6f5f8d28b05ff90505a255f8334">  116</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a0d05a6f5f8d28b05ff90505a255f8334">addBodyPart</a>(<span class="keywordtype">int</span> n = 1);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a72caf7890f32a5ee7df67ce1c4acd3df">  121</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a72caf7890f32a5ee7df67ce1c4acd3df">resetBody</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#af41bb508e98de8ed5cfe08a1f65e6c37">  128</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#af41bb508e98de8ed5cfe08a1f65e6c37">setMoveSpeed</a>(<span class="keywordtype">float</span> moveSpeed, <span class="keywordtype">float</span> duration);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a0e0bb20c37a388fce65b15a16b137cf6">  133</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a0e0bb20c37a388fce65b15a16b137cf6">resetMoveSpeed</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a0230a8da3afd15abce440f5c1dc7f150">  139</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a0230a8da3afd15abce440f5c1dc7f150">setIsReversed</a>(<span class="keywordtype">bool</span> isReversed);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a1f4ecefe963c7e9237f11380817c5fbe">updatePosition</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a20c2bd49362b3e14c8ec377422aa6242">  150</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_player.html#a20c2bd49362b3e14c8ec377422aa6242">updateTime</a>(<span class="keywordtype">float</span> deltaTime);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classarcade_1_1_player.html#a8e57f8a62ff6cfeb56df20c349b8ce47">  157</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_player.html#a8e57f8a62ff6cfeb56df20c349b8ce47">collideWithBody</a>(std::pair&lt;int, int&gt; position) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            std::deque&lt;std::pair&lt;int, int&gt;&gt; _body;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordtype">bool</span> _isDead;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> _direction;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="code" href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">Direction</a> _nextDirection;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordtype">float</span> _defaultMoveSpeed;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordtype">float</span> _currentMoveSpeed;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordtype">float</span> _changedMoveSpeed;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordtype">bool</span> _isReversed;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordtype">float</span> _reversedTimeBank;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordtype">float</span> _speedChangeTimeBank;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordtype">float</span> _speedIncreaseTimeBank;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    };</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !PLAYER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_player_html"><div class="ttname"><a href="classarcade_1_1_player.html">arcade::Player</a></div><div class="ttdef"><b>Definition:</b> Player.hpp:21</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a0230a8da3afd15abce440f5c1dc7f150"><div class="ttname"><a href="classarcade_1_1_player.html#a0230a8da3afd15abce440f5c1dc7f150">arcade::Player::setIsReversed</a></div><div class="ttdeci">void setIsReversed(bool isReversed)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a0d05a6f5f8d28b05ff90505a255f8334"><div class="ttname"><a href="classarcade_1_1_player.html#a0d05a6f5f8d28b05ff90505a255f8334">arcade::Player::addBodyPart</a></div><div class="ttdeci">void addBodyPart(int n=1)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a0e0bb20c37a388fce65b15a16b137cf6"><div class="ttname"><a href="classarcade_1_1_player.html#a0e0bb20c37a388fce65b15a16b137cf6">arcade::Player::resetMoveSpeed</a></div><div class="ttdeci">void resetMoveSpeed()</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a1a64815325ed739fc91c9192e92fa3a0"><div class="ttname"><a href="classarcade_1_1_player.html#a1a64815325ed739fc91c9192e92fa3a0">arcade::Player::getMoveSpeed</a></div><div class="ttdeci">float getMoveSpeed() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a1a889c812eff18f3452c15f3b1ddeb55"><div class="ttname"><a href="classarcade_1_1_player.html#a1a889c812eff18f3452c15f3b1ddeb55">arcade::Player::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> Player.hpp:26</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a1d718bc5147cef4d24c269871477ecca"><div class="ttname"><a href="classarcade_1_1_player.html#a1d718bc5147cef4d24c269871477ecca">arcade::Player::getEndIt</a></div><div class="ttdeci">std::deque&lt; std::pair&lt; int, int &gt; &gt;::const_iterator getEndIt() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a1f4ecefe963c7e9237f11380817c5fbe"><div class="ttname"><a href="classarcade_1_1_player.html#a1f4ecefe963c7e9237f11380817c5fbe">arcade::Player::updatePosition</a></div><div class="ttdeci">void updatePosition()</div><div class="ttdef"><b>Definition:</b> Player.cpp:122</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a20c2bd49362b3e14c8ec377422aa6242"><div class="ttname"><a href="classarcade_1_1_player.html#a20c2bd49362b3e14c8ec377422aa6242">arcade::Player::updateTime</a></div><div class="ttdeci">void updateTime(float deltaTime)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a288af5f8d0233cb5e62d12033630936d"><div class="ttname"><a href="classarcade_1_1_player.html#a288af5f8d0233cb5e62d12033630936d">arcade::Player::getHead</a></div><div class="ttdeci">std::pair&lt; int, int &gt; getHead() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a2b31bfd017291060c0b2e13008129031"><div class="ttname"><a href="classarcade_1_1_player.html#a2b31bfd017291060c0b2e13008129031">arcade::Player::getBody</a></div><div class="ttdeci">std::deque&lt; std::pair&lt; int, int &gt; &gt; getBody() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a345601e9a32ba2165a5562eb19b3175b"><div class="ttname"><a href="classarcade_1_1_player.html#a345601e9a32ba2165a5562eb19b3175b">arcade::Player::getTailIt</a></div><div class="ttdeci">std::deque&lt; std::pair&lt; int, int &gt; &gt;::const_iterator getTailIt() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a3eb4701356ae034fa5772392e8ad35fc"><div class="ttname"><a href="classarcade_1_1_player.html#a3eb4701356ae034fa5772392e8ad35fc">arcade::Player::getIsDead</a></div><div class="ttdeci">bool getIsDead() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a3fa840016ebc04c18a28f2792a2ade40"><div class="ttname"><a href="classarcade_1_1_player.html#a3fa840016ebc04c18a28f2792a2ade40">arcade::Player::setNextDirection</a></div><div class="ttdeci">void setNextDirection(Direction direction)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a6bbbc6d231df535ad2a71c86be7519e9"><div class="ttname"><a href="classarcade_1_1_player.html#a6bbbc6d231df535ad2a71c86be7519e9">arcade::Player::setDirection</a></div><div class="ttdeci">void setDirection(Direction direction)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a72caf7890f32a5ee7df67ce1c4acd3df"><div class="ttname"><a href="classarcade_1_1_player.html#a72caf7890f32a5ee7df67ce1c4acd3df">arcade::Player::resetBody</a></div><div class="ttdeci">void resetBody()</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a85a3bba79d14d7ff9d2bedc2876d98ed"><div class="ttname"><a href="classarcade_1_1_player.html#a85a3bba79d14d7ff9d2bedc2876d98ed">arcade::Player::getDirection</a></div><div class="ttdeci">Direction getDirection() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a8e57f8a62ff6cfeb56df20c349b8ce47"><div class="ttname"><a href="classarcade_1_1_player.html#a8e57f8a62ff6cfeb56df20c349b8ce47">arcade::Player::collideWithBody</a></div><div class="ttdeci">bool collideWithBody(std::pair&lt; int, int &gt; position) const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a91ac9e60c8bc7ac487a08f48eb7ee405"><div class="ttname"><a href="classarcade_1_1_player.html#a91ac9e60c8bc7ac487a08f48eb7ee405">arcade::Player::getIsReversed</a></div><div class="ttdeci">bool getIsReversed() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_a9dc0964ee3fe56f484c35c38e6a1ce49"><div class="ttname"><a href="classarcade_1_1_player.html#a9dc0964ee3fe56f484c35c38e6a1ce49">arcade::Player::init</a></div><div class="ttdeci">void init(std::pair&lt; int, int &gt; position)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_aa013752b9e7769c5ce1d15c101369642"><div class="ttname"><a href="classarcade_1_1_player.html#aa013752b9e7769c5ce1d15c101369642">arcade::Player::setIsDead</a></div><div class="ttdeci">void setIsDead(bool state)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_add9a320c84b05fcf6b77dd6d5ed26238"><div class="ttname"><a href="classarcade_1_1_player.html#add9a320c84b05fcf6b77dd6d5ed26238">arcade::Player::Player</a></div><div class="ttdeci">Player(std::size_t size=4, Direction direction=Direction::RIGHT, float moveSpeed=0.1f)</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html_af41bb508e98de8ed5cfe08a1f65e6c37"><div class="ttname"><a href="classarcade_1_1_player.html#af41bb508e98de8ed5cfe08a1f65e6c37">arcade::Player::setMoveSpeed</a></div><div class="ttdeci">void setMoveSpeed(float moveSpeed, float duration)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

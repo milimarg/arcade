@@ -94,72 +94,81 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classarcade_1_1_nibbler.html">   25</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_nibbler.html">Nibbler</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_a_game_module.html">AGameModule</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="classarcade_1_1_nibbler.html">Nibbler</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            ~<a class="code" href="classarcade_1_1_nibbler.html">Nibbler</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> init() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">void</span> stop() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classarcade_1_1_nibbler.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_nibbler.html">Nibbler</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_a_game_module.html">AGameModule</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="classarcade_1_1_nibbler.html">Nibbler</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            ~<a class="code" href="classarcade_1_1_nibbler.html">Nibbler</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">void</span> applyEvents(<a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *eventWrapper) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">void</span> update(<span class="keywordtype">float</span> deltaTime) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">void</span> reload() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">int</span> getScore() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">void</span> draw(<a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> *module) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#a09f8796df2152f6df443184fc0ee30e3">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#ad3ace326108e1f1042a1e3b1332a74cf">stop</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">void</span> applyEvent(<span class="keyword">const</span> Key &amp;key) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">int</span> _score;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">bool</span> _isGameOver;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="classarcade_1_1_player.html">Player</a> _snake;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            std::unordered_map&lt;std::string, int&gt; _gameSettings;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">float</span> _timeBank;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">bool</span> _toReload;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::unordered_map&lt;std::pair&lt;int, int&gt;, std::pair&lt;int, int&gt;&gt; _arenaTextureCoords;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::vector&lt;Food&gt; _foodMap;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">float</span> _beforeReload;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            std::pair&lt;std::array&lt;int, 4&gt;, std::array&lt;int, 4&gt;&gt; _backgroundColors;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            std::unordered_map&lt;std::pair&lt;int, int&gt;, <span class="keywordtype">bool</span>&gt; _walls;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">float</span> _currentSpeedIncrease;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#a2571d4375faa98829b5715825ad4781e">applyEvents</a>(<a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *eventWrapper) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#aa6c7ecb2db5707581d555f914cd8376a">update</a>(<span class="keywordtype">float</span> deltaTime) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#af21a0b1264a6e3afa764ed1e53c82358">reload</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">void</span> initSnake();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">void</span> initWallMapFromFile(<span class="keyword">const</span> std::string &amp;fileName);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">void</span> handleCollisions();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">void</span> handleNibblerDirectionChange(<span class="keyword">const</span> Key &amp;key);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">void</span> renderNibbler();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">bool</span> checkFoodPosition(std::pair&lt;int, int&gt; checkedPos);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">void</span> spawnFood();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">void</span> renderFood();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">void</span> renderArena();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">void</span> renderBackground();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">void</span> renderScore();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_nibbler.html#a021d3214d050dfe10673dcb9ff6ecd9e">getScore</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#a463ff0a5e606144a3483f455e69ab255">draw</a>(<a class="code" href="classarcade_1_1_i_graphical_module.html">IGraphicalModule</a> *module) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Key, std::pair&lt;Player::Direction, Player::Direction&gt;&gt; _playerDirection;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::string getType() {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;game&quot;</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::unique_ptr&lt;arcade::IGameModule&gt; entryPoint() {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;arcade::Nibbler&gt;();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !NIBBLER_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_a_game_module_html"><div class="ttname"><a href="classarcade_1_1_a_game_module.html">arcade::AGameModule</a></div><div class="ttdef"><b>Definition:</b> AGameModule.hpp:17</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:15</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> IGraphicalModule.hpp:24</div></div>
-<div class="ttc" id="aclassarcade_1_1_nibbler_html"><div class="ttname"><a href="classarcade_1_1_nibbler.html">arcade::Nibbler</a></div><div class="ttdef"><b>Definition:</b> Nibbler.hpp:25</div></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_nibbler.html#a4aefd8490d8d3c411d44b4695807f424">applyEvent</a>(<span class="keyword">const</span> Key &amp;key) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">int</span> _score;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordtype">bool</span> _isGameOver;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classarcade_1_1_player.html">Player</a> _snake;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            std::unordered_map&lt;std::string, int&gt; _gameSettings;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordtype">float</span> _timeBank;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">bool</span> _toReload;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            std::unordered_map&lt;std::pair&lt;int, int&gt;, std::pair&lt;int, int&gt;&gt; _arenaTextureCoords;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            std::vector&lt;Food&gt; _foodMap;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordtype">float</span> _beforeReload;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            std::pair&lt;std::array&lt;int, 4&gt;, std::array&lt;int, 4&gt;&gt; _backgroundColors;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            std::unordered_map&lt;std::pair&lt;int, int&gt;, <span class="keywordtype">bool</span>&gt; _walls;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">float</span> _currentSpeedIncrease;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordtype">void</span> initSnake();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">void</span> initWallMapFromFile(<span class="keyword">const</span> std::string &amp;fileName);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">void</span> handleCollisions();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">void</span> handleNibblerDirectionChange(<span class="keyword">const</span> Key &amp;key);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">void</span> renderNibbler();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">bool</span> checkFoodPosition(std::pair&lt;int, int&gt; checkedPos);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordtype">void</span> spawnFood();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">void</span> renderFood();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordtype">void</span> renderArena();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">void</span> renderBackground();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordtype">void</span> renderScore();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Key, std::pair&lt;Player::Direction, Player::Direction&gt;&gt; _playerDirection;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string getType() {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;game&quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::unique_ptr&lt;arcade::IGameModule&gt; entryPoint() {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;arcade::Nibbler&gt;();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !NIBBLER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_a_game_module_html"><div class="ttname"><a href="classarcade_1_1_a_game_module.html">arcade::AGameModule</a></div><div class="ttdef"><b>Definition:</b> AGameModule.hpp:20</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:18</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_graphical_module_html"><div class="ttname"><a href="classarcade_1_1_i_graphical_module.html">arcade::IGraphicalModule</a></div><div class="ttdef"><b>Definition:</b> IGraphicalModule.hpp:27</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html"><div class="ttname"><a href="classarcade_1_1_nibbler.html">arcade::Nibbler</a></div><div class="ttdef"><b>Definition:</b> Nibbler.hpp:28</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_a021d3214d050dfe10673dcb9ff6ecd9e"><div class="ttname"><a href="classarcade_1_1_nibbler.html#a021d3214d050dfe10673dcb9ff6ecd9e">arcade::Nibbler::getScore</a></div><div class="ttdeci">int getScore() override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:221</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_a09f8796df2152f6df443184fc0ee30e3"><div class="ttname"><a href="classarcade_1_1_nibbler.html#a09f8796df2152f6df443184fc0ee30e3">arcade::Nibbler::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:93</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_a2571d4375faa98829b5715825ad4781e"><div class="ttname"><a href="classarcade_1_1_nibbler.html#a2571d4375faa98829b5715825ad4781e">arcade::Nibbler::applyEvents</a></div><div class="ttdeci">void applyEvents(IEvent *eventWrapper) override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:159</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_a463ff0a5e606144a3483f455e69ab255"><div class="ttname"><a href="classarcade_1_1_nibbler.html#a463ff0a5e606144a3483f455e69ab255">arcade::Nibbler::draw</a></div><div class="ttdeci">void draw(IGraphicalModule *module) override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:226</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_a4aefd8490d8d3c411d44b4695807f424"><div class="ttname"><a href="classarcade_1_1_nibbler.html#a4aefd8490d8d3c411d44b4695807f424">arcade::Nibbler::applyEvent</a></div><div class="ttdeci">void applyEvent(const Key &amp;key) override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:233</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_aa6c7ecb2db5707581d555f914cd8376a"><div class="ttname"><a href="classarcade_1_1_nibbler.html#aa6c7ecb2db5707581d555f914cd8376a">arcade::Nibbler::update</a></div><div class="ttdeci">void update(float deltaTime) override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:174</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_ad3ace326108e1f1042a1e3b1332a74cf"><div class="ttname"><a href="classarcade_1_1_nibbler.html#ad3ace326108e1f1042a1e3b1332a74cf">arcade::Nibbler::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:153</div></div>
+<div class="ttc" id="aclassarcade_1_1_nibbler_html_af21a0b1264a6e3afa764ed1e53c82358"><div class="ttname"><a href="classarcade_1_1_nibbler.html#af21a0b1264a6e3afa764ed1e53c82358">arcade::Nibbler::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdef"><b>Definition:</b> Nibbler.cpp:215</div></div>
 <div class="ttc" id="aclassarcade_1_1_player_html"><div class="ttname"><a href="classarcade_1_1_player.html">arcade::Player</a></div><div class="ttdef"><b>Definition:</b> Player.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

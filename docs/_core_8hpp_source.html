@@ -87,68 +87,81 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classarcade_1_1_core.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_core.html">Core</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_i_core.html">ICore</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="classarcade_1_1_core.html">Core</a>(std::string &amp;graphical);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            ~<a class="code" href="classarcade_1_1_core.html">Core</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordtype">bool</span> areSameFiles(<span class="keyword">const</span> std::string&amp; first, <span class="keyword">const</span> std::string&amp; second);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">void</span> initLib(std::string &amp;graphical);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">bool</span> initialize() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">void</span> run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">void</span> shutdown() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classarcade_1_1_core.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_core.html">Core</a> : <span class="keyword">public</span> <a class="code" href="classarcade_1_1_i_core.html">ICore</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="classarcade_1_1_core.html#ac4515206cf27e3b3402f5ba5a2532a9b">Core</a>(std::string &amp;graphical);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            ~<a class="code" href="classarcade_1_1_core.html">Core</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> addGameLibrary(<span class="keyword">const</span> std::string &amp;libraryName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">void</span> addGraphicalLibrary(<span class="keyword">const</span> std::string &amp;libraryName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">void</span> switchGameLibrary(<span class="keyword">const</span> std::string &amp;path, <span class="keywordtype">bool</span> inGame = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">void</span> switchGraphicalLibrary(<span class="keyword">const</span> std::string &amp;path, <span class="keywordtype">bool</span> inGame = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">void</span> switchMainMenu(<span class="keywordtype">bool</span> inGame = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            std::unique_ptr&lt;LibraryHandler&gt; _graphicalLibrary;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            std::unique_ptr&lt;LibraryHandler&gt; _gameLibrary;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            std::unique_ptr&lt;IGraphicalModule&gt; _graphicalModule;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            std::unique_ptr&lt;IGameModule&gt; _gameModule;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">bool</span> loadGameModule() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">bool</span> loadGraphicalModule() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">void</span> initializeModules() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">void</span> initializeWrappers() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">int</span> updateModules() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">int</span> handleChangeEvent() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::string encryptData(<span class="keyword">const</span> std::string &amp;plaintext, <span class="keyword">const</span> std::string &amp;key);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::string decryptData(<span class="keyword">const</span> std::string &amp;ciphertext, <span class="keyword">const</span> std::string &amp;key);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::string cleanLibName(<span class="keyword">const</span> std::string &amp;libName);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">void</span> saveCurrentScore(<span class="keyword">const</span> std::string &amp;libName);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            std::vector&lt;std::string&gt; _gameLibraryList;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            std::vector&lt;std::string&gt; _graphicalLibraryList;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">int</span> _gameIndex;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">int</span> _graphicalIndex;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">size_t</span> _indexMainMenu;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="classarcade_1_1_time.html">Time</a> _time;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *_eventWrapper;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> *_windowWrapper;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            std::string _secretKey;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            std::string _currentUserName;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">int</span> _currentScore;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_core.html#a31f4bdcd188fcfb36c8160b520527838">areSameFiles</a>(<span class="keyword">const</span> std::string&amp; first, <span class="keyword">const</span> std::string&amp; second);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#a8fc154884bc697e6b974176e347eb059">initLib</a>(std::string &amp;graphical);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_core.html#aaea3d23d1a9d3b7c3217d6d4d7208096">initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#abea75d1a76fb9c25e204cdfc3f4e1e13">run</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#acbbdeace5ba2882b029de01c022528fc">shutdown</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#a5f1670e54539ec3d5fe335225b5ed24e">addGameLibrary</a>(<span class="keyword">const</span> std::string &amp;libraryName) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#afb84503daf84374217b4c5e64de5ec00">addGraphicalLibrary</a>(<span class="keyword">const</span> std::string &amp;libraryName) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#aa2f007f69fa198b5f75ad99aebfb22e0">switchGameLibrary</a>(<span class="keyword">const</span> std::string &amp;path, <span class="keywordtype">bool</span> inGame = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#a941a709aad5d5be8d8cc92dcf18c3bb0">switchGraphicalLibrary</a>(<span class="keyword">const</span> std::string &amp;path, <span class="keywordtype">bool</span> inGame = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_core.html#aab44316322ca186686939197f8637a02">switchMainMenu</a>(<span class="keywordtype">bool</span> inGame = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            std::unique_ptr&lt;LibraryHandler&gt; _graphicalLibrary;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            std::unique_ptr&lt;LibraryHandler&gt; _gameLibrary;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            std::unique_ptr&lt;IGraphicalModule&gt; _graphicalModule;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            std::unique_ptr&lt;IGameModule&gt; _gameModule;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">bool</span> loadGameModule() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">bool</span> loadGraphicalModule() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">void</span> initializeModules() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">void</span> initializeWrappers() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">int</span> updateModules() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !CORE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_core_html"><div class="ttname"><a href="classarcade_1_1_core.html">arcade::Core</a></div><div class="ttdef"><b>Definition:</b> Core.hpp:18</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_core_html"><div class="ttname"><a href="classarcade_1_1_i_core.html">arcade::ICore</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:26</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:15</div></div>
-<div class="ttc" id="aclassarcade_1_1_i_window_html"><div class="ttname"><a href="classarcade_1_1_i_window.html">arcade::IWindow</a></div><div class="ttdef"><b>Definition:</b> IWindow.hpp:16</div></div>
-<div class="ttc" id="aclassarcade_1_1_time_html"><div class="ttname"><a href="classarcade_1_1_time.html">arcade::Time</a></div><div class="ttdef"><b>Definition:</b> Time.hpp:15</div></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordtype">int</span> handleChangeEvent() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            std::string encryptData(<span class="keyword">const</span> std::string &amp;plaintext, <span class="keyword">const</span> std::string &amp;key);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            std::string decryptData(<span class="keyword">const</span> std::string &amp;ciphertext, <span class="keyword">const</span> std::string &amp;key);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            std::string cleanLibName(<span class="keyword">const</span> std::string &amp;libName);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">void</span> saveCurrentScore(<span class="keyword">const</span> std::string &amp;libName);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            std::vector&lt;std::string&gt; _gameLibraryList;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            std::vector&lt;std::string&gt; _graphicalLibraryList;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">int</span> _gameIndex;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">int</span> _graphicalIndex;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordtype">size_t</span> _indexMainMenu;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classarcade_1_1_time.html">Time</a> _time;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="classarcade_1_1_i_event.html">IEvent</a> *_eventWrapper;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="classarcade_1_1_i_window.html">IWindow</a> *_windowWrapper;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            std::string _secretKey;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            std::string _currentUserName;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordtype">int</span> _currentScore;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !CORE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_core_html"><div class="ttname"><a href="classarcade_1_1_core.html">arcade::Core</a></div><div class="ttdef"><b>Definition:</b> Core.hpp:21</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_a31f4bdcd188fcfb36c8160b520527838"><div class="ttname"><a href="classarcade_1_1_core.html#a31f4bdcd188fcfb36c8160b520527838">arcade::Core::areSameFiles</a></div><div class="ttdeci">bool areSameFiles(const std::string &amp;first, const std::string &amp;second)</div><div class="ttdef"><b>Definition:</b> Core.cpp:35</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_a5f1670e54539ec3d5fe335225b5ed24e"><div class="ttname"><a href="classarcade_1_1_core.html#a5f1670e54539ec3d5fe335225b5ed24e">arcade::Core::addGameLibrary</a></div><div class="ttdeci">void addGameLibrary(const std::string &amp;libraryName) override</div><div class="ttdef"><b>Definition:</b> Core.cpp:199</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_a8fc154884bc697e6b974176e347eb059"><div class="ttname"><a href="classarcade_1_1_core.html#a8fc154884bc697e6b974176e347eb059">arcade::Core::initLib</a></div><div class="ttdeci">void initLib(std::string &amp;graphical)</div><div class="ttdef"><b>Definition:</b> Core.cpp:49</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_a941a709aad5d5be8d8cc92dcf18c3bb0"><div class="ttname"><a href="classarcade_1_1_core.html#a941a709aad5d5be8d8cc92dcf18c3bb0">arcade::Core::switchGraphicalLibrary</a></div><div class="ttdeci">void switchGraphicalLibrary(const std::string &amp;path, bool inGame=false) override</div><div class="ttdef"><b>Definition:</b> Core.cpp:399</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_aa2f007f69fa198b5f75ad99aebfb22e0"><div class="ttname"><a href="classarcade_1_1_core.html#aa2f007f69fa198b5f75ad99aebfb22e0">arcade::Core::switchGameLibrary</a></div><div class="ttdeci">void switchGameLibrary(const std::string &amp;path, bool inGame=false) override</div><div class="ttdef"><b>Definition:</b> Core.cpp:378</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_aab44316322ca186686939197f8637a02"><div class="ttname"><a href="classarcade_1_1_core.html#aab44316322ca186686939197f8637a02">arcade::Core::switchMainMenu</a></div><div class="ttdeci">void switchMainMenu(bool inGame=false) override</div><div class="ttdef"><b>Definition:</b> Core.cpp:425</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_aaea3d23d1a9d3b7c3217d6d4d7208096"><div class="ttname"><a href="classarcade_1_1_core.html#aaea3d23d1a9d3b7c3217d6d4d7208096">arcade::Core::initialize</a></div><div class="ttdeci">bool initialize() override</div><div class="ttdef"><b>Definition:</b> Core.cpp:97</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_abea75d1a76fb9c25e204cdfc3f4e1e13"><div class="ttname"><a href="classarcade_1_1_core.html#abea75d1a76fb9c25e204cdfc3f4e1e13">arcade::Core::run</a></div><div class="ttdeci">void run() override</div><div class="ttdef"><b>Definition:</b> Core.cpp:160</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_ac4515206cf27e3b3402f5ba5a2532a9b"><div class="ttname"><a href="classarcade_1_1_core.html#ac4515206cf27e3b3402f5ba5a2532a9b">arcade::Core::Core</a></div><div class="ttdeci">Core(std::string &amp;graphical)</div><div class="ttdef"><b>Definition:</b> Core.cpp:12</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_acbbdeace5ba2882b029de01c022528fc"><div class="ttname"><a href="classarcade_1_1_core.html#acbbdeace5ba2882b029de01c022528fc">arcade::Core::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdef"><b>Definition:</b> Core.cpp:195</div></div>
+<div class="ttc" id="aclassarcade_1_1_core_html_afb84503daf84374217b4c5e64de5ec00"><div class="ttname"><a href="classarcade_1_1_core.html#afb84503daf84374217b4c5e64de5ec00">arcade::Core::addGraphicalLibrary</a></div><div class="ttdeci">void addGraphicalLibrary(const std::string &amp;libraryName) override</div><div class="ttdef"><b>Definition:</b> Core.cpp:204</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_core_html"><div class="ttname"><a href="classarcade_1_1_i_core.html">arcade::ICore</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:29</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_html"><div class="ttname"><a href="classarcade_1_1_i_event.html">arcade::IEvent</a></div><div class="ttdef"><b>Definition:</b> IEvent.hpp:18</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_window_html"><div class="ttname"><a href="classarcade_1_1_i_window.html">arcade::IWindow</a></div><div class="ttdef"><b>Definition:</b> IWindow.hpp:19</div></div>
+<div class="ttc" id="aclassarcade_1_1_time_html"><div class="ttname"><a href="classarcade_1_1_time.html">arcade::Time</a></div><div class="ttdef"><b>Definition:</b> Time.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

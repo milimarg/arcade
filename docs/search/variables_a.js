@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['left_1182',['left',['../structid__rect.html#a3945d90ee0f18662df61eb9497fa4b40',1,'id_rect']]],
-  ['look_1183',['look',['../structmy__idt1__player.html#af310b3a6cb32256b8313a9baed9690ee',1,'my_idt1_player']]]
+  ['no_5fspam_5fkey_583',['no_spam_key',['../structmy__idt1.html#a2e9dd6f5224e8af8313ad96dcdb11163',1,'my_idt1']]]
 ];

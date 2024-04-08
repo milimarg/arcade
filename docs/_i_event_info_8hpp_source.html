@@ -84,22 +84,32 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_event_info.html">IEventInfo</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_event_info.html">IEventInfo</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">virtual</span> std::pair&lt;int, int&gt; getMouseCoords() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">virtual</span> Key getKey() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">virtual</span> ChangeKey getChangeKey() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setMouseCoords(<span class="keyword">const</span> std::pair&lt;int, int&gt; &amp;coords) = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setKey(<span class="keyword">const</span> Key &amp;key) = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> setChangeKey(<span class="keyword">const</span> ChangeKey &amp;key) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IEVENTINFO_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_i_event_info_html"><div class="ttname"><a href="classarcade_1_1_i_event_info.html">arcade::IEventInfo</a></div><div class="ttdef"><b>Definition:</b> IEventInfo.hpp:15</div></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_event_info.html">IEventInfo</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_event_info.html">IEventInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html#a56b16808a7740d507b7b062b86b71e17">   26</a></span>&#160;            <span class="keyword">virtual</span> std::pair&lt;int, int&gt; <a class="code" href="classarcade_1_1_i_event_info.html#a56b16808a7740d507b7b062b86b71e17">getMouseCoords</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html#a6a332799af92c1c909209b56390d928c">   32</a></span>&#160;            <span class="keyword">virtual</span> Key <a class="code" href="classarcade_1_1_i_event_info.html#a6a332799af92c1c909209b56390d928c">getKey</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html#acabb5d30e396171be440871c12ee651b">   38</a></span>&#160;            <span class="keyword">virtual</span> ChangeKey <a class="code" href="classarcade_1_1_i_event_info.html#acabb5d30e396171be440871c12ee651b">getChangeKey</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html#a993ebddff9cc1e3e6fd53236466df76a">   44</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_event_info.html#a993ebddff9cc1e3e6fd53236466df76a">setMouseCoords</a>(<span class="keyword">const</span> std::pair&lt;int, int&gt; &amp;coords) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html#a719bb26c00347007f62f4c87e07e7069">   50</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_event_info.html#a719bb26c00347007f62f4c87e07e7069">setKey</a>(<span class="keyword">const</span> Key &amp;key) = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_event_info.html#a22102e644271144e21203fecee60bb54">   56</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_event_info.html#a22102e644271144e21203fecee60bb54">setChangeKey</a>(<span class="keyword">const</span> ChangeKey &amp;key) = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IEVENTINFO_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html"><div class="ttname"><a href="classarcade_1_1_i_event_info.html">arcade::IEventInfo</a></div><div class="ttdef"><b>Definition:</b> IEventInfo.hpp:18</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html_a22102e644271144e21203fecee60bb54"><div class="ttname"><a href="classarcade_1_1_i_event_info.html#a22102e644271144e21203fecee60bb54">arcade::IEventInfo::setChangeKey</a></div><div class="ttdeci">virtual void setChangeKey(const ChangeKey &amp;key)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html_a56b16808a7740d507b7b062b86b71e17"><div class="ttname"><a href="classarcade_1_1_i_event_info.html#a56b16808a7740d507b7b062b86b71e17">arcade::IEventInfo::getMouseCoords</a></div><div class="ttdeci">virtual std::pair&lt; int, int &gt; getMouseCoords() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html_a6a332799af92c1c909209b56390d928c"><div class="ttname"><a href="classarcade_1_1_i_event_info.html#a6a332799af92c1c909209b56390d928c">arcade::IEventInfo::getKey</a></div><div class="ttdeci">virtual Key getKey() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html_a719bb26c00347007f62f4c87e07e7069"><div class="ttname"><a href="classarcade_1_1_i_event_info.html#a719bb26c00347007f62f4c87e07e7069">arcade::IEventInfo::setKey</a></div><div class="ttdeci">virtual void setKey(const Key &amp;key)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html_a993ebddff9cc1e3e6fd53236466df76a"><div class="ttname"><a href="classarcade_1_1_i_event_info.html#a993ebddff9cc1e3e6fd53236466df76a">arcade::IEventInfo::setMouseCoords</a></div><div class="ttdeci">virtual void setMouseCoords(const std::pair&lt; int, int &gt; &amp;coords)=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_event_info_html_acabb5d30e396171be440871c12ee651b"><div class="ttname"><a href="classarcade_1_1_i_event_info.html#acabb5d30e396171be440871c12ee651b">arcade::IEventInfo::getChangeKey</a></div><div class="ttdeci">virtual ChangeKey getChangeKey() const =0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

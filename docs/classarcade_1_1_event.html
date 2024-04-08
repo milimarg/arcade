@@ -73,6 +73,8 @@ $(function() {
 <div class="title">arcade::Event Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_curses_8hpp_source.html">NCurses.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for arcade::Event:</div>
 <div class="dyncontent">
@@ -94,91 +96,969 @@ Collaboration diagram for arcade::Event:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a80a5dd808827fb2dc0aaa7e161df7363"><td class="memItemLeft" align="right" valign="top"><a id="a80a5dd808827fb2dc0aaa7e161df7363"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getEvent</b> () override</td></tr>
+<tr class="memitem:a80a5dd808827fb2dc0aaa7e161df7363"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a80a5dd808827fb2dc0aaa7e161df7363">getEvent</a> () override</td></tr>
 <tr class="separator:a80a5dd808827fb2dc0aaa7e161df7363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbd389d5f5e55085bac7c63c51e3a002"><td class="memItemLeft" align="right" valign="top"><a id="adbd389d5f5e55085bac7c63c51e3a002"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getChangeEvent</b> () override</td></tr>
+<tr class="memitem:adbd389d5f5e55085bac7c63c51e3a002"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#adbd389d5f5e55085bac7c63c51e3a002">getChangeEvent</a> () override</td></tr>
 <tr class="separator:adbd389d5f5e55085bac7c63c51e3a002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top"><a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key) override</td></tr>
+<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">pushEvent</a> (const Key &amp;key) override</td></tr>
 <tr class="separator:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top"><a id="ad87928fda176fe795ec6569d80cf7739"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
+<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">pushEvent</a> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
 <tr class="separator:ad87928fda176fe795ec6569d80cf7739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top"><a id="aff950591dd19cea87d6365395acb2a1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushChangeEvent</b> (const ChangeKey &amp;changeKey) override</td></tr>
+<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">pushChangeEvent</a> (const ChangeKey &amp;changeKey) override</td></tr>
 <tr class="separator:aff950591dd19cea87d6365395acb2a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top"><a id="aa1668dfeeac80a791898383deaba1f69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearEventQueue</b> () override</td></tr>
+<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">clearEventQueue</a> () override</td></tr>
 <tr class="separator:aa1668dfeeac80a791898383deaba1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top"><a id="a6cb094e77a59440f66a5954c20c09589"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearChangeEventQueue</b> () override</td></tr>
+<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">clearChangeEventQueue</a> () override</td></tr>
 <tr class="separator:a6cb094e77a59440f66a5954c20c09589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5329e1694ca5a6476e08227718b70a9c"><td class="memItemLeft" align="right" valign="top"><a id="a5329e1694ca5a6476e08227718b70a9c"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getEvent</b> () override</td></tr>
+<tr class="memitem:a5329e1694ca5a6476e08227718b70a9c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">getEvent</a> () override</td></tr>
 <tr class="separator:a5329e1694ca5a6476e08227718b70a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6076f93241fe94ceb88ad05957b950"><td class="memItemLeft" align="right" valign="top"><a id="a5b6076f93241fe94ceb88ad05957b950"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getChangeEvent</b> () override</td></tr>
+<tr class="memitem:a5b6076f93241fe94ceb88ad05957b950"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">getChangeEvent</a> () override</td></tr>
 <tr class="separator:a5b6076f93241fe94ceb88ad05957b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top"><a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key) override</td></tr>
+<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">pushEvent</a> (const Key &amp;key) override</td></tr>
 <tr class="separator:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top"><a id="ad87928fda176fe795ec6569d80cf7739"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
+<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">pushEvent</a> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
 <tr class="separator:ad87928fda176fe795ec6569d80cf7739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top"><a id="aff950591dd19cea87d6365395acb2a1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushChangeEvent</b> (const ChangeKey &amp;changeKey) override</td></tr>
+<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">pushChangeEvent</a> (const ChangeKey &amp;changeKey) override</td></tr>
 <tr class="separator:aff950591dd19cea87d6365395acb2a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top"><a id="aa1668dfeeac80a791898383deaba1f69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearEventQueue</b> () override</td></tr>
+<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">clearEventQueue</a> () override</td></tr>
 <tr class="separator:aa1668dfeeac80a791898383deaba1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top"><a id="a6cb094e77a59440f66a5954c20c09589"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearChangeEventQueue</b> () override</td></tr>
+<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">clearChangeEventQueue</a> () override</td></tr>
 <tr class="separator:a6cb094e77a59440f66a5954c20c09589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5329e1694ca5a6476e08227718b70a9c"><td class="memItemLeft" align="right" valign="top"><a id="a5329e1694ca5a6476e08227718b70a9c"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getEvent</b> () override</td></tr>
+<tr class="memitem:a5329e1694ca5a6476e08227718b70a9c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">getEvent</a> () override</td></tr>
 <tr class="separator:a5329e1694ca5a6476e08227718b70a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6076f93241fe94ceb88ad05957b950"><td class="memItemLeft" align="right" valign="top"><a id="a5b6076f93241fe94ceb88ad05957b950"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getChangeEvent</b> () override</td></tr>
+<tr class="memitem:a5b6076f93241fe94ceb88ad05957b950"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">getChangeEvent</a> () override</td></tr>
 <tr class="separator:a5b6076f93241fe94ceb88ad05957b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top"><a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key) override</td></tr>
+<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">pushEvent</a> (const Key &amp;key) override</td></tr>
 <tr class="separator:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top"><a id="ad87928fda176fe795ec6569d80cf7739"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
+<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">pushEvent</a> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
 <tr class="separator:ad87928fda176fe795ec6569d80cf7739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top"><a id="aff950591dd19cea87d6365395acb2a1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushChangeEvent</b> (const ChangeKey &amp;changeKey) override</td></tr>
+<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">pushChangeEvent</a> (const ChangeKey &amp;changeKey) override</td></tr>
 <tr class="separator:aff950591dd19cea87d6365395acb2a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top"><a id="aa1668dfeeac80a791898383deaba1f69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearEventQueue</b> () override</td></tr>
+<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">clearEventQueue</a> () override</td></tr>
 <tr class="separator:aa1668dfeeac80a791898383deaba1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top"><a id="a6cb094e77a59440f66a5954c20c09589"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearChangeEventQueue</b> () override</td></tr>
+<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">clearChangeEventQueue</a> () override</td></tr>
 <tr class="separator:a6cb094e77a59440f66a5954c20c09589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5329e1694ca5a6476e08227718b70a9c"><td class="memItemLeft" align="right" valign="top"><a id="a5329e1694ca5a6476e08227718b70a9c"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getEvent</b> () override</td></tr>
+<tr class="memitem:a5329e1694ca5a6476e08227718b70a9c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a5329e1694ca5a6476e08227718b70a9c">getEvent</a> () override</td></tr>
 <tr class="separator:a5329e1694ca5a6476e08227718b70a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6076f93241fe94ceb88ad05957b950"><td class="memItemLeft" align="right" valign="top"><a id="a5b6076f93241fe94ceb88ad05957b950"></a>
-std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getChangeEvent</b> () override</td></tr>
+<tr class="memitem:a5b6076f93241fe94ceb88ad05957b950"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a5b6076f93241fe94ceb88ad05957b950">getChangeEvent</a> () override</td></tr>
 <tr class="separator:a5b6076f93241fe94ceb88ad05957b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top"><a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key) override</td></tr>
+<tr class="memitem:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a131c08c7d1dc992dc3c7116c2fd9e494">pushEvent</a> (const Key &amp;key) override</td></tr>
 <tr class="separator:a131c08c7d1dc992dc3c7116c2fd9e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top"><a id="ad87928fda176fe795ec6569d80cf7739"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushEvent</b> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
+<tr class="memitem:ad87928fda176fe795ec6569d80cf7739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#ad87928fda176fe795ec6569d80cf7739">pushEvent</a> (const Key &amp;key, std::pair&lt; int, int &gt; mouseCoords) override</td></tr>
 <tr class="separator:ad87928fda176fe795ec6569d80cf7739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top"><a id="aff950591dd19cea87d6365395acb2a1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushChangeEvent</b> (const ChangeKey &amp;changeKey) override</td></tr>
+<tr class="memitem:aff950591dd19cea87d6365395acb2a1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aff950591dd19cea87d6365395acb2a1f">pushChangeEvent</a> (const ChangeKey &amp;changeKey) override</td></tr>
 <tr class="separator:aff950591dd19cea87d6365395acb2a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top"><a id="aa1668dfeeac80a791898383deaba1f69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearEventQueue</b> () override</td></tr>
+<tr class="memitem:aa1668dfeeac80a791898383deaba1f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#aa1668dfeeac80a791898383deaba1f69">clearEventQueue</a> () override</td></tr>
 <tr class="separator:aa1668dfeeac80a791898383deaba1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top"><a id="a6cb094e77a59440f66a5954c20c09589"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearChangeEventQueue</b> () override</td></tr>
+<tr class="memitem:a6cb094e77a59440f66a5954c20c09589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_event.html#a6cb094e77a59440f66a5954c20c09589">clearChangeEventQueue</a> () override</td></tr>
 <tr class="separator:a6cb094e77a59440f66a5954c20c09589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classarcade_1_1_n_curses.html">NCurses</a> <a class="el" href="classarcade_1_1_event.html">Event</a></p>
+<p><a class="el" href="classarcade_1_1_open_g_l.html">OpenGL</a> <a class="el" href="classarcade_1_1_event.html">Event</a></p>
+<p>SDL2 <a class="el" href="classarcade_1_1_event.html">Event</a></p>
+<p><a class="el" href="classarcade_1_1_event.html">Event</a> <a class="el" href="classarcade_1_1_s_f_m_l.html">SFML</a> </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6cb094e77a59440f66a5954c20c09589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb094e77a59440f66a5954c20c09589">&#9670;&nbsp;</a></span>clearChangeEventQueue() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearChangeEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the ChangeEvents queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a00d550501b70f1c88b5e145ceb6f28be">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a6cb094e77a59440f66a5954c20c09589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb094e77a59440f66a5954c20c09589">&#9670;&nbsp;</a></span>clearChangeEventQueue() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearChangeEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the ChangeEvents queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a00d550501b70f1c88b5e145ceb6f28be">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a6cb094e77a59440f66a5954c20c09589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb094e77a59440f66a5954c20c09589">&#9670;&nbsp;</a></span>clearChangeEventQueue() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearChangeEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the ChangeEvents queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a00d550501b70f1c88b5e145ceb6f28be">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a6cb094e77a59440f66a5954c20c09589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb094e77a59440f66a5954c20c09589">&#9670;&nbsp;</a></span>clearChangeEventQueue() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearChangeEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the ChangeEvents queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a00d550501b70f1c88b5e145ceb6f28be">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aa1668dfeeac80a791898383deaba1f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1668dfeeac80a791898383deaba1f69">&#9670;&nbsp;</a></span>clearEventQueue() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the events queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#adf566dcdf182f661b59727264281632a">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aa1668dfeeac80a791898383deaba1f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1668dfeeac80a791898383deaba1f69">&#9670;&nbsp;</a></span>clearEventQueue() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the events queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#adf566dcdf182f661b59727264281632a">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aa1668dfeeac80a791898383deaba1f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1668dfeeac80a791898383deaba1f69">&#9670;&nbsp;</a></span>clearEventQueue() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the events queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#adf566dcdf182f661b59727264281632a">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aa1668dfeeac80a791898383deaba1f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1668dfeeac80a791898383deaba1f69">&#9670;&nbsp;</a></span>clearEventQueue() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::clearEventQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the events queue </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#adf566dcdf182f661b59727264281632a">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="adbd389d5f5e55085bac7c63c51e3a002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd389d5f5e55085bac7c63c51e3a002">&#9670;&nbsp;</a></span>getChangeEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt; arcade::Event::getChangeEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>changeEvents info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a3bc27435b3ac7949c6cbd5c891d35abe">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a5b6076f93241fe94ceb88ad05957b950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6076f93241fe94ceb88ad05957b950">&#9670;&nbsp;</a></span>getChangeEvent() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::Event::getChangeEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>changeEvents info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a3bc27435b3ac7949c6cbd5c891d35abe">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a5b6076f93241fe94ceb88ad05957b950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6076f93241fe94ceb88ad05957b950">&#9670;&nbsp;</a></span>getChangeEvent() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::Event::getChangeEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>changeEvents info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a3bc27435b3ac7949c6cbd5c891d35abe">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a5b6076f93241fe94ceb88ad05957b950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6076f93241fe94ceb88ad05957b950">&#9670;&nbsp;</a></span>getChangeEvent() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::Event::getChangeEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>changeEvents info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a3bc27435b3ac7949c6cbd5c891d35abe">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a80a5dd808827fb2dc0aaa7e161df7363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a5dd808827fb2dc0aaa7e161df7363">&#9670;&nbsp;</a></span>getEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a> &gt; arcade::Event::getEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>events info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a5329e1694ca5a6476e08227718b70a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5329e1694ca5a6476e08227718b70a9c">&#9670;&nbsp;</a></span>getEvent() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::Event::getEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>events info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a5329e1694ca5a6476e08227718b70a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5329e1694ca5a6476e08227718b70a9c">&#9670;&nbsp;</a></span>getEvent() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::Event::getEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>events info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a5329e1694ca5a6476e08227718b70a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5329e1694ca5a6476e08227718b70a9c">&#9670;&nbsp;</a></span>getEvent() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classarcade_1_1_i_event_info.html">IEventInfo</a>&gt; arcade::Event::getEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>events info wrapper </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a112e714166ced329d7f6898a2638c623">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aff950591dd19cea87d6365395acb2a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff950591dd19cea87d6365395acb2a1f">&#9670;&nbsp;</a></span>pushChangeEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushChangeEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChangeKey &amp;&#160;</td>
+          <td class="paramname"><em>changeKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push a changeEvent in the changeEvents queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">changeKey</td><td>changeEvent to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#acb469a183832dcce8319147dbd63f9f5">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aff950591dd19cea87d6365395acb2a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff950591dd19cea87d6365395acb2a1f">&#9670;&nbsp;</a></span>pushChangeEvent() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushChangeEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChangeKey &amp;&#160;</td>
+          <td class="paramname"><em>changeKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push a changeEvent in the changeEvents queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">changeKey</td><td>changeEvent to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#acb469a183832dcce8319147dbd63f9f5">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aff950591dd19cea87d6365395acb2a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff950591dd19cea87d6365395acb2a1f">&#9670;&nbsp;</a></span>pushChangeEvent() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushChangeEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChangeKey &amp;&#160;</td>
+          <td class="paramname"><em>changeKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push a changeEvent in the changeEvents queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">changeKey</td><td>changeEvent to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#acb469a183832dcce8319147dbd63f9f5">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="aff950591dd19cea87d6365395acb2a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff950591dd19cea87d6365395acb2a1f">&#9670;&nbsp;</a></span>pushChangeEvent() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushChangeEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChangeKey &amp;&#160;</td>
+          <td class="paramname"><em>changeKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push a changeEvent in the changeEvents queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">changeKey</td><td>changeEvent to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#acb469a183832dcce8319147dbd63f9f5">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131c08c7d1dc992dc3c7116c2fd9e494">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#ac3218a24b07ef91051543909b55373b6">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131c08c7d1dc992dc3c7116c2fd9e494">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#ac3218a24b07ef91051543909b55373b6">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131c08c7d1dc992dc3c7116c2fd9e494">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#ac3218a24b07ef91051543909b55373b6">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="a131c08c7d1dc992dc3c7116c2fd9e494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131c08c7d1dc992dc3c7116c2fd9e494">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#ac3218a24b07ef91051543909b55373b6">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="ad87928fda176fe795ec6569d80cf7739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87928fda176fe795ec6569d80cf7739">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>mouseCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+    <tr><td class="paramname">mouseCoords</td><td>current mouse coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a61b1f1a60f3ea48570c0b721f77ae923">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="ad87928fda176fe795ec6569d80cf7739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87928fda176fe795ec6569d80cf7739">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>mouseCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+    <tr><td class="paramname">mouseCoords</td><td>current mouse coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a61b1f1a60f3ea48570c0b721f77ae923">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="ad87928fda176fe795ec6569d80cf7739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87928fda176fe795ec6569d80cf7739">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>mouseCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+    <tr><td class="paramname">mouseCoords</td><td>current mouse coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a61b1f1a60f3ea48570c0b721f77ae923">arcade::IEvent</a>.</p>
+
+</div>
+</div>
+<a id="ad87928fda176fe795ec6569d80cf7739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87928fda176fe795ec6569d80cf7739">&#9670;&nbsp;</a></span>pushEvent() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Event::pushEvent </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>mouseCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Push an event in the events queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>event to push </td></tr>
+    <tr><td class="paramname">mouseCoords</td><td>current mouse coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_event.html#a61b1f1a60f3ea48570c0b721f77ae923">arcade::IEvent</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/NCurses/<a class="el" href="_n_curses_8hpp_source.html">NCurses.hpp</a></li>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/OpenGL/<a class="el" href="_open_g_l_8hpp_source.html">OpenGL.hpp</a></li>

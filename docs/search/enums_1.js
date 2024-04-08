@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ghoststate_222',['GhostState',['../classarcade_1_1_pacman.html#ade2c6c0e6495a4aa5779c0f4b092b2a6',1,'arcade::Pacman']]],
-  ['gumgumstate_223',['GumGumState',['../classarcade_1_1_pacman.html#a59336203783d213d3beca56293c5d083',1,'arcade::Pacman']]]
+  ['foodtype_618',['FoodType',['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41',1,'arcade::Food::FoodType()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41',1,'arcade::Food::FoodType()']]]
 ];

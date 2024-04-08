@@ -82,20 +82,23 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_time.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_time.html">ITime</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_time.html">ITime</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> update() = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> getTime() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> getDeltaTime() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_time.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1_i_time.html">ITime</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classarcade_1_1_i_time.html">ITime</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_time.html#a4ae78f28ab7ecac15a3b598ba9efe2f8">   23</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_i_time.html#a4ae78f28ab7ecac15a3b598ba9efe2f8">update</a>() = 0;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ITIME_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassarcade_1_1_i_time_html"><div class="ttname"><a href="classarcade_1_1_i_time.html">arcade::ITime</a></div><div class="ttdef"><b>Definition:</b> ITime.hpp:13</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_time.html#aba8bfc9ee8851e5887e6906ec6c05d73">   29</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classarcade_1_1_i_time.html#aba8bfc9ee8851e5887e6906ec6c05d73">getTime</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classarcade_1_1_i_time.html#a95aa12f5f8e39cc90a11bb754e3fa8cb">   35</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classarcade_1_1_i_time.html#a95aa12f5f8e39cc90a11bb754e3fa8cb">getDeltaTime</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ITIME_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_i_time_html"><div class="ttname"><a href="classarcade_1_1_i_time.html">arcade::ITime</a></div><div class="ttdef"><b>Definition:</b> ITime.hpp:16</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_time_html_a4ae78f28ab7ecac15a3b598ba9efe2f8"><div class="ttname"><a href="classarcade_1_1_i_time.html#a4ae78f28ab7ecac15a3b598ba9efe2f8">arcade::ITime::update</a></div><div class="ttdeci">virtual void update()=0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_time_html_a95aa12f5f8e39cc90a11bb754e3fa8cb"><div class="ttname"><a href="classarcade_1_1_i_time.html#a95aa12f5f8e39cc90a11bb754e3fa8cb">arcade::ITime::getDeltaTime</a></div><div class="ttdeci">virtual float getDeltaTime() const =0</div></div>
+<div class="ttc" id="aclassarcade_1_1_i_time_html_aba8bfc9ee8851e5887e6906ec6c05d73"><div class="ttname"><a href="classarcade_1_1_i_time.html#aba8bfc9ee8851e5887e6906ec6c05d73">arcade::ITime::getTime</a></div><div class="ttdeci">virtual float getTime() const =0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

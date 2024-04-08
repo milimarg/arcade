@@ -89,40 +89,55 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>arcade</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">class </span>Food {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">enum class</span> FoodType {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                DEFAULT,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                RED_FRUIT,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                GREEN_FRUIT,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                YELLOW_FRUIT,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                COOKIE,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                RANDOM</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            Food(FoodType type = FoodType::DEFAULT, std::pair&lt;int, int&gt; position = {0, 0});</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            ~Food();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            FoodType getType() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            std::pair&lt;int, int&gt; getTextureCoords() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">int</span> getScore() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            std::pair&lt;int, int&gt; getPosition() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            std::array&lt;int, 4&gt; getColor() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">void</span> applyEffect(Player &amp;snake);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> Food &amp;food) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            FoodType _type;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            std::pair&lt;int, int&gt; _textureCoords;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">int</span> _score;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::pair&lt;int, int&gt; _position;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            std::array&lt;int, 4&gt; _color;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FOOD_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">class </span>Food {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41">   28</a></span>&#160;            <span class="keyword">enum class</span> <a class="code" href="classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41">FoodType</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                DEFAULT,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                RED_FRUIT,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                GREEN_FRUIT,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                YELLOW_FRUIT,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                COOKIE,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                RANDOM</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#aa9dbf716af452f5ab57197644953acb4">   42</a></span>&#160;            <a class="code" href="classarcade_1_1_food.html#aa9dbf716af452f5ab57197644953acb4">Food</a>(<a class="code" href="classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41">FoodType</a> type = FoodType::DEFAULT, std::pair&lt;int, int&gt; position = {0, 0});</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            ~<a class="code" href="classarcade_1_1_food.html">Food</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#af33c4e96d5537ef37c7aae5369e47ec7">   49</a></span>&#160;            <a class="code" href="classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41">FoodType</a> <a class="code" href="classarcade_1_1_food.html#af33c4e96d5537ef37c7aae5369e47ec7">getType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#a774e40afd82f896b08263aa8ee181cea">   55</a></span>&#160;            std::pair&lt;int, int&gt; <a class="code" href="classarcade_1_1_food.html#a774e40afd82f896b08263aa8ee181cea">getTextureCoords</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#a452d5fce7d46c6a75947e44b2242a920">   61</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classarcade_1_1_food.html#a452d5fce7d46c6a75947e44b2242a920">getScore</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#aea18b0c2cb124e966afb382a3b838afb">   67</a></span>&#160;            std::pair&lt;int, int&gt; <a class="code" href="classarcade_1_1_food.html#aea18b0c2cb124e966afb382a3b838afb">getPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#aa523307d29789ba8cd0bcd630cec165f">   73</a></span>&#160;            std::array&lt;int, 4&gt; <a class="code" href="classarcade_1_1_food.html#aa523307d29789ba8cd0bcd630cec165f">getColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#ab6f440fdff422df42c02fc816a120b5c">   79</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1_food.html#ab6f440fdff422df42c02fc816a120b5c">applyEffect</a>(<a class="code" href="classarcade_1_1_player.html">Player</a> &amp;snake);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classarcade_1_1_food.html#af18446d429e3f848c2a65e86780258f6">   86</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classarcade_1_1_food.html#af18446d429e3f848c2a65e86780258f6">operator==</a>(<span class="keyword">const</span> <a class="code" href="classarcade_1_1_food.html">Food</a> &amp;food) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41">FoodType</a> _type;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            std::pair&lt;int, int&gt; _textureCoords;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">int</span> _score;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            std::pair&lt;int, int&gt; _position;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            std::array&lt;int, 4&gt; _color;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FOOD_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassarcade_1_1_food_html"><div class="ttname"><a href="classarcade_1_1_food.html">arcade::Food</a></div><div class="ttdef"><b>Definition:</b> Food.hpp:23</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_a452d5fce7d46c6a75947e44b2242a920"><div class="ttname"><a href="classarcade_1_1_food.html#a452d5fce7d46c6a75947e44b2242a920">arcade::Food::getScore</a></div><div class="ttdeci">int getScore() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_a5c4da8d9aab194088fb4856e75f88f41"><div class="ttname"><a href="classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41">arcade::Food::FoodType</a></div><div class="ttdeci">FoodType</div><div class="ttdef"><b>Definition:</b> Food.hpp:28</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_a774e40afd82f896b08263aa8ee181cea"><div class="ttname"><a href="classarcade_1_1_food.html#a774e40afd82f896b08263aa8ee181cea">arcade::Food::getTextureCoords</a></div><div class="ttdeci">std::pair&lt; int, int &gt; getTextureCoords() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_aa523307d29789ba8cd0bcd630cec165f"><div class="ttname"><a href="classarcade_1_1_food.html#aa523307d29789ba8cd0bcd630cec165f">arcade::Food::getColor</a></div><div class="ttdeci">std::array&lt; int, 4 &gt; getColor() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_aa9dbf716af452f5ab57197644953acb4"><div class="ttname"><a href="classarcade_1_1_food.html#aa9dbf716af452f5ab57197644953acb4">arcade::Food::Food</a></div><div class="ttdeci">Food(FoodType type=FoodType::DEFAULT, std::pair&lt; int, int &gt; position={0, 0})</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_ab6f440fdff422df42c02fc816a120b5c"><div class="ttname"><a href="classarcade_1_1_food.html#ab6f440fdff422df42c02fc816a120b5c">arcade::Food::applyEffect</a></div><div class="ttdeci">void applyEffect(Player &amp;snake)</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_aea18b0c2cb124e966afb382a3b838afb"><div class="ttname"><a href="classarcade_1_1_food.html#aea18b0c2cb124e966afb382a3b838afb">arcade::Food::getPosition</a></div><div class="ttdeci">std::pair&lt; int, int &gt; getPosition() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_af18446d429e3f848c2a65e86780258f6"><div class="ttname"><a href="classarcade_1_1_food.html#af18446d429e3f848c2a65e86780258f6">arcade::Food::operator==</a></div><div class="ttdeci">bool operator==(const Food &amp;food) const</div></div>
+<div class="ttc" id="aclassarcade_1_1_food_html_af33c4e96d5537ef37c7aae5369e47ec7"><div class="ttname"><a href="classarcade_1_1_food.html#af33c4e96d5537ef37c7aae5369e47ec7">arcade::Food::getType</a></div><div class="ttdeci">FoodType getType() const</div></div>
+<div class="ttc" id="aclassarcade_1_1_player_html"><div class="ttname"><a href="classarcade_1_1_player.html">arcade::Player</a></div><div class="ttdef"><b>Definition:</b> Player.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

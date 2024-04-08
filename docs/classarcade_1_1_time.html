@@ -73,6 +73,8 @@ $(function() {
 <div class="title">arcade::Time Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_time_8hpp_source.html">Time.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for arcade::Time:</div>
 <div class="dyncontent">
@@ -94,16 +96,100 @@ Collaboration diagram for arcade::Time:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09bcf7efecc18c4f8da080bc554536f1"><td class="memItemLeft" align="right" valign="top"><a id="a09bcf7efecc18c4f8da080bc554536f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> () override</td></tr>
+<tr class="memitem:a09bcf7efecc18c4f8da080bc554536f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_time.html#a09bcf7efecc18c4f8da080bc554536f1">update</a> () override</td></tr>
 <tr class="separator:a09bcf7efecc18c4f8da080bc554536f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e35471047bcfa9f4d7149d92831edbf"><td class="memItemLeft" align="right" valign="top"><a id="a6e35471047bcfa9f4d7149d92831edbf"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getTime</b> () const override</td></tr>
+<tr class="memitem:a6e35471047bcfa9f4d7149d92831edbf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_time.html#a6e35471047bcfa9f4d7149d92831edbf">getTime</a> () const override</td></tr>
 <tr class="separator:a6e35471047bcfa9f4d7149d92831edbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef18e5064178cf708abcbfecd296a65a"><td class="memItemLeft" align="right" valign="top"><a id="aef18e5064178cf708abcbfecd296a65a"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getDeltaTime</b> () const override</td></tr>
+<tr class="memitem:aef18e5064178cf708abcbfecd296a65a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarcade_1_1_time.html#aef18e5064178cf708abcbfecd296a65a">getDeltaTime</a> () const override</td></tr>
 <tr class="separator:aef18e5064178cf708abcbfecd296a65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classarcade_1_1_time.html">Time</a> Class </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef18e5064178cf708abcbfecd296a65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef18e5064178cf708abcbfecd296a65a">&#9670;&nbsp;</a></span>getDeltaTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float arcade::Time::getDeltaTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>time since last call of this function </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_time.html#a95aa12f5f8e39cc90a11bb754e3fa8cb">arcade::ITime</a>.</p>
+
+</div>
+</div>
+<a id="a6e35471047bcfa9f4d7149d92831edbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e35471047bcfa9f4d7149d92831edbf">&#9670;&nbsp;</a></span>getTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float arcade::Time::getTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>current timeBank </dd></dl>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_time.html#aba8bfc9ee8851e5887e6906ec6c05d73">arcade::ITime</a>.</p>
+
+</div>
+</div>
+<a id="a09bcf7efecc18c4f8da080bc554536f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bcf7efecc18c4f8da080bc554536f1">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arcade::Time::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update time variables </p>
+
+<p>Implements <a class="el" href="classarcade_1_1_i_time.html#a4ae78f28ab7ecac15a3b598ba9efe2f8">arcade::ITime</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Includes/<a class="el" href="_time_8hpp_source.html">Time.hpp</a></li>
 <li>/home/marg/EPITECH_PROJECTS/B-OOP-400-STG-4-1-arcade-noe.tritsch/Sources/Time.cpp</li>

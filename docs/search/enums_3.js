@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foodtype_1243',['FoodType',['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41',1,'arcade::Food::FoodType()'],['../classarcade_1_1_food.html#a5c4da8d9aab194088fb4856e75f88f41',1,'arcade::Food::FoodType()']]]
+  ['orientation_621',['Orientation',['../classarcade_1_1_entity.html#aea5b418a57a431c26db89907a816d85a',1,'arcade::Entity']]]
 ];
