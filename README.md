@@ -56,6 +56,10 @@ make -C <filepath to lib> # i.e. './lib/SDL2' or './lib/Pacman'
 - [Class hierarchy](https://flguitt.com/arcade)
 - [Game controls](./doc/GAME-CONTROLS.md)
 
+## Mark
+
+21 / 21 (100%)
+
 ## Credits
 
 [Augustin GROSNON](https://github.com/augustin-grosnon) \
